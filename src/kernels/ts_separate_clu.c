@@ -113,7 +113,7 @@ void mwd_iso_ref_split( const int shape[3], const int xb, const int yb_r, const 
   int th_nwf = nwf/tgs;
   int bs_x = stencil_ctx.bs_x;
 
-#pragma omp parallel private(ib_r, ie_r, ib, ie, zi, kt, yb, ye, t, q, r, thb, the, tid, gtid, i, j, k, not_done) shared(bs_x, tgs, nwf, th_nwf, zb, ze, yb_r, ye_r, mtid, xb, xe, time_blk, t_dim, b_inc, e_inc, t_start) num_threads(stencil_ctx.thread_group_size)
+#pragma omp parallel private(ib_r, ie_r, ib, ie, zi, kt, yb, ye, t, q, r, thb, the, tid, gtid, i, j, k, not_done) shared(bs_x, tgs, nwf, th_nwf, mtid, time_blk, t_dim, b_inc, e_inc, t_start) num_threads(stencil_ctx.thread_group_size)
   {
 
 
