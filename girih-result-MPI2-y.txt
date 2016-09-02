@@ -1,0 +1,1662 @@
+librdmacm: Fatal: no RDMA devices found
+--------------------------------------------------------------------------
+[[49822,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: jenever0.aics27.riken.jp
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+librdmacm: Fatal: no RDMA devices found
+[AUTO TUNE] Any selected values for time block and number of frontlines are ignored
+[AUTO TUNE] [AUTO TUNE] Allocated based on diam width: 128
+[AUTO TUNE] Tuning case(s) [16] (thread group size, th_z, th_y, th_x, th_c): (1, 1, 1, 1, 1) (2, 1, 1, 2, 1) (2, 1, 2, 1, 1) (2, 2, 1, 1, 1) (4, 1, 2, 2, 1) (4, 2, 1, 2, 1) (4, 2, 2, 1, 1) (4, 4, 1, 1, 1) (8, 2, 2, 2, 1) (8, 4, 1, 2, 1) (8, 4, 2, 1, 1) (8, 8, 1, 1, 1) (16, 4, 2, 2, 1) (16, 8, 1, 2, 1) (16, 8, 2, 1, 1) (16, 16, 1, 1, 1) 
+
+[AUTO TUNE] START tune case #00: Thread group size:01  thc:01  thx:01  thy:01  thz:01  Possilbe diam width: 4 8 16 32
+[AUTO TUNE]   Diamond width:04  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [001: 809.21]  time:4.975901e-01  MLUPS:000402  cache block size:975kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [001: 2558.26]  time:3.672509e-01  MLUPS:000939  cache block size:975kiB  reps:2  perf err: 68.4%
+[AUTO TUNE]     [001: 7037.63]  time:2.097859e-01  MLUPS:001476  cache block size:975kiB  reps:3  perf err: 63.6%
+[AUTO TUNE]     [001: 6920.56]  time:2.909110e-01  MLUPS:002013  cache block size:975kiB  reps:4  perf err:  1.7%
+[AUTO TUNE]     [002: 9837.83]  time:4.092908e-02  MLUPS:000402  cache block size:1300kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 7606.12]  time:1.235220e-01  MLUPS:000939  cache block size:1300kiB  reps:2  perf err: 29.3%
+[AUTO TUNE]     [002: 7131.90]  time:2.070129e-01  MLUPS:001476  cache block size:1300kiB  reps:3  perf err:  6.6%
+[AUTO TUNE]     [002: 6936.82]  time:2.902291e-01  MLUPS:002013  cache block size:1300kiB  reps:4  perf err:  2.8%
+[AUTO TUNE]     [002: 6900.04]  time:3.695829e-01  MLUPS:002550  cache block size:1300kiB  reps:5  perf err:  0.5%
+[AUTO TUNE]   Diamond width:08  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [001: 13577.62]  time:4.942608e-02  MLUPS:000671  cache block size:3055kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [001: 12374.41]  time:1.410031e-01  MLUPS:001744  cache block size:3055kiB  reps:2  perf err:  9.7%
+[AUTO TUNE]     [001: 12053.68]  time:2.338350e-01  MLUPS:002818  cache block size:3055kiB  reps:3  perf err:  2.7%
+[AUTO TUNE]     [001: 12053.05]  time:3.229318e-01  MLUPS:003892  cache block size:3055kiB  reps:4  perf err:  0.0%
+[AUTO TUNE]     [002: 13587.85]  time:4.938889e-02  MLUPS:000671  cache block size:3640kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 12218.02]  time:1.428080e-01  MLUPS:001744  cache block size:3640kiB  reps:2  perf err: 11.2%
+[AUTO TUNE]     [002: 12121.22]  time:2.325320e-01  MLUPS:002818  cache block size:3640kiB  reps:3  perf err:  0.8%
+[AUTO TUNE]     [003: 13501.68]  time:4.970407e-02  MLUPS:000671  cache block size:4225kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [003: 12403.71]  time:1.406701e-01  MLUPS:001744  cache block size:4225kiB  reps:2  perf err:  8.9%
+[jenever0.aics27.riken.jp:05891] 1 more process has sent help message help-mpi-btl-base.txt / btl:no-nics
+[jenever0.aics27.riken.jp:05891] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[AUTO TUNE]     [003: 12228.08]  time:2.305000e-01  MLUPS:002818  cache block size:4225kiB  reps:3  perf err:  1.4%
+[AUTO TUNE]     [004: 13259.98]  time:5.061007e-02  MLUPS:000671  cache block size:4810kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 12251.22]  time:1.424210e-01  MLUPS:001744  cache block size:4810kiB  reps:2  perf err:  8.2%
+[AUTO TUNE]     [004: 12129.94]  time:2.323649e-01  MLUPS:002818  cache block size:4810kiB  reps:3  perf err:  1.0%
+[AUTO TUNE]   Diamond width:16  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [001: 13900.42]  time:8.690095e-02  MLUPS:001207  cache block size:10335kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [001: 15662.16]  time:2.142389e-01  MLUPS:003355  cache block size:10335kiB  reps:2  perf err: 11.2%
+[AUTO TUNE]     [001: 15463.18]  time:3.558729e-01  MLUPS:005502  cache block size:10335kiB  reps:3  perf err:  1.3%
+[AUTO TUNE]     [002: 13968.71]  time:8.647609e-02  MLUPS:001207  cache block size:11440kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 15630.12]  time:2.146780e-01  MLUPS:003355  cache block size:11440kiB  reps:2  perf err: 10.6%
+[AUTO TUNE]     [002: 15915.50]  time:3.457589e-01  MLUPS:005502  cache block size:11440kiB  reps:3  perf err:  1.8%
+[AUTO TUNE]     [003: 14053.88]  time:8.595204e-02  MLUPS:001207  cache block size:12545kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [003: 16219.90]  time:2.068720e-01  MLUPS:003355  cache block size:12545kiB  reps:2  perf err: 13.4%
+[AUTO TUNE]     [003: 15604.85]  time:3.526421e-01  MLUPS:005502  cache block size:12545kiB  reps:3  perf err:  3.9%
+[AUTO TUNE]     [003: 16332.41]  time:4.684191e-01  MLUPS:007650  cache block size:12545kiB  reps:4  perf err:  4.5%
+[AUTO TUNE]     [003: 16019.26]  time:6.116321e-01  MLUPS:009797  cache block size:12545kiB  reps:5  perf err:  2.0%
+[AUTO TUNE]     [004: 14155.85]  time:8.533287e-02  MLUPS:001207  cache block size:13650kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 15583.58]  time:2.153192e-01  MLUPS:003355  cache block size:13650kiB  reps:2  perf err:  9.2%
+[AUTO TUNE]     [004: 16013.21]  time:3.436491e-01  MLUPS:005502  cache block size:13650kiB  reps:3  perf err:  2.7%
+[AUTO TUNE]     [004: 15469.40]  time:4.945512e-01  MLUPS:007650  cache block size:13650kiB  reps:4  perf err:  3.5%
+[AUTO TUNE]     [004: 15722.92]  time:6.231599e-01  MLUPS:009797  cache block size:13650kiB  reps:5  perf err:  1.6%
+[AUTO TUNE]   Diamond width:32  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [001: 10339.69]  time:2.206740e-01  MLUPS:002281  cache block size:37375kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [001: 12016.22]  time:5.473158e-01  MLUPS:006576  cache block size:37375kiB  reps:2  perf err: 14.0%
+[AUTO TUNE]     [001: 12202.05]  time:8.909681e-01  MLUPS:010871  cache block size:37375kiB  reps:3  perf err:  1.5%
+[AUTO TUNE]     [002: 11054.43]  time:2.064061e-01  MLUPS:002281  cache block size:39520kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 11364.62]  time:5.786970e-01  MLUPS:006576  cache block size:39520kiB  reps:2  perf err:  2.7%
+[AUTO TUNE]     [002: 11789.47]  time:9.221480e-01  MLUPS:010871  cache block size:39520kiB  reps:3  perf err:  3.6%
+[AUTO TUNE]     [002: 12282.85]  time:1.234779e+00  MLUPS:015166  cache block size:39520kiB  reps:4  perf err:  4.0%
+[AUTO TUNE]     [002: 12658.38]  time:1.537446e+00  MLUPS:019461  cache block size:39520kiB  reps:5  perf err:  3.0%
+[AUTO TUNE]     [002: 12941.92]  time:1.835627e+00  MLUPS:023756  cache block size:39520kiB  reps:6  perf err:  2.2%
+[AUTO TUNE]     [003: 11728.45]  time:1.945441e-01  MLUPS:002281  cache block size:41665kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [003: 11839.21]  time:5.554991e-01  MLUPS:006576  cache block size:41665kiB  reps:2  perf err:  0.9%
+[AUTO TUNE] COMPLETE tune case #00: Thread group size:01  thc:01  thx:01  thy:01  thz:01  t_dim:07  bs_z:03  perf:16019.26 MLUP/s
+
+[AUTO TUNE] START tune case #01: Thread group size:02  thc:01  thx:02  thy:01  thz:01  Possilbe diam width: 4 8 16 32 64
+[AUTO TUNE]   Diamond width:04  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [001: 7795.98]  time:5.164886e-02  MLUPS:000402  cache block size:487kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [001: 6765.49]  time:1.388700e-01  MLUPS:000939  cache block size:487kiB  reps:2  perf err: 15.2%
+[AUTO TUNE]     [001: 6440.16]  time:2.292480e-01  MLUPS:001476  cache block size:487kiB  reps:3  perf err:  5.1%
+[AUTO TUNE]     [001: 6294.51]  time:3.198450e-01  MLUPS:002013  cache block size:487kiB  reps:4  perf err:  2.3%
+[AUTO TUNE]     [002: 8855.36]  time:4.547000e-02  MLUPS:000402  cache block size:650kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 6991.02]  time:1.343901e-01  MLUPS:000939  cache block size:650kiB  reps:2  perf err: 26.7%
+[AUTO TUNE]     [002: 6628.90]  time:2.227211e-01  MLUPS:001476  cache block size:650kiB  reps:3  perf err:  5.5%
+[AUTO TUNE]     [002: 6458.22]  time:3.117368e-01  MLUPS:002013  cache block size:650kiB  reps:4  perf err:  2.6%
+[AUTO TUNE]     [002: 6369.69]  time:4.003549e-01  MLUPS:002550  cache block size:650kiB  reps:5  perf err:  1.4%
+[AUTO TUNE]     [003: 9009.51]  time:4.469204e-02  MLUPS:000402  cache block size:812kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [003: 7120.63]  time:1.319439e-01  MLUPS:000939  cache block size:812kiB  reps:2  perf err: 26.5%
+[AUTO TUNE]     [003: 6648.30]  time:2.220709e-01  MLUPS:001476  cache block size:812kiB  reps:3  perf err:  7.1%
+[AUTO TUNE]     [003: 6593.09]  time:3.053601e-01  MLUPS:002013  cache block size:812kiB  reps:4  perf err:  0.8%
+[AUTO TUNE]     [004: 9128.18]  time:4.411101e-02  MLUPS:000402  cache block size:975kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 7136.70]  time:1.316469e-01  MLUPS:000939  cache block size:975kiB  reps:2  perf err: 27.9%
+[AUTO TUNE]     [004: 6801.91]  time:2.170560e-01  MLUPS:001476  cache block size:975kiB  reps:3  perf err:  4.9%
+[AUTO TUNE]     [004: 6532.72]  time:3.081820e-01  MLUPS:002013  cache block size:975kiB  reps:4  perf err:  4.1%
+[AUTO TUNE]     [004: 6474.45]  time:3.938770e-01  MLUPS:002550  cache block size:975kiB  reps:5  perf err:  0.9%
+[AUTO TUNE]   Diamond width:08  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [001: 9170.63]  time:7.317805e-02  MLUPS:000671  cache block size:1527kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [001: 9206.92]  time:1.895130e-01  MLUPS:001744  cache block size:1527kiB  reps:2  perf err:  0.4%
+[AUTO TUNE]     [002: 10429.87]  time:6.434298e-02  MLUPS:000671  cache block size:1820kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 9694.63]  time:1.799791e-01  MLUPS:001744  cache block size:1820kiB  reps:2  perf err:  7.6%
+[AUTO TUNE]     [002: 9888.00]  time:2.850499e-01  MLUPS:002818  cache block size:1820kiB  reps:3  perf err:  2.0%
+[AUTO TUNE]     [003: 10835.75]  time:6.193280e-02  MLUPS:000671  cache block size:2112kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [003: 10084.45]  time:1.730218e-01  MLUPS:001744  cache block size:2112kiB  reps:2  perf err:  7.5%
+[AUTO TUNE]     [003: 9756.62]  time:2.888882e-01  MLUPS:002818  cache block size:2112kiB  reps:3  perf err:  3.4%
+[AUTO TUNE]     [003: 9669.50]  time:4.025352e-01  MLUPS:003892  cache block size:2112kiB  reps:4  perf err:  0.9%
+[AUTO TUNE]   Diamond width:16  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [001: 9420.11]  time:1.282320e-01  MLUPS:001207  cache block size:5167kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [001: 9465.58]  time:3.544891e-01  MLUPS:003355  cache block size:5167kiB  reps:2  perf err:  0.5%
+[AUTO TUNE]     [002: 11531.82]  time:1.047502e-01  MLUPS:001207  cache block size:5720kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 11589.91]  time:2.895141e-01  MLUPS:003355  cache block size:5720kiB  reps:2  perf err:  0.5%
+[AUTO TUNE]     [003: 12018.43]  time:1.005089e-01  MLUPS:001207  cache block size:6272kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [003: 12164.84]  time:2.758312e-01  MLUPS:003355  cache block size:6272kiB  reps:2  perf err:  1.2%
+[AUTO TUNE]     [004: 10748.40]  time:1.123850e-01  MLUPS:001207  cache block size:6825kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 12335.42]  time:2.720170e-01  MLUPS:003355  cache block size:6825kiB  reps:2  perf err: 12.9%
+[AUTO TUNE]     [004: 12068.40]  time:4.559782e-01  MLUPS:005502  cache block size:6825kiB  reps:3  perf err:  2.2%
+[AUTO TUNE]   Diamond width:32  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [001: 8256.53]  time:2.763510e-01  MLUPS:002281  cache block size:18687kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [001: 11120.25]  time:5.914140e-01  MLUPS:006576  cache block size:18687kiB  reps:2  perf err: 25.8%
+[AUTO TUNE]     [001: 11429.56]  time:9.511859e-01  MLUPS:010871  cache block size:18687kiB  reps:3  perf err:  2.7%
+[AUTO TUNE]     [001: 11214.74]  time:1.352381e+00  MLUPS:015166  cache block size:18687kiB  reps:4  perf err:  1.9%
+[AUTO TUNE]     [002: 11127.11]  time:2.050579e-01  MLUPS:002281  cache block size:19760kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 12197.45]  time:5.391839e-01  MLUPS:006576  cache block size:19760kiB  reps:2  perf err:  8.8%
+[AUTO TUNE]     [002: 11239.19]  time:9.672971e-01  MLUPS:010871  cache block size:19760kiB  reps:3  perf err:  8.5%
+[AUTO TUNE]     [002: 11443.83]  time:1.325308e+00  MLUPS:015166  cache block size:19760kiB  reps:4  perf err:  1.8%
+[AUTO TUNE]     [003: 11168.39]  time:2.042999e-01  MLUPS:002281  cache block size:20832kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [003: 12133.89]  time:5.420082e-01  MLUPS:006576  cache block size:20832kiB  reps:2  perf err:  8.0%
+[AUTO TUNE]     [003: 11362.76]  time:9.567780e-01  MLUPS:010871  cache block size:20832kiB  reps:3  perf err:  6.8%
+[AUTO TUNE]     [003: 11709.48]  time:1.295241e+00  MLUPS:015166  cache block size:20832kiB  reps:4  perf err:  3.0%
+[AUTO TUNE]     [003: 12146.28]  time:1.602266e+00  MLUPS:019461  cache block size:20832kiB  reps:5  perf err:  3.6%
+[AUTO TUNE]     [003: 11656.53]  time:2.038046e+00  MLUPS:023756  cache block size:20832kiB  reps:6  perf err:  4.2%
+[AUTO TUNE]     [003: 11615.58]  time:2.414990e+00  MLUPS:028051  cache block size:20832kiB  reps:7  perf err:  0.4%
+[AUTO TUNE]     [004: 9345.45]  time:2.441511e-01  MLUPS:002281  cache block size:21905kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 11935.40]  time:5.510221e-01  MLUPS:006576  cache block size:21905kiB  reps:2  perf err: 21.7%
+[AUTO TUNE]     [004: 12324.76]  time:8.820970e-01  MLUPS:010871  cache block size:21905kiB  reps:3  perf err:  3.2%
+[AUTO TUNE]     [004: 12420.07]  time:1.221137e+00  MLUPS:015166  cache block size:21905kiB  reps:4  perf err:  0.8%
+[AUTO TUNE]     [005: 11287.56]  time:2.021430e-01  MLUPS:002281  cache block size:22977kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [005: 11686.74]  time:5.627460e-01  MLUPS:006576  cache block size:22977kiB  reps:2  perf err:  3.4%
+[AUTO TUNE]     [005: 11972.99]  time:9.080131e-01  MLUPS:010871  cache block size:22977kiB  reps:3  perf err:  2.4%
+[AUTO TUNE]   Diamond width:64  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [001: 4806.15]  time:9.215670e-01  MLUPS:004429  cache block size:70687kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [001: 4809.53]  time:2.706945e+00  MLUPS:013019  cache block size:70687kiB  reps:2  perf err:  0.1%
+[AUTO TUNE]     [002: 6154.85]  time:7.196250e-01  MLUPS:004429  cache block size:72800kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 6280.06]  time:2.073087e+00  MLUPS:013019  cache block size:72800kiB  reps:2  perf err:  2.0%
+[AUTO TUNE]     [003: 7310.86]  time:6.058362e-01  MLUPS:004429  cache block size:74912kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [003: 8019.42]  time:1.623450e+00  MLUPS:013019  cache block size:74912kiB  reps:2  perf err:  8.8%
+[AUTO TUNE]     [003: 8125.01]  time:2.659573e+00  MLUPS:021609  cache block size:74912kiB  reps:3  perf err:  1.3%
+[AUTO TUNE]     [004: 8074.69]  time:5.485270e-01  MLUPS:004429  cache block size:77025kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 8817.97]  time:1.476430e+00  MLUPS:013019  cache block size:77025kiB  reps:2  perf err:  8.4%
+[AUTO TUNE]     [004: 9044.72]  time:2.389134e+00  MLUPS:021609  cache block size:77025kiB  reps:3  perf err:  2.5%
+[AUTO TUNE]     [004: 9150.65]  time:3.300202e+00  MLUPS:030198  cache block size:77025kiB  reps:4  perf err:  1.2%
+[AUTO TUNE]     [005: 8271.40]  time:5.354819e-01  MLUPS:004429  cache block size:79137kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [005: 9433.90]  time:1.380036e+00  MLUPS:013019  cache block size:79137kiB  reps:2  perf err: 12.3%
+[AUTO TUNE]     [005: 9516.18]  time:2.270769e+00  MLUPS:021609  cache block size:79137kiB  reps:3  perf err:  0.9%
+[AUTO TUNE]     [006: 8520.55]  time:5.198238e-01  MLUPS:004429  cache block size:81250kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 9823.39]  time:1.325319e+00  MLUPS:013019  cache block size:81250kiB  reps:2  perf err: 13.3%
+[AUTO TUNE]     [006: 9982.80]  time:2.164629e+00  MLUPS:021609  cache block size:81250kiB  reps:3  perf err:  1.6%
+[AUTO TUNE]     [007: 8604.60]  time:5.147460e-01  MLUPS:004429  cache block size:83362kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [007: 9283.96]  time:1.402324e+00  MLUPS:013019  cache block size:83362kiB  reps:2  perf err:  7.3%
+[AUTO TUNE]     [007: 10371.95]  time:2.083412e+00  MLUPS:021609  cache block size:83362kiB  reps:3  perf err: 10.5%
+[AUTO TUNE]     [007: 10205.98]  time:2.958951e+00  MLUPS:030198  cache block size:83362kiB  reps:4  perf err:  1.6%
+[AUTO TUNE]     [008: 8615.29]  time:5.141072e-01  MLUPS:004429  cache block size:85475kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 10031.17]  time:1.297866e+00  MLUPS:013019  cache block size:85475kiB  reps:2  perf err: 14.1%
+[AUTO TUNE]     [008: 10366.47]  time:2.084514e+00  MLUPS:021609  cache block size:85475kiB  reps:3  perf err:  3.2%
+[AUTO TUNE]     [008: 10470.23]  time:2.884271e+00  MLUPS:030198  cache block size:85475kiB  reps:4  perf err:  1.0%
+[AUTO TUNE]     [009: 8976.59]  time:4.934149e-01  MLUPS:004429  cache block size:87587kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [009: 10280.23]  time:1.266423e+00  MLUPS:013019  cache block size:87587kiB  reps:2  perf err: 12.7%
+[AUTO TUNE]     [009: 10437.59]  time:2.070310e+00  MLUPS:021609  cache block size:87587kiB  reps:3  perf err:  1.5%
+[AUTO TUNE] COMPLETE tune case #01: Thread group size:02  thc:01  thx:02  thy:01  thz:01  t_dim:15  bs_z:04  perf:12420.07 MLUP/s
+
+[AUTO TUNE] START tune case #02: Thread group size:02  thc:01  thx:01  thy:02  thz:01  Possilbe diam width: 4 8 16 32 64
+[AUTO TUNE]   Diamond width:04  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [001: 8605.56]  time:4.678988e-02  MLUPS:000402  cache block size:487kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [001: 6881.60]  time:1.365271e-01  MLUPS:000939  cache block size:487kiB  reps:2  perf err: 25.1%
+[AUTO TUNE]     [001: 6540.70]  time:2.257242e-01  MLUPS:001476  cache block size:487kiB  reps:3  perf err:  5.2%
+[AUTO TUNE]     [001: 6330.72]  time:3.180151e-01  MLUPS:002013  cache block size:487kiB  reps:4  perf err:  3.3%
+[AUTO TUNE]     [001: 6259.84]  time:4.073808e-01  MLUPS:002550  cache block size:487kiB  reps:5  perf err:  1.1%
+[AUTO TUNE]     [002: 9007.06]  time:4.470420e-02  MLUPS:000402  cache block size:650kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 7096.91]  time:1.323850e-01  MLUPS:000939  cache block size:650kiB  reps:2  perf err: 26.9%
+[AUTO TUNE]     [002: 6655.71]  time:2.218239e-01  MLUPS:001476  cache block size:650kiB  reps:3  perf err:  6.6%
+[AUTO TUNE]     [002: 6487.27]  time:3.103409e-01  MLUPS:002013  cache block size:650kiB  reps:4  perf err:  2.6%
+[AUTO TUNE]     [002: 6337.93]  time:4.023609e-01  MLUPS:002550  cache block size:650kiB  reps:5  perf err:  2.4%
+[AUTO TUNE]     [003: 8936.52]  time:4.505706e-02  MLUPS:000402  cache block size:812kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [003: 7022.54]  time:1.337869e-01  MLUPS:000939  cache block size:812kiB  reps:2  perf err: 27.3%
+[AUTO TUNE]     [003: 6558.35]  time:2.251170e-01  MLUPS:001476  cache block size:812kiB  reps:3  perf err:  7.1%
+[AUTO TUNE]     [003: 6492.12]  time:3.101091e-01  MLUPS:002013  cache block size:812kiB  reps:4  perf err:  1.0%
+[AUTO TUNE]     [004: 9258.74]  time:4.348898e-02  MLUPS:000402  cache block size:975kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 7016.56]  time:1.339009e-01  MLUPS:000939  cache block size:975kiB  reps:2  perf err: 32.0%
+[AUTO TUNE]     [004: 6804.13]  time:2.169850e-01  MLUPS:001476  cache block size:975kiB  reps:3  perf err:  3.1%
+[AUTO TUNE]     [004: 6518.52]  time:3.088531e-01  MLUPS:002013  cache block size:975kiB  reps:4  perf err:  4.4%
+[AUTO TUNE]     [004: 6444.59]  time:3.957019e-01  MLUPS:002550  cache block size:975kiB  reps:5  perf err:  1.1%
+[AUTO TUNE]   Diamond width:08  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [001: 10885.07]  time:6.165218e-02  MLUPS:000671  cache block size:1527kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [001: 10208.95]  time:1.709118e-01  MLUPS:001744  cache block size:1527kiB  reps:2  perf err:  6.6%
+[AUTO TUNE]     [001: 10086.39]  time:2.794430e-01  MLUPS:002818  cache block size:1527kiB  reps:3  perf err:  1.2%
+[AUTO TUNE]     [002: 11240.25]  time:5.970407e-02  MLUPS:000671  cache block size:1820kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 10795.43]  time:1.616268e-01  MLUPS:001744  cache block size:1820kiB  reps:2  perf err:  4.1%
+[AUTO TUNE]     [002: 10561.63]  time:2.668691e-01  MLUPS:002818  cache block size:1820kiB  reps:3  perf err:  2.2%
+[AUTO TUNE]     [003: 11984.80]  time:5.599499e-02  MLUPS:000671  cache block size:2112kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [003: 10929.91]  time:1.596382e-01  MLUPS:001744  cache block size:2112kiB  reps:2  perf err:  9.7%
+[AUTO TUNE]     [003: 10626.78]  time:2.652330e-01  MLUPS:002818  cache block size:2112kiB  reps:3  perf err:  2.9%
+[AUTO TUNE]     [003: 10567.74]  time:3.683202e-01  MLUPS:003892  cache block size:2112kiB  reps:4  perf err:  0.6%
+[AUTO TUNE]     [004: 11593.69]  time:5.788398e-02  MLUPS:000671  cache block size:2405kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 10908.32]  time:1.599541e-01  MLUPS:001744  cache block size:2405kiB  reps:2  perf err:  6.3%
+[AUTO TUNE]     [004: 10697.32]  time:2.634840e-01  MLUPS:002818  cache block size:2405kiB  reps:3  perf err:  2.0%
+[AUTO TUNE]     [005: 11722.65]  time:5.724716e-02  MLUPS:000671  cache block size:2697kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [005: 10915.29]  time:1.598520e-01  MLUPS:001744  cache block size:2697kiB  reps:2  perf err:  7.4%
+[AUTO TUNE]     [005: 10455.26]  time:2.695842e-01  MLUPS:002818  cache block size:2697kiB  reps:3  perf err:  4.4%
+[AUTO TUNE]     [005: 10614.67]  time:3.666921e-01  MLUPS:003892  cache block size:2697kiB  reps:4  perf err:  1.5%
+[AUTO TUNE]   Diamond width:16  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [001: 10837.31]  time:1.114631e-01  MLUPS:001207  cache block size:5167kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [001: 12352.68]  time:2.716370e-01  MLUPS:003355  cache block size:5167kiB  reps:2  perf err: 12.3%
+[AUTO TUNE]     [001: 12127.75]  time:4.537468e-01  MLUPS:005502  cache block size:5167kiB  reps:3  perf err:  1.9%
+[AUTO TUNE]     [002: 13099.54]  time:9.221387e-02  MLUPS:001207  cache block size:5720kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 13404.13]  time:2.503290e-01  MLUPS:003355  cache block size:5720kiB  reps:2  perf err:  2.3%
+[AUTO TUNE]     [003: 13668.40]  time:8.837605e-02  MLUPS:001207  cache block size:6272kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [003: 14300.15]  time:2.346439e-01  MLUPS:003355  cache block size:6272kiB  reps:2  perf err:  4.4%
+[AUTO TUNE]     [003: 14211.74]  time:3.872099e-01  MLUPS:005502  cache block size:6272kiB  reps:3  perf err:  0.6%
+[AUTO TUNE]     [004: 13658.53]  time:8.843994e-02  MLUPS:001207  cache block size:6825kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 14708.08]  time:2.281361e-01  MLUPS:003355  cache block size:6825kiB  reps:2  perf err:  7.1%
+[AUTO TUNE]     [004: 14438.04]  time:3.811409e-01  MLUPS:005502  cache block size:6825kiB  reps:3  perf err:  1.9%
+[AUTO TUNE]     [005: 14057.00]  time:8.593297e-02  MLUPS:001207  cache block size:7377kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [005: 14238.73]  time:2.356560e-01  MLUPS:003355  cache block size:7377kiB  reps:2  perf err:  1.3%
+[AUTO TUNE]   Diamond width:32  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [001: 11571.13]  time:1.971891e-01  MLUPS:002281  cache block size:18687kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [001: 14881.76]  time:4.419281e-01  MLUPS:006576  cache block size:18687kiB  reps:2  perf err: 22.2%
+[AUTO TUNE]     [001: 14890.21]  time:7.301199e-01  MLUPS:010871  cache block size:18687kiB  reps:3  perf err:  0.1%
+[AUTO TUNE]     [002: 13925.14]  time:1.638548e-01  MLUPS:002281  cache block size:19760kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 15172.08]  time:4.334719e-01  MLUPS:006576  cache block size:19760kiB  reps:2  perf err:  8.2%
+[AUTO TUNE]     [002: 15300.07]  time:7.105610e-01  MLUPS:010871  cache block size:19760kiB  reps:3  perf err:  0.8%
+[AUTO TUNE]     [003: 11854.35]  time:1.924779e-01  MLUPS:002281  cache block size:20832kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [003: 15922.49]  time:4.130428e-01  MLUPS:006576  cache block size:20832kiB  reps:2  perf err: 25.5%
+[AUTO TUNE]     [003: 16340.80]  time:6.653061e-01  MLUPS:010871  cache block size:20832kiB  reps:3  perf err:  2.6%
+[AUTO TUNE]     [003: 15732.37]  time:9.640381e-01  MLUPS:015166  cache block size:20832kiB  reps:4  perf err:  3.9%
+[AUTO TUNE]     [003: 16253.75]  time:1.197359e+00  MLUPS:019461  cache block size:20832kiB  reps:5  perf err:  3.2%
+[AUTO TUNE]     [003: 16346.72]  time:1.453291e+00  MLUPS:023756  cache block size:20832kiB  reps:6  perf err:  0.6%
+[AUTO TUNE]     [004: 13834.11]  time:1.649330e-01  MLUPS:002281  cache block size:21905kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 15749.14]  time:4.175889e-01  MLUPS:006576  cache block size:21905kiB  reps:2  perf err: 12.2%
+[AUTO TUNE]     [004: 16374.42]  time:6.639402e-01  MLUPS:010871  cache block size:21905kiB  reps:3  perf err:  3.8%
+[AUTO TUNE]     [004: 16019.47]  time:9.467609e-01  MLUPS:015166  cache block size:21905kiB  reps:4  perf err:  2.2%
+[AUTO TUNE]   Diamond width:64  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [001: 5201.98]  time:8.514419e-01  MLUPS:004429  cache block size:70687kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [001: 5323.95]  time:2.445389e+00  MLUPS:013019  cache block size:70687kiB  reps:2  perf err:  2.3%
+[AUTO TUNE]     [002: 6411.27]  time:6.908431e-01  MLUPS:004429  cache block size:72800kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 6645.26]  time:1.959159e+00  MLUPS:013019  cache block size:72800kiB  reps:2  perf err:  3.5%
+[AUTO TUNE]     [002: 6540.75]  time:3.303759e+00  MLUPS:021609  cache block size:72800kiB  reps:3  perf err:  1.6%
+[AUTO TUNE]     [003: 8350.07]  time:5.304370e-01  MLUPS:004429  cache block size:74912kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [003: 8862.49]  time:1.469013e+00  MLUPS:013019  cache block size:74912kiB  reps:2  perf err:  5.8%
+[AUTO TUNE]     [003: 8672.68]  time:2.491622e+00  MLUPS:021609  cache block size:74912kiB  reps:3  perf err:  2.2%
+[AUTO TUNE]     [004: 9051.86]  time:4.893122e-01  MLUPS:004429  cache block size:77025kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 9932.13]  time:1.310809e+00  MLUPS:013019  cache block size:77025kiB  reps:2  perf err:  8.9%
+[AUTO TUNE]     [004: 9976.96]  time:2.165895e+00  MLUPS:021609  cache block size:77025kiB  reps:3  perf err:  0.4%
+[AUTO TUNE]     [005: 9642.06]  time:4.593608e-01  MLUPS:004429  cache block size:79137kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [005: 10782.34]  time:1.207448e+00  MLUPS:013019  cache block size:79137kiB  reps:2  perf err: 10.6%
+[AUTO TUNE]     [005: 10635.90]  time:2.031710e+00  MLUPS:021609  cache block size:79137kiB  reps:3  perf err:  1.4%
+[AUTO TUNE]     [006: 9723.58]  time:4.555099e-01  MLUPS:004429  cache block size:81250kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 11259.41]  time:1.156288e+00  MLUPS:013019  cache block size:81250kiB  reps:2  perf err: 13.6%
+[AUTO TUNE]     [006: 11540.86]  time:1.872396e+00  MLUPS:021609  cache block size:81250kiB  reps:3  perf err:  2.4%
+[AUTO TUNE]     [007: 10229.33]  time:4.329889e-01  MLUPS:004429  cache block size:83362kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [007: 11470.30]  time:1.135029e+00  MLUPS:013019  cache block size:83362kiB  reps:2  perf err: 10.8%
+[AUTO TUNE]     [007: 11827.35]  time:1.827041e+00  MLUPS:021609  cache block size:83362kiB  reps:3  perf err:  3.0%
+[AUTO TUNE]     [007: 12445.31]  time:2.426536e+00  MLUPS:030198  cache block size:83362kiB  reps:4  perf err:  5.0%
+[AUTO TUNE]     [007: 12807.58]  time:3.028591e+00  MLUPS:038788  cache block size:83362kiB  reps:5  perf err:  2.8%
+[AUTO TUNE]     [007: 12459.61]  time:3.802596e+00  MLUPS:047378  cache block size:83362kiB  reps:6  perf err:  2.8%
+[AUTO TUNE]     [007: 13117.87]  time:4.266605e+00  MLUPS:055968  cache block size:83362kiB  reps:7  perf err:  5.0%
+[AUTO TUNE]     [007: 12880.92]  time:5.011966e+00  MLUPS:064558  cache block size:83362kiB  reps:8  perf err:  1.8%
+[AUTO TUNE]     [008: 10509.90]  time:4.214299e-01  MLUPS:004429  cache block size:85475kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 12147.71]  time:1.071735e+00  MLUPS:013019  cache block size:85475kiB  reps:2  perf err: 13.5%
+[AUTO TUNE]     [008: 12552.62]  time:1.721478e+00  MLUPS:021609  cache block size:85475kiB  reps:3  perf err:  3.2%
+[AUTO TUNE]     [008: 11970.09]  time:2.522870e+00  MLUPS:030198  cache block size:85475kiB  reps:4  perf err:  4.9%
+[AUTO TUNE]     [008: 13085.21]  time:2.964333e+00  MLUPS:038788  cache block size:85475kiB  reps:5  perf err:  8.5%
+[AUTO TUNE]     [008: 12958.28]  time:3.656261e+00  MLUPS:047378  cache block size:85475kiB  reps:6  perf err:  1.0%
+[AUTO TUNE]     [009: 10672.71]  time:4.150012e-01  MLUPS:004429  cache block size:87587kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [009: 12090.61]  time:1.076796e+00  MLUPS:013019  cache block size:87587kiB  reps:2  perf err: 11.7%
+[AUTO TUNE]     [009: 12731.74]  time:1.697259e+00  MLUPS:021609  cache block size:87587kiB  reps:3  perf err:  5.0%
+[AUTO TUNE]     [009: 11738.30]  time:2.572689e+00  MLUPS:030198  cache block size:87587kiB  reps:4  perf err:  8.5%
+[AUTO TUNE]     [009: 13251.60]  time:2.927113e+00  MLUPS:038788  cache block size:87587kiB  reps:5  perf err: 11.4%
+[AUTO TUNE]     [009: 13291.61]  time:3.564570e+00  MLUPS:047378  cache block size:87587kiB  reps:6  perf err:  0.3%
+[AUTO TUNE]     [010: 11173.98]  time:3.963840e-01  MLUPS:004429  cache block size:89700kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [010: 12272.23]  time:1.060860e+00  MLUPS:013019  cache block size:89700kiB  reps:2  perf err:  8.9%
+[AUTO TUNE]     [010: 13668.97]  time:1.580884e+00  MLUPS:021609  cache block size:89700kiB  reps:3  perf err: 10.2%
+[AUTO TUNE]     [010: 12766.17]  time:2.365549e+00  MLUPS:030198  cache block size:89700kiB  reps:4  perf err:  7.1%
+[AUTO TUNE]     [010: 13617.25]  time:2.848513e+00  MLUPS:038788  cache block size:89700kiB  reps:5  perf err:  6.3%
+[AUTO TUNE]     [010: 13674.08]  time:3.464866e+00  MLUPS:047378  cache block size:89700kiB  reps:6  perf err:  0.4%
+[AUTO TUNE]     [011: 10061.74]  time:4.402008e-01  MLUPS:004429  cache block size:91812kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [011: 11901.51]  time:1.093905e+00  MLUPS:013019  cache block size:91812kiB  reps:2  perf err: 15.5%
+[AUTO TUNE]     [011: 13116.54]  time:1.647466e+00  MLUPS:021609  cache block size:91812kiB  reps:3  perf err:  9.3%
+[AUTO TUNE]     [011: 13281.85]  time:2.273703e+00  MLUPS:030198  cache block size:91812kiB  reps:4  perf err:  1.2%
+[AUTO TUNE] COMPLETE tune case #02: Thread group size:02  thc:01  thx:01  thy:02  thz:01  t_dim:15  bs_z:03  perf:16346.72 MLUP/s
+
+[AUTO TUNE] START tune case #03: Thread group size:02  thc:01  thx:01  thy:01  thz:02  Possilbe diam width: 4 8 16 32 64
+[AUTO TUNE]   Diamond width:04  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [002: 9498.75]  time:4.239011e-02  MLUPS:000402  cache block size:650kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 7130.24]  time:1.317661e-01  MLUPS:000939  cache block size:650kiB  reps:2  perf err: 33.2%
+[AUTO TUNE]     [002: 6937.78]  time:2.128050e-01  MLUPS:001476  cache block size:650kiB  reps:3  perf err:  2.8%
+[AUTO TUNE]     [002: 6721.87]  time:2.995100e-01  MLUPS:002013  cache block size:650kiB  reps:4  perf err:  3.2%
+[AUTO TUNE]     [002: 6634.88]  time:3.843532e-01  MLUPS:002550  cache block size:650kiB  reps:5  perf err:  1.3%
+[AUTO TUNE]     [004: 8532.60]  time:4.718995e-02  MLUPS:000402  cache block size:975kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 7410.90]  time:1.267760e-01  MLUPS:000939  cache block size:975kiB  reps:2  perf err: 15.1%
+[AUTO TUNE]     [004: 6765.74]  time:2.182162e-01  MLUPS:001476  cache block size:975kiB  reps:3  perf err:  9.5%
+[AUTO TUNE]     [004: 6752.21]  time:2.981639e-01  MLUPS:002013  cache block size:975kiB  reps:4  perf err:  0.2%
+[AUTO TUNE]     [006: 9556.97]  time:4.213190e-02  MLUPS:000402  cache block size:1300kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 7328.76]  time:1.281970e-01  MLUPS:000939  cache block size:1300kiB  reps:2  perf err: 30.4%
+[AUTO TUNE]     [006: 6933.65]  time:2.129319e-01  MLUPS:001476  cache block size:1300kiB  reps:3  perf err:  5.7%
+[AUTO TUNE]     [006: 6733.76]  time:2.989810e-01  MLUPS:002013  cache block size:1300kiB  reps:4  perf err:  3.0%
+[AUTO TUNE]     [006: 6671.82]  time:3.822250e-01  MLUPS:002550  cache block size:1300kiB  reps:5  perf err:  0.9%
+[AUTO TUNE]   Diamond width:08  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [002: 12162.00]  time:5.517912e-02  MLUPS:000671  cache block size:1820kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 11381.43]  time:1.533051e-01  MLUPS:001744  cache block size:1820kiB  reps:2  perf err:  6.9%
+[AUTO TUNE]     [002: 11153.70]  time:2.527030e-01  MLUPS:002818  cache block size:1820kiB  reps:3  perf err:  2.0%
+[AUTO TUNE]     [004: 12405.79]  time:5.409479e-02  MLUPS:000671  cache block size:2405kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 11143.59]  time:1.565771e-01  MLUPS:001744  cache block size:2405kiB  reps:2  perf err: 11.3%
+[AUTO TUNE]     [004: 11014.73]  time:2.558911e-01  MLUPS:002818  cache block size:2405kiB  reps:3  perf err:  1.2%
+[AUTO TUNE]   Diamond width:16  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [002: 11896.74]  time:1.015370e-01  MLUPS:001207  cache block size:5720kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 13143.34]  time:2.552960e-01  MLUPS:003355  cache block size:5720kiB  reps:2  perf err:  9.5%
+[AUTO TUNE]     [002: 13223.24]  time:4.161558e-01  MLUPS:005502  cache block size:5720kiB  reps:3  perf err:  0.6%
+[AUTO TUNE]     [004: 14275.11]  time:8.462000e-02  MLUPS:001207  cache block size:6825kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 14207.63]  time:2.361720e-01  MLUPS:003355  cache block size:6825kiB  reps:2  perf err:  0.5%
+[AUTO TUNE]     [006: 14618.20]  time:8.263397e-02  MLUPS:001207  cache block size:7930kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 15550.23]  time:2.157810e-01  MLUPS:003355  cache block size:7930kiB  reps:2  perf err:  6.0%
+[AUTO TUNE]     [006: 15360.80]  time:3.582449e-01  MLUPS:005502  cache block size:7930kiB  reps:3  perf err:  1.2%
+[AUTO TUNE]     [008: 14419.46]  time:8.377290e-02  MLUPS:001207  cache block size:9035kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 15419.11]  time:2.176158e-01  MLUPS:003355  cache block size:9035kiB  reps:2  perf err:  6.5%
+[AUTO TUNE]     [008: 15359.12]  time:3.582840e-01  MLUPS:005502  cache block size:9035kiB  reps:3  perf err:  0.4%
+[AUTO TUNE]   Diamond width:32  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [002: 12590.36]  time:1.812260e-01  MLUPS:002281  cache block size:19760kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 12744.23]  time:5.160508e-01  MLUPS:006576  cache block size:19760kiB  reps:2  perf err:  1.2%
+[AUTO TUNE]     [004: 11735.52]  time:1.944270e-01  MLUPS:002281  cache block size:21905kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 14829.05]  time:4.434991e-01  MLUPS:006576  cache block size:21905kiB  reps:2  perf err: 20.9%
+[AUTO TUNE]     [004: 14457.00]  time:7.519982e-01  MLUPS:010871  cache block size:21905kiB  reps:3  perf err:  2.6%
+[AUTO TUNE]     [004: 15075.42]  time:1.006048e+00  MLUPS:015166  cache block size:21905kiB  reps:4  perf err:  4.1%
+[AUTO TUNE]     [004: 14682.84]  time:1.325464e+00  MLUPS:019461  cache block size:21905kiB  reps:5  perf err:  2.7%
+[AUTO TUNE]     [004: 14720.34]  time:1.613858e+00  MLUPS:023756  cache block size:21905kiB  reps:6  perf err:  0.3%
+[AUTO TUNE]     [006: 11463.65]  time:1.990380e-01  MLUPS:002281  cache block size:24050kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 14932.34]  time:4.404311e-01  MLUPS:006576  cache block size:24050kiB  reps:2  perf err: 23.2%
+[AUTO TUNE]     [006: 15041.00]  time:7.228000e-01  MLUPS:010871  cache block size:24050kiB  reps:3  perf err:  0.7%
+[AUTO TUNE]     [008: 12675.34]  time:1.800110e-01  MLUPS:002281  cache block size:26195kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 15167.63]  time:4.335990e-01  MLUPS:006576  cache block size:26195kiB  reps:2  perf err: 16.4%
+[AUTO TUNE]     [008: 15154.26]  time:7.173979e-01  MLUPS:010871  cache block size:26195kiB  reps:3  perf err:  0.1%
+[AUTO TUNE]     [010: 13670.74]  time:1.669040e-01  MLUPS:002281  cache block size:28340kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [010: 15446.57]  time:4.257689e-01  MLUPS:006576  cache block size:28340kiB  reps:2  perf err: 11.5%
+[AUTO TUNE]     [010: 14821.99]  time:7.334800e-01  MLUPS:010871  cache block size:28340kiB  reps:3  perf err:  4.2%
+[AUTO TUNE]     [010: 15373.51]  time:9.865410e-01  MLUPS:015166  cache block size:28340kiB  reps:4  perf err:  3.6%
+[AUTO TUNE]     [010: 15486.04]  time:1.256717e+00  MLUPS:019461  cache block size:28340kiB  reps:5  perf err:  0.7%
+[AUTO TUNE]     [012: 13905.35]  time:1.640880e-01  MLUPS:002281  cache block size:30485kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 14387.24]  time:4.571180e-01  MLUPS:006576  cache block size:30485kiB  reps:2  perf err:  3.3%
+[AUTO TUNE]     [012: 15721.38]  time:6.915190e-01  MLUPS:010871  cache block size:30485kiB  reps:3  perf err:  8.5%
+[AUTO TUNE]     [012: 15762.64]  time:9.621868e-01  MLUPS:015166  cache block size:30485kiB  reps:4  perf err:  0.3%
+[AUTO TUNE]     [014: 11883.23]  time:1.920102e-01  MLUPS:002281  cache block size:32630kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [014: 15613.75]  time:4.212101e-01  MLUPS:006576  cache block size:32630kiB  reps:2  perf err: 23.9%
+[AUTO TUNE]     [014: 15720.27]  time:6.915679e-01  MLUPS:010871  cache block size:32630kiB  reps:3  perf err:  0.7%
+[AUTO TUNE]   Diamond width:64  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [002: 6312.10]  time:7.016981e-01  MLUPS:004429  cache block size:72800kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 6489.84]  time:2.006078e+00  MLUPS:013019  cache block size:72800kiB  reps:2  perf err:  2.7%
+[AUTO TUNE]     [002: 6592.22]  time:3.277965e+00  MLUPS:021609  cache block size:72800kiB  reps:3  perf err:  1.6%
+[AUTO TUNE]     [004: 9210.68]  time:4.808750e-01  MLUPS:004429  cache block size:77025kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 9667.27]  time:1.346722e+00  MLUPS:013019  cache block size:77025kiB  reps:2  perf err:  4.7%
+[AUTO TUNE]     [004: 10145.21]  time:2.129975e+00  MLUPS:021609  cache block size:77025kiB  reps:3  perf err:  4.7%
+[AUTO TUNE]     [004: 10510.47]  time:2.873230e+00  MLUPS:030198  cache block size:77025kiB  reps:4  perf err:  3.5%
+[AUTO TUNE]     [004: 9954.53]  time:3.896609e+00  MLUPS:038788  cache block size:77025kiB  reps:5  perf err:  5.6%
+[AUTO TUNE]     [004: 10312.00]  time:4.594535e+00  MLUPS:047378  cache block size:77025kiB  reps:6  perf err:  3.5%
+[AUTO TUNE]     [004: 10454.53]  time:5.353545e+00  MLUPS:055968  cache block size:77025kiB  reps:7  perf err:  1.4%
+[AUTO TUNE]     [006: 10404.89]  time:4.256830e-01  MLUPS:004429  cache block size:81250kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 11333.08]  time:1.148771e+00  MLUPS:013019  cache block size:81250kiB  reps:2  perf err:  8.2%
+[AUTO TUNE]     [006: 11625.11]  time:1.858825e+00  MLUPS:021609  cache block size:81250kiB  reps:3  perf err:  2.5%
+[AUTO TUNE]     [006: 12213.64]  time:2.472563e+00  MLUPS:030198  cache block size:81250kiB  reps:4  perf err:  4.8%
+[AUTO TUNE]     [006: 11936.96]  time:3.249481e+00  MLUPS:038788  cache block size:81250kiB  reps:5  perf err:  2.3%
+[AUTO TUNE]     [008: 11051.99]  time:4.007590e-01  MLUPS:004429  cache block size:85475kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 12272.87]  time:1.060805e+00  MLUPS:013019  cache block size:85475kiB  reps:2  perf err:  9.9%
+[AUTO TUNE]     [008: 11965.02]  time:1.806019e+00  MLUPS:021609  cache block size:85475kiB  reps:3  perf err:  2.6%
+[AUTO TUNE]     [008: 12847.14]  time:2.350640e+00  MLUPS:030198  cache block size:85475kiB  reps:4  perf err:  6.9%
+[AUTO TUNE]     [008: 12489.03]  time:3.105839e+00  MLUPS:038788  cache block size:85475kiB  reps:5  perf err:  2.9%
+[AUTO TUNE]     [008: 12599.67]  time:3.760326e+00  MLUPS:047378  cache block size:85475kiB  reps:6  perf err:  0.9%
+[AUTO TUNE]     [010: 11278.06]  time:3.927259e-01  MLUPS:004429  cache block size:89700kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [010: 12617.97]  time:1.031792e+00  MLUPS:013019  cache block size:89700kiB  reps:2  perf err: 10.6%
+[AUTO TUNE]     [010: 12395.33]  time:1.743322e+00  MLUPS:021609  cache block size:89700kiB  reps:3  perf err:  1.8%
+[AUTO TUNE] COMPLETE tune case #03: Thread group size:02  thc:01  thx:01  thy:01  thz:02  t_dim:15  bs_z:12  perf:15762.64 MLUP/s
+
+[AUTO TUNE] START tune case #04: Thread group size:04  thc:01  thx:02  thy:02  thz:01  Possilbe diam width: 4 8 16 32 64
+[AUTO TUNE]   Diamond width:04  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [001: 5745.46]  time:7.008195e-02  MLUPS:000402  cache block size:243kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [001: 4597.80]  time:2.043421e-01  MLUPS:000939  cache block size:243kiB  reps:2  perf err: 25.0%
+[AUTO TUNE]     [001: 4277.20]  time:3.451781e-01  MLUPS:001476  cache block size:243kiB  reps:3  perf err:  7.5%
+[AUTO TUNE]     [001: 4221.13]  time:4.769490e-01  MLUPS:002013  cache block size:243kiB  reps:4  perf err:  1.3%
+[AUTO TUNE]     [002: 6721.31]  time:5.990696e-02  MLUPS:000402  cache block size:325kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 5337.72]  time:1.760161e-01  MLUPS:000939  cache block size:325kiB  reps:2  perf err: 25.9%
+[AUTO TUNE]     [002: 4975.28]  time:2.967460e-01  MLUPS:001476  cache block size:325kiB  reps:3  perf err:  7.3%
+[AUTO TUNE]     [002: 4936.24]  time:4.078541e-01  MLUPS:002013  cache block size:325kiB  reps:4  perf err:  0.8%
+[AUTO TUNE]     [003: 6872.37]  time:5.859017e-02  MLUPS:000402  cache block size:406kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [003: 5548.12]  time:1.693411e-01  MLUPS:000939  cache block size:406kiB  reps:2  perf err: 23.9%
+[AUTO TUNE]     [003: 5191.32]  time:2.843969e-01  MLUPS:001476  cache block size:406kiB  reps:3  perf err:  6.9%
+[AUTO TUNE]     [003: 5209.46]  time:3.864632e-01  MLUPS:002013  cache block size:406kiB  reps:4  perf err:  0.3%
+[AUTO TUNE]     [004: 7444.95]  time:5.408406e-02  MLUPS:000402  cache block size:487kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 5652.33]  time:1.662190e-01  MLUPS:000939  cache block size:487kiB  reps:2  perf err: 31.7%
+[AUTO TUNE]     [004: 5484.26]  time:2.692058e-01  MLUPS:001476  cache block size:487kiB  reps:3  perf err:  3.1%
+[AUTO TUNE]     [004: 5198.19]  time:3.873010e-01  MLUPS:002013  cache block size:487kiB  reps:4  perf err:  5.5%
+[AUTO TUNE]     [004: 5324.30]  time:4.789619e-01  MLUPS:002550  cache block size:487kiB  reps:5  perf err:  2.4%
+[AUTO TUNE]     [005: 7130.13]  time:5.647206e-02  MLUPS:000402  cache block size:568kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [005: 5929.09]  time:1.584601e-01  MLUPS:000939  cache block size:568kiB  reps:2  perf err: 20.3%
+[AUTO TUNE]     [005: 5564.69]  time:2.653151e-01  MLUPS:001476  cache block size:568kiB  reps:3  perf err:  6.5%
+[AUTO TUNE]     [005: 5360.53]  time:3.755720e-01  MLUPS:002013  cache block size:568kiB  reps:4  perf err:  3.8%
+[AUTO TUNE]     [005: 5308.29]  time:4.804060e-01  MLUPS:002550  cache block size:568kiB  reps:5  perf err:  1.0%
+[AUTO TUNE]   Diamond width:08  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [001: 6909.33]  time:9.712791e-02  MLUPS:000671  cache block size:763kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [001: 6377.05]  time:2.736108e-01  MLUPS:001744  cache block size:763kiB  reps:2  perf err:  8.3%
+[AUTO TUNE]     [001: 6266.98]  time:4.497499e-01  MLUPS:002818  cache block size:763kiB  reps:3  perf err:  1.8%
+[AUTO TUNE]     [002: 7527.98]  time:8.914590e-02  MLUPS:000671  cache block size:910kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 6997.97]  time:2.493339e-01  MLUPS:001744  cache block size:910kiB  reps:2  perf err:  7.6%
+[AUTO TUNE]     [002: 6889.15]  time:4.091320e-01  MLUPS:002818  cache block size:910kiB  reps:3  perf err:  1.6%
+[AUTO TUNE]     [003: 7847.52]  time:8.551598e-02  MLUPS:000671  cache block size:1056kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [003: 7643.82]  time:2.282670e-01  MLUPS:001744  cache block size:1056kiB  reps:2  perf err:  2.7%
+[AUTO TUNE]     [003: 7267.75]  time:3.878191e-01  MLUPS:002818  cache block size:1056kiB  reps:3  perf err:  5.2%
+[AUTO TUNE]     [003: 7007.15]  time:5.554779e-01  MLUPS:003892  cache block size:1056kiB  reps:4  perf err:  3.7%
+[AUTO TUNE]     [003: 7151.66]  time:6.943920e-01  MLUPS:004966  cache block size:1056kiB  reps:5  perf err:  2.0%
+[AUTO TUNE]     [004: 8870.97]  time:7.564998e-02  MLUPS:000671  cache block size:1202kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 7750.60]  time:2.251220e-01  MLUPS:001744  cache block size:1202kiB  reps:2  perf err: 14.5%
+[AUTO TUNE]     [004: 7466.63]  time:3.774891e-01  MLUPS:002818  cache block size:1202kiB  reps:3  perf err:  3.8%
+[AUTO TUNE]     [004: 7716.74]  time:5.043991e-01  MLUPS:003892  cache block size:1202kiB  reps:4  perf err:  3.2%
+[AUTO TUNE]     [004: 7530.36]  time:6.594710e-01  MLUPS:004966  cache block size:1202kiB  reps:5  perf err:  2.5%
+[AUTO TUNE]     [005: 9130.35]  time:7.350087e-02  MLUPS:000671  cache block size:1348kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [005: 7903.31]  time:2.207720e-01  MLUPS:001744  cache block size:1348kiB  reps:2  perf err: 15.5%
+[AUTO TUNE]     [005: 7846.52]  time:3.592131e-01  MLUPS:002818  cache block size:1348kiB  reps:3  perf err:  0.7%
+[AUTO TUNE]     [006: 9289.97]  time:7.223797e-02  MLUPS:000671  cache block size:1495kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 8261.74]  time:2.111940e-01  MLUPS:001744  cache block size:1495kiB  reps:2  perf err: 12.4%
+[AUTO TUNE]     [006: 7997.51]  time:3.524311e-01  MLUPS:002818  cache block size:1495kiB  reps:3  perf err:  3.3%
+[AUTO TUNE]     [006: 8059.74]  time:4.829330e-01  MLUPS:003892  cache block size:1495kiB  reps:4  perf err:  0.8%
+[AUTO TUNE]     [007: 9548.26]  time:7.028389e-02  MLUPS:000671  cache block size:1641kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [007: 8027.86]  time:2.173469e-01  MLUPS:001744  cache block size:1641kiB  reps:2  perf err: 18.9%
+[AUTO TUNE]     [007: 8018.29]  time:3.515179e-01  MLUPS:002818  cache block size:1641kiB  reps:3  perf err:  0.1%
+[AUTO TUNE]   Diamond width:16  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [001: 7812.49]  time:1.546190e-01  MLUPS:001207  cache block size:2583kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [001: 7665.62]  time:4.377260e-01  MLUPS:003355  cache block size:2583kiB  reps:2  perf err:  1.9%
+[AUTO TUNE]     [002: 9007.17]  time:1.341109e-01  MLUPS:001207  cache block size:2860kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 8807.84]  time:3.809609e-01  MLUPS:003355  cache block size:2860kiB  reps:2  perf err:  2.3%
+[AUTO TUNE]     [003: 9165.80]  time:1.317899e-01  MLUPS:001207  cache block size:3136kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [003: 9671.98]  time:3.469241e-01  MLUPS:003355  cache block size:3136kiB  reps:2  perf err:  5.2%
+[AUTO TUNE]     [003: 9540.11]  time:5.768199e-01  MLUPS:005502  cache block size:3136kiB  reps:3  perf err:  1.4%
+[AUTO TUNE]     [004: 9394.47]  time:1.285820e-01  MLUPS:001207  cache block size:3412kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 9959.76]  time:3.369000e-01  MLUPS:003355  cache block size:3412kiB  reps:2  perf err:  5.7%
+[AUTO TUNE]     [004: 10013.24]  time:5.495648e-01  MLUPS:005502  cache block size:3412kiB  reps:3  perf err:  0.5%
+[AUTO TUNE]     [005: 9070.26]  time:1.331780e-01  MLUPS:001207  cache block size:3688kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [005: 10093.19]  time:3.324461e-01  MLUPS:003355  cache block size:3688kiB  reps:2  perf err: 10.1%
+[AUTO TUNE]     [005: 10168.27]  time:5.411861e-01  MLUPS:005502  cache block size:3688kiB  reps:3  perf err:  0.7%
+[AUTO TUNE]     [006: 9772.59]  time:1.236069e-01  MLUPS:001207  cache block size:3965kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 10342.74]  time:3.244250e-01  MLUPS:003355  cache block size:3965kiB  reps:2  perf err:  5.5%
+[AUTO TUNE]     [006: 10469.92]  time:5.255940e-01  MLUPS:005502  cache block size:3965kiB  reps:3  perf err:  1.2%
+[AUTO TUNE]     [007: 10646.29]  time:1.134629e-01  MLUPS:001207  cache block size:4241kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [007: 10531.54]  time:3.186090e-01  MLUPS:003355  cache block size:4241kiB  reps:2  perf err:  1.1%
+[AUTO TUNE]     [008: 10604.71]  time:1.139078e-01  MLUPS:001207  cache block size:4517kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 10586.76]  time:3.169470e-01  MLUPS:003355  cache block size:4517kiB  reps:2  perf err:  0.2%
+[AUTO TUNE]     [009: 10330.26]  time:1.169341e-01  MLUPS:001207  cache block size:4793kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [009: 10465.29]  time:3.206260e-01  MLUPS:003355  cache block size:4793kiB  reps:2  perf err:  1.3%
+[AUTO TUNE]   Diamond width:32  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [001: 9092.32]  time:2.509482e-01  MLUPS:002281  cache block size:9343kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [001: 9230.91]  time:7.124619e-01  MLUPS:006576  cache block size:9343kiB  reps:2  perf err:  1.5%
+[AUTO TUNE]     [002: 9902.74]  time:2.304111e-01  MLUPS:002281  cache block size:9880kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 9999.83]  time:6.576781e-01  MLUPS:006576  cache block size:9880kiB  reps:2  perf err:  1.0%
+[AUTO TUNE]     [003: 10002.37]  time:2.281160e-01  MLUPS:002281  cache block size:10416kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [003: 10504.35]  time:6.260900e-01  MLUPS:006576  cache block size:10416kiB  reps:2  perf err:  4.8%
+[AUTO TUNE]     [003: 10653.56]  time:1.020470e+00  MLUPS:010871  cache block size:10416kiB  reps:3  perf err:  1.4%
+[AUTO TUNE]     [004: 9285.25]  time:2.457340e-01  MLUPS:002281  cache block size:10952kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 10464.37]  time:6.284821e-01  MLUPS:006576  cache block size:10952kiB  reps:2  perf err: 11.3%
+[AUTO TUNE]     [004: 10889.78]  time:9.983342e-01  MLUPS:010871  cache block size:10952kiB  reps:3  perf err:  3.9%
+[AUTO TUNE]     [004: 11126.78]  time:1.363072e+00  MLUPS:015166  cache block size:10952kiB  reps:4  perf err:  2.1%
+[AUTO TUNE]     [005: 9569.89]  time:2.384250e-01  MLUPS:002281  cache block size:11488kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [005: 10996.76]  time:5.980549e-01  MLUPS:006576  cache block size:11488kiB  reps:2  perf err: 13.0%
+[AUTO TUNE]     [005: 11134.06]  time:9.764309e-01  MLUPS:010871  cache block size:11488kiB  reps:3  perf err:  1.2%
+[AUTO TUNE]     [006: 10539.52]  time:2.164900e-01  MLUPS:002281  cache block size:12025kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 11144.57]  time:5.901229e-01  MLUPS:006576  cache block size:12025kiB  reps:2  perf err:  5.4%
+[AUTO TUNE]     [006: 11033.47]  time:9.853320e-01  MLUPS:010871  cache block size:12025kiB  reps:3  perf err:  1.0%
+[AUTO TUNE]   Diamond width:64  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [001: 8902.56]  time:4.975181e-01  MLUPS:004429  cache block size:35343kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [001: 9813.00]  time:1.326722e+00  MLUPS:013019  cache block size:35343kiB  reps:2  perf err:  9.3%
+[AUTO TUNE]     [001: 9874.80]  time:2.188302e+00  MLUPS:021609  cache block size:35343kiB  reps:3  perf err:  0.6%
+[AUTO TUNE]     [002: 9783.13]  time:4.527369e-01  MLUPS:004429  cache block size:36400kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 10187.34]  time:1.277970e+00  MLUPS:013019  cache block size:36400kiB  reps:2  perf err:  4.0%
+[AUTO TUNE]     [002: 10359.49]  time:2.085918e+00  MLUPS:021609  cache block size:36400kiB  reps:3  perf err:  1.7%
+[AUTO TUNE]     [003: 8563.99]  time:5.171869e-01  MLUPS:004429  cache block size:37456kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [003: 10488.39]  time:1.241289e+00  MLUPS:013019  cache block size:37456kiB  reps:2  perf err: 18.3%
+[AUTO TUNE]     [003: 10592.45]  time:2.040042e+00  MLUPS:021609  cache block size:37456kiB  reps:3  perf err:  1.0%
+[AUTO TUNE]     [004: 8568.53]  time:5.169129e-01  MLUPS:004429  cache block size:38512kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 9794.02]  time:1.329292e+00  MLUPS:013019  cache block size:38512kiB  reps:2  perf err: 12.5%
+[AUTO TUNE]     [004: 10676.32]  time:2.024017e+00  MLUPS:021609  cache block size:38512kiB  reps:3  perf err:  8.3%
+[AUTO TUNE]     [004: 10787.94]  time:2.799328e+00  MLUPS:030198  cache block size:38512kiB  reps:4  perf err:  1.0%
+[AUTO TUNE]     [005: 8503.58]  time:5.208611e-01  MLUPS:004429  cache block size:39568kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [005: 10902.27]  time:1.194166e+00  MLUPS:013019  cache block size:39568kiB  reps:2  perf err: 22.0%
+[AUTO TUNE]     [005: 10680.73]  time:2.023182e+00  MLUPS:021609  cache block size:39568kiB  reps:3  perf err:  2.1%
+[AUTO TUNE] COMPLETE tune case #04: Thread group size:04  thc:01  thx:02  thy:02  thz:01  t_dim:15  bs_z:05  perf:11134.06 MLUP/s
+
+[AUTO TUNE] START tune case #05: Thread group size:04  thc:01  thx:02  thy:01  thz:02  Possilbe diam width: 4 8 16 32 64
+[AUTO TUNE]   Diamond width:04  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [002: 7130.37]  time:5.647016e-02  MLUPS:000402  cache block size:325kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 5741.59]  time:1.636348e-01  MLUPS:000939  cache block size:325kiB  reps:2  perf err: 24.2%
+[AUTO TUNE]     [002: 5477.64]  time:2.695310e-01  MLUPS:001476  cache block size:325kiB  reps:3  perf err:  4.8%
+[AUTO TUNE]     [002: 5308.66]  time:3.792422e-01  MLUPS:002013  cache block size:325kiB  reps:4  perf err:  3.2%
+[AUTO TUNE]     [002: 5122.55]  time:4.978261e-01  MLUPS:002550  cache block size:325kiB  reps:5  perf err:  3.6%
+[AUTO TUNE]     [002: 5199.15]  time:5.937521e-01  MLUPS:003087  cache block size:325kiB  reps:6  perf err:  1.5%
+[AUTO TUNE]     [004: 7637.43]  time:5.272102e-02  MLUPS:000402  cache block size:487kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 6184.09]  time:1.519260e-01  MLUPS:000939  cache block size:487kiB  reps:2  perf err: 23.5%
+[AUTO TUNE]     [004: 5673.03]  time:2.602479e-01  MLUPS:001476  cache block size:487kiB  reps:3  perf err:  9.0%
+[AUTO TUNE]     [004: 5614.69]  time:3.585711e-01  MLUPS:002013  cache block size:487kiB  reps:4  perf err:  1.0%
+[AUTO TUNE]     [006: 7805.63]  time:5.158496e-02  MLUPS:000402  cache block size:650kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 5914.01]  time:1.588640e-01  MLUPS:000939  cache block size:650kiB  reps:2  perf err: 32.0%
+[AUTO TUNE]     [006: 6035.66]  time:2.446120e-01  MLUPS:001476  cache block size:650kiB  reps:3  perf err:  2.0%
+[AUTO TUNE]     [008: 7982.65]  time:5.044103e-02  MLUPS:000402  cache block size:812kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 6351.91]  time:1.479120e-01  MLUPS:000939  cache block size:812kiB  reps:2  perf err: 25.7%
+[AUTO TUNE]     [008: 6006.76]  time:2.457891e-01  MLUPS:001476  cache block size:812kiB  reps:3  perf err:  5.7%
+[AUTO TUNE]     [008: 5910.81]  time:3.406072e-01  MLUPS:002013  cache block size:812kiB  reps:4  perf err:  1.6%
+[AUTO TUNE]   Diamond width:08  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [002: 7710.40]  time:8.703685e-02  MLUPS:000671  cache block size:910kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 7431.04]  time:2.348030e-01  MLUPS:001744  cache block size:910kiB  reps:2  perf err:  3.8%
+[AUTO TUNE]     [002: 7220.15]  time:3.903759e-01  MLUPS:002818  cache block size:910kiB  reps:3  perf err:  2.9%
+[AUTO TUNE]     [002: 7148.51]  time:5.444930e-01  MLUPS:003892  cache block size:910kiB  reps:4  perf err:  1.0%
+[AUTO TUNE]     [004: 8972.86]  time:7.479095e-02  MLUPS:000671  cache block size:1202kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 8183.39]  time:2.132161e-01  MLUPS:001744  cache block size:1202kiB  reps:2  perf err:  9.6%
+[AUTO TUNE]     [004: 7879.91]  time:3.576910e-01  MLUPS:002818  cache block size:1202kiB  reps:3  perf err:  3.9%
+[AUTO TUNE]     [004: 7721.47]  time:5.040901e-01  MLUPS:003892  cache block size:1202kiB  reps:4  perf err:  2.1%
+[AUTO TUNE]     [006: 9567.99]  time:7.013893e-02  MLUPS:000671  cache block size:1495kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 8399.55]  time:2.077291e-01  MLUPS:001744  cache block size:1495kiB  reps:2  perf err: 13.9%
+[AUTO TUNE]     [006: 8408.02]  time:3.352242e-01  MLUPS:002818  cache block size:1495kiB  reps:3  perf err:  0.1%
+[AUTO TUNE]     [008: 9418.51]  time:7.125211e-02  MLUPS:000671  cache block size:1787kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 8962.24]  time:1.946869e-01  MLUPS:001744  cache block size:1787kiB  reps:2  perf err:  5.1%
+[AUTO TUNE]     [008: 8400.01]  time:3.355441e-01  MLUPS:002818  cache block size:1787kiB  reps:3  perf err:  6.7%
+[AUTO TUNE]     [008: 8309.61]  time:4.684110e-01  MLUPS:003892  cache block size:1787kiB  reps:4  perf err:  1.1%
+[AUTO TUNE]   Diamond width:16  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [002: 8961.92]  time:1.347880e-01  MLUPS:001207  cache block size:2860kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 8744.33]  time:3.837280e-01  MLUPS:003355  cache block size:2860kiB  reps:2  perf err:  2.5%
+[AUTO TUNE]     [004: 10321.17]  time:1.170371e-01  MLUPS:001207  cache block size:3412kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 9776.36]  time:3.432200e-01  MLUPS:003355  cache block size:3412kiB  reps:2  perf err:  5.6%
+[AUTO TUNE]     [004: 9966.40]  time:5.521481e-01  MLUPS:005502  cache block size:3412kiB  reps:3  perf err:  1.9%
+[AUTO TUNE]     [006: 9981.99]  time:1.210139e-01  MLUPS:001207  cache block size:3965kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 10233.57]  time:3.278859e-01  MLUPS:003355  cache block size:3965kiB  reps:2  perf err:  2.5%
+[AUTO TUNE]     [008: 10013.34]  time:1.206350e-01  MLUPS:001207  cache block size:4517kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 10499.37]  time:3.195851e-01  MLUPS:003355  cache block size:4517kiB  reps:2  perf err:  4.6%
+[AUTO TUNE]     [008: 10418.91]  time:5.281670e-01  MLUPS:005502  cache block size:4517kiB  reps:3  perf err:  0.8%
+[AUTO TUNE]     [010: 10681.96]  time:1.130841e-01  MLUPS:001207  cache block size:5070kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [010: 10144.99]  time:3.307488e-01  MLUPS:003355  cache block size:5070kiB  reps:2  perf err:  5.3%
+[AUTO TUNE]     [010: 10675.12]  time:5.154910e-01  MLUPS:005502  cache block size:5070kiB  reps:3  perf err:  5.0%
+[AUTO TUNE]     [010: 10510.48]  time:7.278841e-01  MLUPS:007650  cache block size:5070kiB  reps:4  perf err:  1.6%
+[AUTO TUNE]     [012: 10873.80]  time:1.110890e-01  MLUPS:001207  cache block size:5622kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 10763.77]  time:3.117349e-01  MLUPS:003355  cache block size:5622kiB  reps:2  perf err:  1.0%
+[AUTO TUNE]     [014: 10757.96]  time:1.122851e-01  MLUPS:001207  cache block size:6175kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [014: 10641.73]  time:3.153100e-01  MLUPS:003355  cache block size:6175kiB  reps:2  perf err:  1.1%
+[AUTO TUNE]   Diamond width:32  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [002: 8928.14]  time:2.555630e-01  MLUPS:002281  cache block size:9880kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 9544.61]  time:6.890450e-01  MLUPS:006576  cache block size:9880kiB  reps:2  perf err:  6.5%
+[AUTO TUNE]     [002: 9668.26]  time:1.124466e+00  MLUPS:010871  cache block size:9880kiB  reps:3  perf err:  1.3%
+[AUTO TUNE]     [004: 8836.06]  time:2.582262e-01  MLUPS:002281  cache block size:10952kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 10594.46]  time:6.207650e-01  MLUPS:006576  cache block size:10952kiB  reps:2  perf err: 16.6%
+[AUTO TUNE]     [004: 10607.19]  time:1.024931e+00  MLUPS:010871  cache block size:10952kiB  reps:3  perf err:  0.1%
+[AUTO TUNE]     [006: 10407.42]  time:2.192380e-01  MLUPS:002281  cache block size:12025kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 10862.57]  time:6.054430e-01  MLUPS:006576  cache block size:12025kiB  reps:2  perf err:  4.2%
+[AUTO TUNE]     [006: 10829.91]  time:1.003853e+00  MLUPS:010871  cache block size:12025kiB  reps:3  perf err:  0.3%
+[AUTO TUNE]     [008: 9661.80]  time:2.361569e-01  MLUPS:002281  cache block size:13097kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 10364.76]  time:6.345220e-01  MLUPS:006576  cache block size:13097kiB  reps:2  perf err:  6.8%
+[AUTO TUNE]     [008: 10979.85]  time:9.901440e-01  MLUPS:010871  cache block size:13097kiB  reps:3  perf err:  5.6%
+[AUTO TUNE]     [008: 10946.88]  time:1.385473e+00  MLUPS:015166  cache block size:13097kiB  reps:4  perf err:  0.3%
+[AUTO TUNE]     [010: 10387.70]  time:2.196541e-01  MLUPS:002281  cache block size:14170kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [010: 11055.27]  time:5.948899e-01  MLUPS:006576  cache block size:14170kiB  reps:2  perf err:  6.0%
+[AUTO TUNE]     [010: 10586.98]  time:1.026887e+00  MLUPS:010871  cache block size:14170kiB  reps:3  perf err:  4.4%
+[AUTO TUNE]     [010: 10968.25]  time:1.382774e+00  MLUPS:015166  cache block size:14170kiB  reps:4  perf err:  3.5%
+[AUTO TUNE]     [010: 11026.12]  time:1.765043e+00  MLUPS:019461  cache block size:14170kiB  reps:5  perf err:  0.5%
+[AUTO TUNE]     [012: 10627.59]  time:2.146959e-01  MLUPS:002281  cache block size:15242kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 11125.68]  time:5.911250e-01  MLUPS:006576  cache block size:15242kiB  reps:2  perf err:  4.5%
+[AUTO TUNE]     [012: 10990.50]  time:9.891851e-01  MLUPS:010871  cache block size:15242kiB  reps:3  perf err:  1.2%
+[AUTO TUNE]   Diamond width:64  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [002: 7571.61]  time:5.849729e-01  MLUPS:004429  cache block size:36400kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 9421.56]  time:1.381844e+00  MLUPS:013019  cache block size:36400kiB  reps:2  perf err: 19.6%
+[AUTO TUNE]     [002: 9587.84]  time:2.253797e+00  MLUPS:021609  cache block size:36400kiB  reps:3  perf err:  1.7%
+[AUTO TUNE]     [004: 7868.29]  time:5.629160e-01  MLUPS:004429  cache block size:38512kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 9155.33]  time:1.422026e+00  MLUPS:013019  cache block size:38512kiB  reps:2  perf err: 14.1%
+[AUTO TUNE]     [004: 10056.43]  time:2.148779e+00  MLUPS:021609  cache block size:38512kiB  reps:3  perf err:  9.0%
+[AUTO TUNE]     [004: 9856.86]  time:3.063753e+00  MLUPS:030198  cache block size:38512kiB  reps:4  perf err:  2.0%
+[AUTO TUNE]     [006: 7661.13]  time:5.781372e-01  MLUPS:004429  cache block size:40625kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 9731.89]  time:1.337779e+00  MLUPS:013019  cache block size:40625kiB  reps:2  perf err: 21.3%
+[AUTO TUNE]     [006: 9793.48]  time:2.206473e+00  MLUPS:021609  cache block size:40625kiB  reps:3  perf err:  0.6%
+[AUTO TUNE] COMPLETE tune case #05: Thread group size:04  thc:01  thx:02  thy:01  thz:02  t_dim:15  bs_z:10  perf:11026.12 MLUP/s
+
+[AUTO TUNE] START tune case #06: Thread group size:04  thc:01  thx:01  thy:02  thz:02  Possilbe diam width: 4 8 16 32 64
+[AUTO TUNE]   Diamond width:04  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [002: 7119.55]  time:5.655599e-02  MLUPS:000402  cache block size:325kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 5891.06]  time:1.594830e-01  MLUPS:000939  cache block size:325kiB  reps:2  perf err: 20.9%
+[AUTO TUNE]     [002: 5362.74]  time:2.753060e-01  MLUPS:001476  cache block size:325kiB  reps:3  perf err:  9.9%
+[AUTO TUNE]     [002: 5464.24]  time:3.684440e-01  MLUPS:002013  cache block size:325kiB  reps:4  perf err:  1.9%
+[AUTO TUNE]     [004: 8371.00]  time:4.810095e-02  MLUPS:000402  cache block size:487kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 5988.35]  time:1.568921e-01  MLUPS:000939  cache block size:487kiB  reps:2  perf err: 39.8%
+[AUTO TUNE]     [004: 5746.63]  time:2.569151e-01  MLUPS:001476  cache block size:487kiB  reps:3  perf err:  4.2%
+[AUTO TUNE]     [004: 5819.44]  time:3.459551e-01  MLUPS:002013  cache block size:487kiB  reps:4  perf err:  1.3%
+[AUTO TUNE]     [006: 7341.80]  time:5.484390e-02  MLUPS:000402  cache block size:650kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 6197.34]  time:1.516011e-01  MLUPS:000939  cache block size:650kiB  reps:2  perf err: 18.5%
+[AUTO TUNE]     [006: 6136.10]  time:2.406080e-01  MLUPS:001476  cache block size:650kiB  reps:3  perf err:  1.0%
+[AUTO TUNE]     [008: 8192.85]  time:4.914689e-02  MLUPS:000402  cache block size:812kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 6125.91]  time:1.533689e-01  MLUPS:000939  cache block size:812kiB  reps:2  perf err: 33.7%
+[AUTO TUNE]     [008: 6237.36]  time:2.367020e-01  MLUPS:001476  cache block size:812kiB  reps:3  perf err:  1.8%
+[AUTO TUNE]     [010: 8513.46]  time:4.729605e-02  MLUPS:000402  cache block size:975kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [010: 6469.92]  time:1.452141e-01  MLUPS:000939  cache block size:975kiB  reps:2  perf err: 31.6%
+[AUTO TUNE]     [010: 5939.01]  time:2.485929e-01  MLUPS:001476  cache block size:975kiB  reps:3  perf err:  8.9%
+[AUTO TUNE]     [010: 5922.83]  time:3.399160e-01  MLUPS:002013  cache block size:975kiB  reps:4  perf err:  0.3%
+[AUTO TUNE]   Diamond width:08  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [002: 8473.47]  time:7.919884e-02  MLUPS:000671  cache block size:910kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 8288.11]  time:2.105222e-01  MLUPS:001744  cache block size:910kiB  reps:2  perf err:  2.2%
+[AUTO TUNE]     [004: 9072.81]  time:7.396698e-02  MLUPS:000671  cache block size:1202kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 8163.14]  time:2.137451e-01  MLUPS:001744  cache block size:1202kiB  reps:2  perf err: 11.1%
+[AUTO TUNE]     [004: 8188.98]  time:3.441911e-01  MLUPS:002818  cache block size:1202kiB  reps:3  perf err:  0.3%
+[AUTO TUNE]   Diamond width:16  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [002: 9780.42]  time:1.235080e-01  MLUPS:001207  cache block size:2860kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 9922.21]  time:3.381748e-01  MLUPS:003355  cache block size:2860kiB  reps:2  perf err:  1.4%
+[AUTO TUNE]     [004: 11499.44]  time:1.050451e-01  MLUPS:001207  cache block size:3412kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 11209.77]  time:2.993319e-01  MLUPS:003355  cache block size:3412kiB  reps:2  perf err:  2.6%
+[AUTO TUNE]     [004: 11265.90]  time:4.884589e-01  MLUPS:005502  cache block size:3412kiB  reps:3  perf err:  0.5%
+[AUTO TUNE]     [006: 12372.19]  time:9.763503e-02  MLUPS:001207  cache block size:3965kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 11490.97]  time:2.920070e-01  MLUPS:003355  cache block size:3965kiB  reps:2  perf err:  7.7%
+[AUTO TUNE]     [006: 11952.05]  time:4.604170e-01  MLUPS:005502  cache block size:3965kiB  reps:3  perf err:  3.9%
+[AUTO TUNE]     [006: 12156.26]  time:6.293390e-01  MLUPS:007650  cache block size:3965kiB  reps:4  perf err:  1.7%
+[AUTO TUNE]     [008: 12643.49]  time:9.554005e-02  MLUPS:001207  cache block size:4517kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 11769.40]  time:2.850990e-01  MLUPS:003355  cache block size:4517kiB  reps:2  perf err:  7.4%
+[AUTO TUNE]     [008: 12348.31]  time:4.456420e-01  MLUPS:005502  cache block size:4517kiB  reps:3  perf err:  4.7%
+[AUTO TUNE]     [008: 12564.03]  time:6.089139e-01  MLUPS:007650  cache block size:4517kiB  reps:4  perf err:  1.7%
+[AUTO TUNE]     [010: 13155.87]  time:9.181905e-02  MLUPS:001207  cache block size:5070kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [010: 12581.15]  time:2.667041e-01  MLUPS:003355  cache block size:5070kiB  reps:2  perf err:  4.6%
+[AUTO TUNE]     [010: 12243.48]  time:4.494579e-01  MLUPS:005502  cache block size:5070kiB  reps:3  perf err:  2.8%
+[AUTO TUNE]     [010: 12497.69]  time:6.121459e-01  MLUPS:007650  cache block size:5070kiB  reps:4  perf err:  2.0%
+[AUTO TUNE]   Diamond width:32  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [002: 10471.33]  time:2.178998e-01  MLUPS:002281  cache block size:9880kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 11316.94]  time:5.811350e-01  MLUPS:006576  cache block size:9880kiB  reps:2  perf err:  7.5%
+[AUTO TUNE]     [002: 11574.71]  time:9.392579e-01  MLUPS:010871  cache block size:9880kiB  reps:3  perf err:  2.2%
+[AUTO TUNE]     [004: 13492.33]  time:1.691110e-01  MLUPS:002281  cache block size:10952kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 14071.62]  time:4.673712e-01  MLUPS:006576  cache block size:10952kiB  reps:2  perf err:  4.1%
+[AUTO TUNE]     [004: 13968.73]  time:7.782838e-01  MLUPS:010871  cache block size:10952kiB  reps:3  perf err:  0.7%
+[AUTO TUNE]     [006: 13382.33]  time:1.705010e-01  MLUPS:002281  cache block size:12025kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 14036.48]  time:4.685411e-01  MLUPS:006576  cache block size:12025kiB  reps:2  perf err:  4.7%
+[AUTO TUNE]     [006: 13568.97]  time:8.012130e-01  MLUPS:010871  cache block size:12025kiB  reps:3  perf err:  3.4%
+[AUTO TUNE]     [006: 14016.44]  time:1.082058e+00  MLUPS:015166  cache block size:12025kiB  reps:4  perf err:  3.2%
+[AUTO TUNE]     [006: 13903.33]  time:1.399778e+00  MLUPS:019461  cache block size:12025kiB  reps:5  perf err:  0.8%
+[AUTO TUNE]   Diamond width:64  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [002: 11046.45]  time:4.009600e-01  MLUPS:004429  cache block size:36400kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 11544.70]  time:1.127714e+00  MLUPS:013019  cache block size:36400kiB  reps:2  perf err:  4.3%
+[AUTO TUNE]     [002: 11672.34]  time:1.851304e+00  MLUPS:021609  cache block size:36400kiB  reps:3  perf err:  1.1%
+[AUTO TUNE]     [004: 9753.98]  time:4.540901e-01  MLUPS:004429  cache block size:38512kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 12462.64]  time:1.044652e+00  MLUPS:013019  cache block size:38512kiB  reps:2  perf err: 21.7%
+[AUTO TUNE]     [004: 12822.06]  time:1.685303e+00  MLUPS:021609  cache block size:38512kiB  reps:3  perf err:  2.8%
+[AUTO TUNE]     [004: 12726.20]  time:2.372978e+00  MLUPS:030198  cache block size:38512kiB  reps:4  perf err:  0.8%
+[AUTO TUNE]     [006: 9702.46]  time:4.565010e-01  MLUPS:004429  cache block size:40625kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 12312.83]  time:1.057362e+00  MLUPS:013019  cache block size:40625kiB  reps:2  perf err: 21.2%
+[AUTO TUNE]     [006: 13185.83]  time:1.638809e+00  MLUPS:021609  cache block size:40625kiB  reps:3  perf err:  6.6%
+[AUTO TUNE]     [006: 12879.45]  time:2.344742e+00  MLUPS:030198  cache block size:40625kiB  reps:4  perf err:  2.4%
+[AUTO TUNE]     [008: 10088.96]  time:4.390130e-01  MLUPS:004429  cache block size:42737kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 13603.13]  time:9.570680e-01  MLUPS:013019  cache block size:42737kiB  reps:2  perf err: 25.8%
+[AUTO TUNE]     [008: 13012.16]  time:1.660681e+00  MLUPS:021609  cache block size:42737kiB  reps:3  perf err:  4.5%
+[AUTO TUNE]     [008: 13465.92]  time:2.242623e+00  MLUPS:030198  cache block size:42737kiB  reps:4  perf err:  3.4%
+[AUTO TUNE]     [008: 13611.24]  time:2.849772e+00  MLUPS:038788  cache block size:42737kiB  reps:5  perf err:  1.1%
+[AUTO TUNE]     [010: 11025.88]  time:4.017081e-01  MLUPS:004429  cache block size:44850kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [010: 13109.05]  time:9.931400e-01  MLUPS:013019  cache block size:44850kiB  reps:2  perf err: 15.9%
+[AUTO TUNE]     [010: 13507.73]  time:1.599754e+00  MLUPS:021609  cache block size:44850kiB  reps:3  perf err:  3.0%
+[AUTO TUNE]     [010: 13819.45]  time:2.185252e+00  MLUPS:030198  cache block size:44850kiB  reps:4  perf err:  2.3%
+[AUTO TUNE]     [012: 10483.55]  time:4.224889e-01  MLUPS:004429  cache block size:46962kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 13837.69]  time:9.408450e-01  MLUPS:013019  cache block size:46962kiB  reps:2  perf err: 24.2%
+[AUTO TUNE]     [012: 13662.05]  time:1.581684e+00  MLUPS:021609  cache block size:46962kiB  reps:3  perf err:  1.3%
+[AUTO TUNE] COMPLETE tune case #06: Thread group size:04  thc:01  thx:01  thy:02  thz:02  t_dim:15  bs_z:04  perf:13968.73 MLUP/s
+
+[AUTO TUNE] START tune case #07: Thread group size:04  thc:01  thx:01  thy:01  thz:04  Possilbe diam width: 4 8 16 32 64
+[AUTO TUNE]   Diamond width:04  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [004: 6893.55]  time:5.841017e-02  MLUPS:000402  cache block size:487kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 5269.90]  time:1.782811e-01  MLUPS:000939  cache block size:487kiB  reps:2  perf err: 30.8%
+[AUTO TUNE]     [004: 4822.20]  time:3.061662e-01  MLUPS:001476  cache block size:487kiB  reps:3  perf err:  9.3%
+[AUTO TUNE]     [004: 4969.37]  time:4.051352e-01  MLUPS:002013  cache block size:487kiB  reps:4  perf err:  3.0%
+[AUTO TUNE]     [004: 4786.05]  time:5.328269e-01  MLUPS:002550  cache block size:487kiB  reps:5  perf err:  3.8%
+[AUTO TUNE]     [004: 4866.67]  time:6.343160e-01  MLUPS:003087  cache block size:487kiB  reps:6  perf err:  1.7%
+[AUTO TUNE]     [008: 6604.45]  time:6.096697e-02  MLUPS:000402  cache block size:812kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 5415.93]  time:1.734741e-01  MLUPS:000939  cache block size:812kiB  reps:2  perf err: 21.9%
+[AUTO TUNE]     [008: 5206.71]  time:2.835560e-01  MLUPS:001476  cache block size:812kiB  reps:3  perf err:  4.0%
+[AUTO TUNE]     [008: 5225.71]  time:3.852620e-01  MLUPS:002013  cache block size:812kiB  reps:4  perf err:  0.4%
+[AUTO TUNE]     [012: 7019.88]  time:5.735898e-02  MLUPS:000402  cache block size:1137kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 5828.35]  time:1.611991e-01  MLUPS:000939  cache block size:1137kiB  reps:2  perf err: 20.4%
+[AUTO TUNE]     [012: 5366.39]  time:2.751188e-01  MLUPS:001476  cache block size:1137kiB  reps:3  perf err:  8.6%
+[AUTO TUNE]     [012: 5132.33]  time:3.922710e-01  MLUPS:002013  cache block size:1137kiB  reps:4  perf err:  4.6%
+[AUTO TUNE]     [012: 5162.94]  time:4.939308e-01  MLUPS:002550  cache block size:1137kiB  reps:5  perf err:  0.6%
+[AUTO TUNE]   Diamond width:08  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [004: 9732.41]  time:6.895399e-02  MLUPS:000671  cache block size:1202kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 8474.49]  time:2.058921e-01  MLUPS:001744  cache block size:1202kiB  reps:2  perf err: 14.8%
+[AUTO TUNE]     [004: 8718.57]  time:3.232839e-01  MLUPS:002818  cache block size:1202kiB  reps:3  perf err:  2.8%
+[AUTO TUNE]     [004: 8870.56]  time:4.387901e-01  MLUPS:003892  cache block size:1202kiB  reps:4  perf err:  1.7%
+[AUTO TUNE]     [008: 11023.67]  time:6.087708e-02  MLUPS:000671  cache block size:1787kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 9296.45]  time:1.876879e-01  MLUPS:001744  cache block size:1787kiB  reps:2  perf err: 18.6%
+[AUTO TUNE]     [008: 9257.73]  time:3.044560e-01  MLUPS:002818  cache block size:1787kiB  reps:3  perf err:  0.4%
+[AUTO TUNE]     [012: 11073.50]  time:6.060314e-02  MLUPS:000671  cache block size:2372kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 10103.31]  time:1.726990e-01  MLUPS:001744  cache block size:2372kiB  reps:2  perf err:  9.6%
+[AUTO TUNE]     [012: 9281.81]  time:3.036661e-01  MLUPS:002818  cache block size:2372kiB  reps:3  perf err:  8.9%
+[AUTO TUNE]     [012: 9675.64]  time:4.022799e-01  MLUPS:003892  cache block size:2372kiB  reps:4  perf err:  4.1%
+[AUTO TUNE]     [012: 9313.42]  time:5.332150e-01  MLUPS:004966  cache block size:2372kiB  reps:5  perf err:  3.9%
+[AUTO TUNE]     [012: 9621.54]  time:6.277370e-01  MLUPS:006039  cache block size:2372kiB  reps:6  perf err:  3.2%
+[AUTO TUNE]     [012: 9704.83]  time:7.329898e-01  MLUPS:007113  cache block size:2372kiB  reps:7  perf err:  0.9%
+[AUTO TUNE]     [016: 10932.81]  time:6.138301e-02  MLUPS:000671  cache block size:2957kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 9833.85]  time:1.774311e-01  MLUPS:001744  cache block size:2957kiB  reps:2  perf err: 11.2%
+[AUTO TUNE]     [016: 9813.80]  time:2.872050e-01  MLUPS:002818  cache block size:2957kiB  reps:3  perf err:  0.2%
+[AUTO TUNE]     [020: 11480.81]  time:5.845308e-02  MLUPS:000671  cache block size:3542kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [020: 10315.09]  time:1.691532e-01  MLUPS:001744  cache block size:3542kiB  reps:2  perf err: 11.3%
+[AUTO TUNE]     [020: 9515.58]  time:2.962060e-01  MLUPS:002818  cache block size:3542kiB  reps:3  perf err:  8.4%
+[AUTO TUNE]     [020: 9471.45]  time:4.109521e-01  MLUPS:003892  cache block size:3542kiB  reps:4  perf err:  0.5%
+[AUTO TUNE]   Diamond width:16  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [004: 5867.72]  time:2.058651e-01  MLUPS:001207  cache block size:3412kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 5224.30]  time:6.422760e-01  MLUPS:003355  cache block size:3412kiB  reps:2  perf err: 12.3%
+[AUTO TUNE]     [004: 4827.94]  time:1.139808e+00  MLUPS:005502  cache block size:3412kiB  reps:3  perf err:  8.2%
+[AUTO TUNE]     [004: 5111.68]  time:1.496653e+00  MLUPS:007650  cache block size:3412kiB  reps:4  perf err:  5.6%
+[AUTO TUNE]     [004: 5059.02]  time:1.936717e+00  MLUPS:009797  cache block size:3412kiB  reps:5  perf err:  1.0%
+[AUTO TUNE]     [008: 5621.03]  time:2.149000e-01  MLUPS:001207  cache block size:4517kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 5515.33]  time:6.083848e-01  MLUPS:003355  cache block size:4517kiB  reps:2  perf err:  1.9%
+[AUTO TUNE]     [012: 6454.12]  time:1.871610e-01  MLUPS:001207  cache block size:5622kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 5361.16]  time:6.258800e-01  MLUPS:003355  cache block size:5622kiB  reps:2  perf err: 20.4%
+[AUTO TUNE]     [012: 6523.19]  time:8.435941e-01  MLUPS:005502  cache block size:5622kiB  reps:3  perf err: 17.8%
+[AUTO TUNE]     [012: 9178.22]  time:8.335400e-01  MLUPS:007650  cache block size:5622kiB  reps:4  perf err: 28.9%
+[AUTO TUNE]     [012: 8659.57]  time:1.131453e+00  MLUPS:009797  cache block size:5622kiB  reps:5  perf err:  6.0%
+[AUTO TUNE]     [012: 8811.30]  time:1.355688e+00  MLUPS:011945  cache block size:5622kiB  reps:6  perf err:  1.7%
+[AUTO TUNE]     [016: 9745.78]  time:1.239469e-01  MLUPS:001207  cache block size:6727kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 8414.72]  time:3.987589e-01  MLUPS:003355  cache block size:6727kiB  reps:2  perf err: 15.8%
+[AUTO TUNE]     [016: 8695.26]  time:6.328650e-01  MLUPS:005502  cache block size:6727kiB  reps:3  perf err:  3.2%
+[AUTO TUNE]     [016: 8687.85]  time:8.805878e-01  MLUPS:007650  cache block size:6727kiB  reps:4  perf err:  0.1%
+[AUTO TUNE] COMPLETE tune case #07: Thread group size:04  thc:01  thx:01  thy:01  thz:04  t_dim:03  bs_z:16  perf:9813.80 MLUP/s
+
+[AUTO TUNE] START tune case #08: Thread group size:08  thc:01  thx:02  thy:02  thz:02  Possilbe diam width: 4 8 16 32 64 128
+[AUTO TUNE]   Diamond width:04  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [002: 2994.06]  time:1.344841e-01  MLUPS:000402  cache block size:162kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 2055.49]  time:4.570811e-01  MLUPS:000939  cache block size:162kiB  reps:2  perf err: 45.7%
+[AUTO TUNE]     [002: 2120.06]  time:6.963918e-01  MLUPS:001476  cache block size:162kiB  reps:3  perf err:  3.0%
+[AUTO TUNE]     [002: 1957.90]  time:1.028278e+00  MLUPS:002013  cache block size:162kiB  reps:4  perf err:  8.3%
+[AUTO TUNE]     [002: 1961.13]  time:1.300340e+00  MLUPS:002550  cache block size:162kiB  reps:5  perf err:  0.2%
+[AUTO TUNE]     [004: 3081.54]  time:1.306660e-01  MLUPS:000402  cache block size:243kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 2121.11]  time:4.429400e-01  MLUPS:000939  cache block size:243kiB  reps:2  perf err: 45.3%
+[AUTO TUNE]     [004: 2412.74]  time:6.119151e-01  MLUPS:001476  cache block size:243kiB  reps:3  perf err: 12.1%
+[AUTO TUNE]     [004: 2259.91]  time:8.908629e-01  MLUPS:002013  cache block size:243kiB  reps:4  perf err:  6.8%
+[AUTO TUNE]     [004: 2136.47]  time:1.193621e+00  MLUPS:002550  cache block size:243kiB  reps:5  perf err:  5.8%
+[AUTO TUNE]     [004: 1680.18]  time:1.837310e+00  MLUPS:003087  cache block size:243kiB  reps:6  perf err: 27.2%
+[AUTO TUNE]     [004: 1730.41]  time:2.094227e+00  MLUPS:003623  cache block size:243kiB  reps:7  perf err:  2.9%
+[AUTO TUNE]     [004: 1793.36]  time:2.320081e+00  MLUPS:004160  cache block size:243kiB  reps:8  perf err:  3.5%
+[AUTO TUNE]     [004: 1766.57]  time:2.659180e+00  MLUPS:004697  cache block size:243kiB  reps:9  perf err:  1.5%
+[AUTO TUNE]   Diamond width:08  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [002: 3031.84]  time:2.213471e-01  MLUPS:000671  cache block size:455kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 2455.03]  time:7.107179e-01  MLUPS:001744  cache block size:455kiB  reps:2  perf err: 23.5%
+[AUTO TUNE]     [002: 2699.88]  time:1.043961e+00  MLUPS:002818  cache block size:455kiB  reps:3  perf err:  9.1%
+[AUTO TUNE]     [002: 2559.59]  time:1.520676e+00  MLUPS:003892  cache block size:455kiB  reps:4  perf err:  5.5%
+[AUTO TUNE]     [002: 2580.09]  time:1.924762e+00  MLUPS:004966  cache block size:455kiB  reps:5  perf err:  0.8%
+[AUTO TUNE]     [004: 4140.14]  time:1.620932e-01  MLUPS:000671  cache block size:601kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 2842.63]  time:6.138091e-01  MLUPS:001744  cache block size:601kiB  reps:2  perf err: 45.6%
+[AUTO TUNE]     [004: 2739.44]  time:1.028885e+00  MLUPS:002818  cache block size:601kiB  reps:3  perf err:  3.8%
+[AUTO TUNE]     [004: 2494.53]  time:1.560341e+00  MLUPS:003892  cache block size:601kiB  reps:4  perf err:  9.8%
+[AUTO TUNE]     [004: 2610.51]  time:1.902333e+00  MLUPS:004966  cache block size:601kiB  reps:5  perf err:  4.4%
+[AUTO TUNE]     [004: 2858.63]  time:2.112826e+00  MLUPS:006039  cache block size:601kiB  reps:6  perf err:  8.7%
+[AUTO TUNE]     [004: 2497.22]  time:2.848582e+00  MLUPS:007113  cache block size:601kiB  reps:7  perf err: 14.5%
+[AUTO TUNE]     [004: 2655.45]  time:3.083197e+00  MLUPS:008187  cache block size:601kiB  reps:8  perf err:  6.0%
+[AUTO TUNE]     [004: 2616.19]  time:3.539884e+00  MLUPS:009261  cache block size:601kiB  reps:9  perf err:  1.5%
+[AUTO TUNE]     [006: 4070.16]  time:1.648800e-01  MLUPS:000671  cache block size:747kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 3161.87]  time:5.518351e-01  MLUPS:001744  cache block size:747kiB  reps:2  perf err: 28.7%
+[AUTO TUNE]     [006: 3111.40]  time:9.058862e-01  MLUPS:002818  cache block size:747kiB  reps:3  perf err:  1.6%
+[AUTO TUNE]     [008: 3712.66]  time:1.807570e-01  MLUPS:000671  cache block size:893kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 3336.81]  time:5.229032e-01  MLUPS:001744  cache block size:893kiB  reps:2  perf err: 11.3%
+[AUTO TUNE]     [008: 3146.56]  time:8.957632e-01  MLUPS:002818  cache block size:893kiB  reps:3  perf err:  6.0%
+[AUTO TUNE]     [008: 2852.38]  time:1.364583e+00  MLUPS:003892  cache block size:893kiB  reps:4  perf err: 10.3%
+[AUTO TUNE]     [008: 2872.80]  time:1.728647e+00  MLUPS:004966  cache block size:893kiB  reps:5  perf err:  0.7%
+[AUTO TUNE]   Diamond width:16  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [002: 4269.43]  time:2.829320e-01  MLUPS:001207  cache block size:1430kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 4052.74]  time:8.279450e-01  MLUPS:003355  cache block size:1430kiB  reps:2  perf err:  5.3%
+[AUTO TUNE]     [002: 3872.99]  time:1.420848e+00  MLUPS:005502  cache block size:1430kiB  reps:3  perf err:  4.6%
+[AUTO TUNE]     [002: 3724.42]  time:2.054121e+00  MLUPS:007650  cache block size:1430kiB  reps:4  perf err:  4.0%
+[AUTO TUNE]     [002: 3849.99]  time:2.544911e+00  MLUPS:009797  cache block size:1430kiB  reps:5  perf err:  3.3%
+[AUTO TUNE]     [002: 3763.85]  time:3.173712e+00  MLUPS:011945  cache block size:1430kiB  reps:6  perf err:  2.3%
+[AUTO TUNE]     [004: 4340.85]  time:2.782772e-01  MLUPS:001207  cache block size:1706kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 4043.27]  time:8.298841e-01  MLUPS:003355  cache block size:1706kiB  reps:2  perf err:  7.4%
+[AUTO TUNE]     [004: 4124.16]  time:1.334316e+00  MLUPS:005502  cache block size:1706kiB  reps:3  perf err:  2.0%
+[AUTO TUNE]     [006: 4366.18]  time:2.766631e-01  MLUPS:001207  cache block size:1982kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 3868.94]  time:8.672781e-01  MLUPS:003355  cache block size:1982kiB  reps:2  perf err: 12.9%
+[AUTO TUNE]     [006: 4289.23]  time:1.282964e+00  MLUPS:005502  cache block size:1982kiB  reps:3  perf err:  9.8%
+[AUTO TUNE]     [006: 4473.35]  time:1.710220e+00  MLUPS:007650  cache block size:1982kiB  reps:4  perf err:  4.1%
+[AUTO TUNE]     [006: 4224.36]  time:2.319381e+00  MLUPS:009797  cache block size:1982kiB  reps:5  perf err:  5.9%
+[AUTO TUNE]     [006: 4227.41]  time:2.825697e+00  MLUPS:011945  cache block size:1982kiB  reps:6  perf err:  0.1%
+[AUTO TUNE]     [008: 4555.60]  time:2.651591e-01  MLUPS:001207  cache block size:2258kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 3907.74]  time:8.586659e-01  MLUPS:003355  cache block size:2258kiB  reps:2  perf err: 16.6%
+[AUTO TUNE]     [008: 4211.37]  time:1.306682e+00  MLUPS:005502  cache block size:2258kiB  reps:3  perf err:  7.2%
+[AUTO TUNE]     [008: 4327.57]  time:1.767830e+00  MLUPS:007650  cache block size:2258kiB  reps:4  perf err:  2.7%
+[AUTO TUNE]     [008: 3835.20]  time:2.554729e+00  MLUPS:009797  cache block size:2258kiB  reps:5  perf err: 12.8%
+[AUTO TUNE]     [008: 4163.75]  time:2.868900e+00  MLUPS:011945  cache block size:2258kiB  reps:6  perf err:  7.9%
+[AUTO TUNE]     [008: 3972.13]  time:3.547934e+00  MLUPS:014092  cache block size:2258kiB  reps:7  perf err:  4.8%
+[AUTO TUNE]     [008: 4322.88]  time:3.756831e+00  MLUPS:016240  cache block size:2258kiB  reps:8  perf err:  8.1%
+[AUTO TUNE]     [008: 4305.14]  time:4.271136e+00  MLUPS:018387  cache block size:2258kiB  reps:9  perf err:  0.4%
+[AUTO TUNE]     [010: 4295.21]  time:2.812340e-01  MLUPS:001207  cache block size:2535kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [010: 4526.14]  time:7.413471e-01  MLUPS:003355  cache block size:2535kiB  reps:2  perf err:  5.1%
+[AUTO TUNE]     [010: 4411.51]  time:1.247403e+00  MLUPS:005502  cache block size:2535kiB  reps:3  perf err:  2.6%
+[AUTO TUNE]     [010: 4131.74]  time:1.851621e+00  MLUPS:007650  cache block size:2535kiB  reps:4  perf err:  6.8%
+[AUTO TUNE]     [010: 3784.50]  time:2.588956e+00  MLUPS:009797  cache block size:2535kiB  reps:5  perf err:  9.2%
+[AUTO TUNE]     [010: 4294.57]  time:2.781507e+00  MLUPS:011945  cache block size:2535kiB  reps:6  perf err: 11.9%
+[AUTO TUNE]     [010: 4149.45]  time:3.396321e+00  MLUPS:014092  cache block size:2535kiB  reps:7  perf err:  3.5%
+[AUTO TUNE]     [010: 3998.39]  time:4.061725e+00  MLUPS:016240  cache block size:2535kiB  reps:8  perf err:  3.8%
+[AUTO TUNE]     [010: 4232.65]  time:4.344280e+00  MLUPS:018387  cache block size:2535kiB  reps:9  perf err:  5.5%
+[AUTO TUNE]     [010: 4287.68]  time:4.789376e+00  MLUPS:020535  cache block size:2535kiB  reps:10  perf err:  1.3%
+[AUTO TUNE]   Diamond width:32  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [002: 5078.35]  time:4.492998e-01  MLUPS:002281  cache block size:4940kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 4668.43]  time:1.408754e+00  MLUPS:006576  cache block size:4940kiB  reps:2  perf err:  8.8%
+[AUTO TUNE]     [002: 4947.16]  time:2.197549e+00  MLUPS:010871  cache block size:4940kiB  reps:3  perf err:  5.6%
+[AUTO TUNE]     [002: 5208.08]  time:2.912132e+00  MLUPS:015166  cache block size:4940kiB  reps:4  perf err:  5.0%
+[AUTO TUNE]     [002: 4796.27]  time:4.057647e+00  MLUPS:019461  cache block size:4940kiB  reps:5  perf err:  8.6%
+[AUTO TUNE]     [002: 4925.05]  time:4.823613e+00  MLUPS:023756  cache block size:4940kiB  reps:6  perf err:  2.6%
+[AUTO TUNE]     [002: 4733.09]  time:5.926679e+00  MLUPS:028051  cache block size:4940kiB  reps:7  perf err:  4.1%
+[AUTO TUNE]     [002: 4828.32]  time:6.699326e+00  MLUPS:032346  cache block size:4940kiB  reps:8  perf err:  2.0%
+[AUTO TUNE]     [004: 5279.27]  time:4.322002e-01  MLUPS:002281  cache block size:5476kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 5604.22]  time:1.173520e+00  MLUPS:006576  cache block size:5476kiB  reps:2  perf err:  5.8%
+[AUTO TUNE]     [004: 5503.81]  time:1.975292e+00  MLUPS:010871  cache block size:5476kiB  reps:3  perf err:  1.8%
+[AUTO TUNE]     [006: 4971.15]  time:4.589882e-01  MLUPS:002281  cache block size:6012kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 5553.59]  time:1.184220e+00  MLUPS:006576  cache block size:6012kiB  reps:2  perf err: 10.5%
+[AUTO TUNE]     [006: 4561.79]  time:2.383196e+00  MLUPS:010871  cache block size:6012kiB  reps:3  perf err: 21.7%
+[AUTO TUNE]     [006: 5169.22]  time:2.934024e+00  MLUPS:015166  cache block size:6012kiB  reps:4  perf err: 11.8%
+[AUTO TUNE]     [006: 5604.36]  time:3.472577e+00  MLUPS:019461  cache block size:6012kiB  reps:5  perf err:  7.8%
+[AUTO TUNE]     [006: 5226.82]  time:4.545125e+00  MLUPS:023756  cache block size:6012kiB  reps:6  perf err:  7.2%
+[AUTO TUNE]     [006: 5222.89]  time:5.370882e+00  MLUPS:028051  cache block size:6012kiB  reps:7  perf err:  0.1%
+[AUTO TUNE]   Diamond width:64  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [002: 5199.60]  time:8.518322e-01  MLUPS:004429  cache block size:18200kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 6016.90]  time:2.163759e+00  MLUPS:013019  cache block size:18200kiB  reps:2  perf err: 13.6%
+[AUTO TUNE]     [002: 6120.92]  time:3.530362e+00  MLUPS:021609  cache block size:18200kiB  reps:3  perf err:  1.7%
+[AUTO TUNE]     [004: 5788.04]  time:7.652299e-01  MLUPS:004429  cache block size:19256kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 5844.65]  time:2.227527e+00  MLUPS:013019  cache block size:19256kiB  reps:2  perf err:  1.0%
+[AUTO TUNE]   Diamond width:128  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [002: 5014.63]  time:1.739741e+00  MLUPS:008724  cache block size:69680kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [002: 5186.05]  time:4.994945e+00  MLUPS:025904  cache block size:69680kiB  reps:2  perf err:  3.3%
+[AUTO TUNE]     [002: 5102.71]  time:8.443338e+00  MLUPS:043083  cache block size:69680kiB  reps:3  perf err:  1.6%
+[AUTO TUNE]     [004: 5682.26]  time:1.535331e+00  MLUPS:008724  cache block size:71776kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 5785.67]  time:4.477270e+00  MLUPS:025904  cache block size:71776kiB  reps:2  perf err:  1.8%
+[AUTO TUNE]     [006: 6060.30]  time:1.439559e+00  MLUPS:008724  cache block size:73872kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [006: 5888.03]  time:4.399439e+00  MLUPS:025904  cache block size:73872kiB  reps:2  perf err:  2.9%
+[AUTO TUNE]     [006: 6047.49]  time:7.124262e+00  MLUPS:043083  cache block size:73872kiB  reps:3  perf err:  2.6%
+[AUTO TUNE]     [006: 6058.07]  time:9.947688e+00  MLUPS:060263  cache block size:73872kiB  reps:4  perf err:  0.2%
+[AUTO TUNE]     [008: 5955.72]  time:1.464835e+00  MLUPS:008724  cache block size:75968kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 6050.36]  time:4.281402e+00  MLUPS:025904  cache block size:75968kiB  reps:2  perf err:  1.6%
+[AUTO TUNE] COMPLETE tune case #08: Thread group size:08  thc:01  thx:02  thy:02  thz:02  t_dim:31  bs_z:02  perf:6120.92 MLUP/s
+
+[AUTO TUNE] START tune case #09: Thread group size:08  thc:01  thx:02  thy:01  thz:04  Possilbe diam width: 4 8 16 32 64 128
+[AUTO TUNE]   Diamond width:04  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [004: 2843.55]  time:1.416020e-01  MLUPS:000402  cache block size:243kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 1784.45]  time:5.265059e-01  MLUPS:000939  cache block size:243kiB  reps:2  perf err: 59.4%
+[AUTO TUNE]     [004: 1330.85]  time:1.109366e+00  MLUPS:001476  cache block size:243kiB  reps:3  perf err: 34.1%
+[AUTO TUNE]     [004: 1467.35]  time:1.372045e+00  MLUPS:002013  cache block size:243kiB  reps:4  perf err:  9.3%
+[AUTO TUNE]     [004: 1406.20]  time:1.813494e+00  MLUPS:002550  cache block size:243kiB  reps:5  perf err:  4.3%
+[AUTO TUNE]     [004: 1432.35]  time:2.155208e+00  MLUPS:003087  cache block size:243kiB  reps:6  perf err:  1.8%
+[AUTO TUNE]     [008: 1701.74]  time:2.366128e-01  MLUPS:000402  cache block size:406kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 1514.51]  time:6.203470e-01  MLUPS:000939  cache block size:406kiB  reps:2  perf err: 12.4%
+[AUTO TUNE]     [008: 1496.73]  time:9.864130e-01  MLUPS:001476  cache block size:406kiB  reps:3  perf err:  1.2%
+[AUTO TUNE]     [012: 2034.19]  time:1.979432e-01  MLUPS:000402  cache block size:568kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 1763.45]  time:5.327761e-01  MLUPS:000939  cache block size:568kiB  reps:2  perf err: 15.4%
+[AUTO TUNE]     [012: 1505.48]  time:9.806831e-01  MLUPS:001476  cache block size:568kiB  reps:3  perf err: 17.1%
+[AUTO TUNE]     [012: 1696.05]  time:1.187034e+00  MLUPS:002013  cache block size:568kiB  reps:4  perf err: 11.2%
+[AUTO TUNE]     [012: 1429.20]  time:1.784308e+00  MLUPS:002550  cache block size:568kiB  reps:5  perf err: 18.7%
+[AUTO TUNE]     [012: 1564.63]  time:1.972999e+00  MLUPS:003087  cache block size:568kiB  reps:6  perf err:  8.7%
+[AUTO TUNE]     [012: 1415.58]  time:2.560003e+00  MLUPS:003623  cache block size:568kiB  reps:7  perf err: 10.5%
+[AUTO TUNE]     [012: 1467.47]  time:2.835318e+00  MLUPS:004160  cache block size:568kiB  reps:8  perf err:  3.5%
+[AUTO TUNE]     [012: 1299.20]  time:3.615770e+00  MLUPS:004697  cache block size:568kiB  reps:9  perf err: 13.0%
+[AUTO TUNE]     [012: 1292.63]  time:4.049500e+00  MLUPS:005234  cache block size:568kiB  reps:10  perf err:  0.5%
+[AUTO TUNE]   Diamond width:08  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [004: 3038.36]  time:2.208722e-01  MLUPS:000671  cache block size:601kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 2252.36]  time:7.746661e-01  MLUPS:001744  cache block size:601kiB  reps:2  perf err: 34.9%
+[AUTO TUNE]     [004: 2261.81]  time:1.246159e+00  MLUPS:002818  cache block size:601kiB  reps:3  perf err:  0.4%
+[AUTO TUNE]     [008: 2192.40]  time:3.060980e-01  MLUPS:000671  cache block size:893kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 2475.82]  time:7.047498e-01  MLUPS:001744  cache block size:893kiB  reps:2  perf err: 11.4%
+[AUTO TUNE]     [008: 2289.74]  time:1.230958e+00  MLUPS:002818  cache block size:893kiB  reps:3  perf err:  8.1%
+[AUTO TUNE]     [008: 2309.90]  time:1.685054e+00  MLUPS:003892  cache block size:893kiB  reps:4  perf err:  0.9%
+[AUTO TUNE]     [012: 3579.81]  time:1.874650e-01  MLUPS:000671  cache block size:1186kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 1871.17]  time:9.324791e-01  MLUPS:001744  cache block size:1186kiB  reps:2  perf err: 91.3%
+[AUTO TUNE]     [012: 2593.07]  time:1.086964e+00  MLUPS:002818  cache block size:1186kiB  reps:3  perf err: 27.8%
+[AUTO TUNE]     [012: 2321.00]  time:1.677001e+00  MLUPS:003892  cache block size:1186kiB  reps:4  perf err: 11.7%
+[AUTO TUNE]     [012: 2451.24]  time:2.025935e+00  MLUPS:004966  cache block size:1186kiB  reps:5  perf err:  5.3%
+[AUTO TUNE]     [012: 2293.08]  time:2.633929e+00  MLUPS:006039  cache block size:1186kiB  reps:6  perf err:  6.9%
+[AUTO TUNE]     [012: 2147.01]  time:3.313236e+00  MLUPS:007113  cache block size:1186kiB  reps:7  perf err:  6.8%
+[AUTO TUNE]     [012: 2302.52]  time:3.555796e+00  MLUPS:008187  cache block size:1186kiB  reps:8  perf err:  6.8%
+[AUTO TUNE]     [012: 2464.11]  time:3.758360e+00  MLUPS:009261  cache block size:1186kiB  reps:9  perf err:  6.6%
+[AUTO TUNE]     [012: 3034.99]  time:3.405210e+00  MLUPS:010334  cache block size:1186kiB  reps:10  perf err: 18.8%
+[AUTO TUNE]     [012: 2611.00]  time:4.369400e+00  MLUPS:011408  cache block size:1186kiB  reps:11  perf err: 16.2%
+[AUTO TUNE]     [012: 3063.99]  time:4.073851e+00  MLUPS:012482  cache block size:1186kiB  reps:12  perf err: 14.8%
+[AUTO TUNE]     [012: 2648.83]  time:5.117736e+00  MLUPS:013555  cache block size:1186kiB  reps:13  perf err: 15.7%
+[AUTO TUNE]     [012: 2467.25]  time:5.929565e+00  MLUPS:014629  cache block size:1186kiB  reps:14  perf err:  7.4%
+[AUTO TUNE]     [012: 2958.58]  time:5.307776e+00  MLUPS:015703  cache block size:1186kiB  reps:15  perf err: 16.6%
+[AUTO TUNE]     [012: 3056.32]  time:5.489343e+00  MLUPS:016777  cache block size:1186kiB  reps:16  perf err:  3.2%
+[AUTO TUNE]     [012: 2759.15]  time:6.469740e+00  MLUPS:017850  cache block size:1186kiB  reps:17  perf err: 10.8%
+[AUTO TUNE]     [012: 3186.32]  time:5.939353e+00  MLUPS:018924  cache block size:1186kiB  reps:18  perf err: 13.4%
+[AUTO TUNE]     [012: 3005.80]  time:6.653281e+00  MLUPS:019998  cache block size:1186kiB  reps:19  perf err:  6.0%
+[AUTO TUNE]     [012: 2306.26]  time:9.136967e+00  MLUPS:021072  cache block size:1186kiB  reps:20  perf err: 30.3%
+[AUTO TUNE]   Diamond width:16  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [004: 4795.87]  time:2.518752e-01  MLUPS:001207  cache block size:1706kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 4294.95]  time:7.812529e-01  MLUPS:003355  cache block size:1706kiB  reps:2  perf err: 11.7%
+[AUTO TUNE]     [004: 4378.95]  time:1.256676e+00  MLUPS:005502  cache block size:1706kiB  reps:3  perf err:  1.9%
+[AUTO TUNE]     [008: 3830.06]  time:3.153892e-01  MLUPS:001207  cache block size:2258kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 4628.87]  time:7.248950e-01  MLUPS:003355  cache block size:2258kiB  reps:2  perf err: 17.3%
+[AUTO TUNE]     [008: 4371.77]  time:1.258741e+00  MLUPS:005502  cache block size:2258kiB  reps:3  perf err:  5.9%
+[AUTO TUNE]     [008: 3937.86]  time:1.942785e+00  MLUPS:007650  cache block size:2258kiB  reps:4  perf err: 11.0%
+[AUTO TUNE]     [008: 3457.92]  time:2.833461e+00  MLUPS:009797  cache block size:2258kiB  reps:5  perf err: 13.9%
+[AUTO TUNE]     [008: 4357.39]  time:2.741407e+00  MLUPS:011945  cache block size:2258kiB  reps:6  perf err: 20.6%
+[AUTO TUNE]     [008: 3640.99]  time:3.870616e+00  MLUPS:014092  cache block size:2258kiB  reps:7  perf err: 19.7%
+[AUTO TUNE]     [008: 3126.32]  time:5.194711e+00  MLUPS:016240  cache block size:2258kiB  reps:8  perf err: 16.5%
+[AUTO TUNE]     [008: 4249.39]  time:4.327174e+00  MLUPS:018387  cache block size:2258kiB  reps:9  perf err: 26.4%
+[AUTO TUNE]     [008: 3798.93]  time:5.405557e+00  MLUPS:020535  cache block size:2258kiB  reps:10  perf err: 11.9%
+[AUTO TUNE]     [008: 4339.32]  time:5.227268e+00  MLUPS:022682  cache block size:2258kiB  reps:11  perf err: 12.5%
+[AUTO TUNE]     [008: 3816.18]  time:6.506574e+00  MLUPS:024830  cache block size:2258kiB  reps:12  perf err: 13.7%
+[AUTO TUNE]     [008: 4156.76]  time:6.490096e+00  MLUPS:026977  cache block size:2258kiB  reps:13  perf err:  8.2%
+[AUTO TUNE]     [008: 4287.01]  time:6.793839e+00  MLUPS:029125  cache block size:2258kiB  reps:14  perf err:  3.0%
+[AUTO TUNE]     [008: 4087.26]  time:7.651276e+00  MLUPS:031272  cache block size:2258kiB  reps:15  perf err:  4.9%
+[AUTO TUNE]     [008: 4255.40]  time:7.853598e+00  MLUPS:033420  cache block size:2258kiB  reps:16  perf err:  4.0%
+[AUTO TUNE]     [008: 3817.31]  time:9.317489e+00  MLUPS:035567  cache block size:2258kiB  reps:17  perf err: 11.5%
+[AUTO TUNE]   Diamond width:32  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [004: 5027.96]  time:4.538028e-01  MLUPS:002281  cache block size:5476kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 4877.81]  time:1.348282e+00  MLUPS:006576  cache block size:5476kiB  reps:2  perf err:  3.1%
+[AUTO TUNE]     [004: 5164.72]  time:2.104982e+00  MLUPS:010871  cache block size:5476kiB  reps:3  perf err:  5.6%
+[AUTO TUNE]     [004: 4811.53]  time:3.152140e+00  MLUPS:015166  cache block size:5476kiB  reps:4  perf err:  7.3%
+[AUTO TUNE]     [004: 4413.86]  time:4.409194e+00  MLUPS:019461  cache block size:5476kiB  reps:5  perf err:  9.0%
+[AUTO TUNE]     [004: 4865.47]  time:4.882684e+00  MLUPS:023756  cache block size:5476kiB  reps:6  perf err:  9.3%
+[AUTO TUNE]     [004: 4606.77]  time:6.089185e+00  MLUPS:028051  cache block size:5476kiB  reps:7  perf err:  5.6%
+[AUTO TUNE]     [004: 5326.53]  time:6.072712e+00  MLUPS:032346  cache block size:5476kiB  reps:8  perf err: 13.5%
+[AUTO TUNE]     [004: 5426.85]  time:6.751885e+00  MLUPS:036641  cache block size:5476kiB  reps:9  perf err:  1.8%
+[AUTO TUNE]     [008: 4653.68]  time:4.903002e-01  MLUPS:002281  cache block size:6548kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 4935.62]  time:1.332491e+00  MLUPS:006576  cache block size:6548kiB  reps:2  perf err:  5.7%
+[AUTO TUNE]     [008: 5115.79]  time:2.125115e+00  MLUPS:010871  cache block size:6548kiB  reps:3  perf err:  3.5%
+[AUTO TUNE]     [008: 5095.60]  time:2.976411e+00  MLUPS:015166  cache block size:6548kiB  reps:4  perf err:  0.4%
+[AUTO TUNE]   Diamond width:64  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [004: 5031.69]  time:8.802581e-01  MLUPS:004429  cache block size:19256kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 5500.43]  time:2.366926e+00  MLUPS:013019  cache block size:19256kiB  reps:2  perf err:  8.5%
+[AUTO TUNE]     [004: 5452.73]  time:3.962981e+00  MLUPS:021609  cache block size:19256kiB  reps:3  perf err:  0.9%
+[AUTO TUNE]     [008: 5255.02]  time:8.428478e-01  MLUPS:004429  cache block size:21368kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 6186.50]  time:2.104440e+00  MLUPS:013019  cache block size:21368kiB  reps:2  perf err: 15.1%
+[AUTO TUNE]     [008: 6316.63]  time:3.420979e+00  MLUPS:021609  cache block size:21368kiB  reps:3  perf err:  2.1%
+[AUTO TUNE]     [012: 5464.80]  time:8.104939e-01  MLUPS:004429  cache block size:23481kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 6189.61]  time:2.103383e+00  MLUPS:013019  cache block size:23481kiB  reps:2  perf err: 11.7%
+[AUTO TUNE]     [012: 5914.68]  time:3.653463e+00  MLUPS:021609  cache block size:23481kiB  reps:3  perf err:  4.6%
+[AUTO TUNE]     [012: 5966.74]  time:5.061220e+00  MLUPS:030198  cache block size:23481kiB  reps:4  perf err:  0.9%
+[AUTO TUNE]   Diamond width:128  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [004: 5782.18]  time:1.508800e+00  MLUPS:008724  cache block size:71776kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 5792.32]  time:4.472132e+00  MLUPS:025904  cache block size:71776kiB  reps:2  perf err:  0.2%
+[AUTO TUNE]     [008: 6184.36]  time:1.410680e+00  MLUPS:008724  cache block size:75968kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 6355.01]  time:4.076155e+00  MLUPS:025904  cache block size:75968kiB  reps:2  perf err:  2.7%
+[AUTO TUNE]     [008: 6155.72]  time:6.998999e+00  MLUPS:043083  cache block size:75968kiB  reps:3  perf err:  3.2%
+[AUTO TUNE]     [008: 6179.43]  time:9.752312e+00  MLUPS:060263  cache block size:75968kiB  reps:4  perf err:  0.4%
+[AUTO TUNE]     [012: 5859.89]  time:1.488792e+00  MLUPS:008724  cache block size:80161kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 6285.03]  time:4.121540e+00  MLUPS:025904  cache block size:80161kiB  reps:2  perf err:  6.8%
+[AUTO TUNE]     [012: 6523.55]  time:6.604367e+00  MLUPS:043083  cache block size:80161kiB  reps:3  perf err:  3.7%
+[AUTO TUNE]     [012: 6138.89]  time:9.816713e+00  MLUPS:060263  cache block size:80161kiB  reps:4  perf err:  6.3%
+[AUTO TUNE] COMPLETE tune case #09: Thread group size:08  thc:01  thx:02  thy:01  thz:04  t_dim:31  bs_z:08  perf:6316.63 MLUP/s
+
+[AUTO TUNE] START tune case #10: Thread group size:08  thc:01  thx:01  thy:02  thz:04  Possilbe diam width: 4 8 16 32 64 128
+[AUTO TUNE]   Diamond width:04  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [004: 1946.93]  time:2.068141e-01  MLUPS:000402  cache block size:243kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 1637.88]  time:5.736220e-01  MLUPS:000939  cache block size:243kiB  reps:2  perf err: 18.9%
+[AUTO TUNE]     [004: 1613.83]  time:9.148381e-01  MLUPS:001476  cache block size:243kiB  reps:3  perf err:  1.5%
+[AUTO TUNE]     [008: 2120.26]  time:1.899071e-01  MLUPS:000402  cache block size:406kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 1784.78]  time:5.264099e-01  MLUPS:000939  cache block size:406kiB  reps:2  perf err: 18.8%
+[AUTO TUNE]     [008: 1678.47]  time:8.796051e-01  MLUPS:001476  cache block size:406kiB  reps:3  perf err:  6.3%
+[AUTO TUNE]     [008: 1649.12]  time:1.220816e+00  MLUPS:002013  cache block size:406kiB  reps:4  perf err:  1.8%
+[AUTO TUNE]     [012: 2015.03]  time:1.998250e-01  MLUPS:000402  cache block size:568kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 2426.34]  time:3.872190e-01  MLUPS:000939  cache block size:568kiB  reps:2  perf err: 17.0%
+[AUTO TUNE]     [012: 1490.85]  time:9.903011e-01  MLUPS:001476  cache block size:568kiB  reps:3  perf err: 62.7%
+[AUTO TUNE]     [012: 1654.19]  time:1.217069e+00  MLUPS:002013  cache block size:568kiB  reps:4  perf err:  9.9%
+[AUTO TUNE]     [012: 1770.92]  time:1.440010e+00  MLUPS:002550  cache block size:568kiB  reps:5  perf err:  6.6%
+[AUTO TUNE]     [012: 1812.90]  time:1.702797e+00  MLUPS:003087  cache block size:568kiB  reps:6  perf err:  2.3%
+[AUTO TUNE]     [016: 2761.87]  time:1.457899e-01  MLUPS:000402  cache block size:731kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 2020.79]  time:4.649301e-01  MLUPS:000939  cache block size:731kiB  reps:2  perf err: 36.7%
+[AUTO TUNE]     [016: 2179.86]  time:6.772890e-01  MLUPS:001476  cache block size:731kiB  reps:3  perf err:  7.3%
+[AUTO TUNE]     [016: 1777.73]  time:1.132493e+00  MLUPS:002013  cache block size:731kiB  reps:4  perf err: 22.6%
+[AUTO TUNE]     [016: 1902.18]  time:1.340642e+00  MLUPS:002550  cache block size:731kiB  reps:5  perf err:  6.5%
+[AUTO TUNE]     [016: 1792.59]  time:1.722089e+00  MLUPS:003087  cache block size:731kiB  reps:6  perf err:  6.1%
+[AUTO TUNE]     [016: 1807.95]  time:2.004418e+00  MLUPS:003623  cache block size:731kiB  reps:7  perf err:  0.8%
+[AUTO TUNE]   Diamond width:08  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [004: 3935.75]  time:1.705110e-01  MLUPS:000671  cache block size:601kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 1749.82]  time:9.971490e-01  MLUPS:001744  cache block size:601kiB  reps:2  perf err: 124.9%
+[AUTO TUNE]     [004: 2778.19]  time:1.014535e+00  MLUPS:002818  cache block size:601kiB  reps:3  perf err: 37.0%
+[AUTO TUNE]     [004: 3091.12]  time:1.259194e+00  MLUPS:003892  cache block size:601kiB  reps:4  perf err: 10.1%
+[AUTO TUNE]     [004: 2166.24]  time:2.292479e+00  MLUPS:004966  cache block size:601kiB  reps:5  perf err: 42.7%
+[AUTO TUNE]     [004: 2773.93]  time:2.177346e+00  MLUPS:006039  cache block size:601kiB  reps:6  perf err: 21.9%
+[AUTO TUNE]     [004: 3268.81]  time:2.176184e+00  MLUPS:007113  cache block size:601kiB  reps:7  perf err: 15.1%
+[AUTO TUNE]     [004: 2170.99]  time:3.771213e+00  MLUPS:008187  cache block size:601kiB  reps:8  perf err: 50.6%
+[AUTO TUNE]     [004: 2508.29]  time:3.692164e+00  MLUPS:009261  cache block size:601kiB  reps:9  perf err: 13.4%
+[AUTO TUNE]     [004: 2753.48]  time:3.753342e+00  MLUPS:010334  cache block size:601kiB  reps:10  perf err:  8.9%
+[AUTO TUNE]     [004: 2537.11]  time:4.496654e+00  MLUPS:011408  cache block size:601kiB  reps:11  perf err:  8.5%
+[AUTO TUNE]     [004: 2878.86]  time:4.335833e+00  MLUPS:012482  cache block size:601kiB  reps:12  perf err: 11.9%
+[AUTO TUNE]     [004: 3255.96]  time:4.163436e+00  MLUPS:013555  cache block size:601kiB  reps:13  perf err: 11.6%
+[AUTO TUNE]     [004: 3281.24]  time:4.458605e+00  MLUPS:014629  cache block size:601kiB  reps:14  perf err:  0.8%
+[AUTO TUNE]     [008: 4240.07]  time:1.582730e-01  MLUPS:000671  cache block size:893kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 3811.73]  time:4.577529e-01  MLUPS:001744  cache block size:893kiB  reps:2  perf err: 11.2%
+[AUTO TUNE]     [008: 3643.33]  time:7.736261e-01  MLUPS:002818  cache block size:893kiB  reps:3  perf err:  4.6%
+[AUTO TUNE]     [008: 3534.33]  time:1.101289e+00  MLUPS:003892  cache block size:893kiB  reps:4  perf err:  3.1%
+[AUTO TUNE]     [008: 3457.32]  time:1.436388e+00  MLUPS:004966  cache block size:893kiB  reps:5  perf err:  2.2%
+[AUTO TUNE]     [012: 3811.62]  time:1.760640e-01  MLUPS:000671  cache block size:1186kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 3833.98]  time:4.550970e-01  MLUPS:001744  cache block size:1186kiB  reps:2  perf err:  0.6%
+[AUTO TUNE]     [016: 4673.45]  time:1.435959e-01  MLUPS:000671  cache block size:1478kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 1798.05]  time:9.704039e-01  MLUPS:001744  cache block size:1478kiB  reps:2  perf err: 159.9%
+[AUTO TUNE]     [016: 2488.70]  time:1.132550e+00  MLUPS:002818  cache block size:1478kiB  reps:3  perf err: 27.8%
+[AUTO TUNE]     [016: 3212.15]  time:1.211746e+00  MLUPS:003892  cache block size:1478kiB  reps:4  perf err: 22.5%
+[AUTO TUNE]     [016: 3031.82]  time:1.637977e+00  MLUPS:004966  cache block size:1478kiB  reps:5  perf err:  5.9%
+[AUTO TUNE]     [016: 3482.48]  time:1.734339e+00  MLUPS:006039  cache block size:1478kiB  reps:6  perf err: 12.9%
+[AUTO TUNE]     [016: 3802.04]  time:1.870980e+00  MLUPS:007113  cache block size:1478kiB  reps:7  perf err:  8.4%
+[AUTO TUNE]     [016: 3010.96]  time:2.719160e+00  MLUPS:008187  cache block size:1478kiB  reps:8  perf err: 26.3%
+[AUTO TUNE]     [016: 3509.18]  time:2.639086e+00  MLUPS:009261  cache block size:1478kiB  reps:9  perf err: 14.2%
+[AUTO TUNE]     [016: 3690.67]  time:2.800237e+00  MLUPS:010334  cache block size:1478kiB  reps:10  perf err:  4.9%
+[AUTO TUNE]     [016: 2467.97]  time:4.622636e+00  MLUPS:011408  cache block size:1478kiB  reps:11  perf err: 49.5%
+[AUTO TUNE]     [016: 2798.26]  time:4.460714e+00  MLUPS:012482  cache block size:1478kiB  reps:12  perf err: 11.8%
+[AUTO TUNE]     [016: 3171.53]  time:4.274275e+00  MLUPS:013555  cache block size:1478kiB  reps:13  perf err: 11.8%
+[AUTO TUNE]     [016: 2793.32]  time:5.237398e+00  MLUPS:014629  cache block size:1478kiB  reps:14  perf err: 13.5%
+[AUTO TUNE]     [016: 3076.91]  time:5.103645e+00  MLUPS:015703  cache block size:1478kiB  reps:15  perf err:  9.2%
+[AUTO TUNE]     [016: 2285.71]  time:7.340037e+00  MLUPS:016777  cache block size:1478kiB  reps:16  perf err: 34.6%
+[AUTO TUNE]     [016: 3233.01]  time:5.521467e+00  MLUPS:017850  cache block size:1478kiB  reps:17  perf err: 29.3%
+[AUTO TUNE]     [016: 3252.26]  time:5.818942e+00  MLUPS:018924  cache block size:1478kiB  reps:18  perf err:  0.6%
+[AUTO TUNE]   Diamond width:16  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [004: 5541.48]  time:2.179849e-01  MLUPS:001207  cache block size:1706kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 5038.52]  time:6.659579e-01  MLUPS:003355  cache block size:1706kiB  reps:2  perf err: 10.0%
+[AUTO TUNE]     [004: 5019.96]  time:1.096210e+00  MLUPS:005502  cache block size:1706kiB  reps:3  perf err:  0.4%
+[AUTO TUNE]     [008: 5320.45]  time:2.270410e-01  MLUPS:001207  cache block size:2258kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 5627.02]  time:5.963092e-01  MLUPS:003355  cache block size:2258kiB  reps:2  perf err:  5.4%
+[AUTO TUNE]     [008: 5363.39]  time:1.026016e+00  MLUPS:005502  cache block size:2258kiB  reps:3  perf err:  4.9%
+[AUTO TUNE]     [008: 3565.11]  time:2.145909e+00  MLUPS:007650  cache block size:2258kiB  reps:4  perf err: 50.4%
+[AUTO TUNE]     [008: 4380.13]  time:2.236895e+00  MLUPS:009797  cache block size:2258kiB  reps:5  perf err: 18.6%
+[AUTO TUNE]     [008: 4343.69]  time:2.750056e+00  MLUPS:011945  cache block size:2258kiB  reps:6  perf err:  0.8%
+[AUTO TUNE]   Diamond width:32  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [004: 6052.02]  time:3.770151e-01  MLUPS:002281  cache block size:5476kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 6234.38]  time:1.054904e+00  MLUPS:006576  cache block size:5476kiB  reps:2  perf err:  2.9%
+[AUTO TUNE]     [004: 6569.68]  time:1.654819e+00  MLUPS:010871  cache block size:5476kiB  reps:3  perf err:  5.1%
+[AUTO TUNE]     [004: 6547.16]  time:2.316515e+00  MLUPS:015166  cache block size:5476kiB  reps:4  perf err:  0.3%
+[AUTO TUNE]     [008: 6765.21]  time:3.372698e-01  MLUPS:002281  cache block size:6548kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 7231.57]  time:9.094391e-01  MLUPS:006576  cache block size:6548kiB  reps:2  perf err:  6.4%
+[AUTO TUNE]     [008: 6547.71]  time:1.660372e+00  MLUPS:010871  cache block size:6548kiB  reps:3  perf err: 10.4%
+[AUTO TUNE]     [008: 6288.44]  time:2.411821e+00  MLUPS:015166  cache block size:6548kiB  reps:4  perf err:  4.1%
+[AUTO TUNE]     [008: 7138.15]  time:2.726418e+00  MLUPS:019461  cache block size:6548kiB  reps:5  perf err: 11.9%
+[AUTO TUNE]     [008: 6451.75]  time:3.682185e+00  MLUPS:023756  cache block size:6548kiB  reps:6  perf err: 10.6%
+[AUTO TUNE]     [008: 6684.37]  time:4.196583e+00  MLUPS:028051  cache block size:6548kiB  reps:7  perf err:  3.5%
+[AUTO TUNE]     [008: 6451.80]  time:5.013559e+00  MLUPS:032346  cache block size:6548kiB  reps:8  perf err:  3.6%
+[AUTO TUNE]     [008: 6801.24]  time:5.387461e+00  MLUPS:036641  cache block size:6548kiB  reps:9  perf err:  5.1%
+[AUTO TUNE]     [008: 6750.60]  time:6.064117e+00  MLUPS:040936  cache block size:6548kiB  reps:10  perf err:  0.8%
+[AUTO TUNE]     [012: 6665.05]  time:3.423381e-01  MLUPS:002281  cache block size:7621kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 5673.00]  time:1.159294e+00  MLUPS:006576  cache block size:7621kiB  reps:2  perf err: 17.5%
+[AUTO TUNE]     [012: 5731.95]  time:1.896672e+00  MLUPS:010871  cache block size:7621kiB  reps:3  perf err:  1.0%
+[AUTO TUNE]   Diamond width:64  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [004: 6472.16]  time:6.843441e-01  MLUPS:004429  cache block size:19256kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 6006.84]  time:2.167383e+00  MLUPS:013019  cache block size:19256kiB  reps:2  perf err:  7.7%
+[AUTO TUNE]     [004: 6108.38]  time:3.537608e+00  MLUPS:021609  cache block size:19256kiB  reps:3  perf err:  1.7%
+[AUTO TUNE]     [008: 7014.86]  time:6.314001e-01  MLUPS:004429  cache block size:21368kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 6755.27]  time:1.927255e+00  MLUPS:013019  cache block size:21368kiB  reps:2  perf err:  3.8%
+[AUTO TUNE]     [008: 7406.03]  time:2.917766e+00  MLUPS:021609  cache block size:21368kiB  reps:3  perf err:  8.8%
+[AUTO TUNE]     [008: 6972.84]  time:4.330943e+00  MLUPS:030198  cache block size:21368kiB  reps:4  perf err:  6.2%
+[AUTO TUNE]     [008: 5654.79]  time:6.859480e+00  MLUPS:038788  cache block size:21368kiB  reps:5  perf err: 23.3%
+[AUTO TUNE]     [008: 7161.03]  time:6.616206e+00  MLUPS:047378  cache block size:21368kiB  reps:6  perf err: 21.0%
+[AUTO TUNE]     [008: 7218.64]  time:7.753373e+00  MLUPS:055968  cache block size:21368kiB  reps:7  perf err:  0.8%
+[AUTO TUNE]     [012: 5360.89]  time:8.262029e-01  MLUPS:004429  cache block size:23481kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 7990.67]  time:1.629290e+00  MLUPS:013019  cache block size:23481kiB  reps:2  perf err: 32.9%
+[AUTO TUNE]     [012: 7542.05]  time:2.865142e+00  MLUPS:021609  cache block size:23481kiB  reps:3  perf err:  5.9%
+[AUTO TUNE]     [012: 7570.30]  time:3.989141e+00  MLUPS:030198  cache block size:23481kiB  reps:4  perf err:  0.4%
+[AUTO TUNE]     [016: 7273.75]  time:6.089270e-01  MLUPS:004429  cache block size:25593kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 7477.03]  time:1.741216e+00  MLUPS:013019  cache block size:25593kiB  reps:2  perf err:  2.7%
+[AUTO TUNE]     [016: 7944.75]  time:2.719917e+00  MLUPS:021609  cache block size:25593kiB  reps:3  perf err:  5.9%
+[AUTO TUNE]     [016: 8044.31]  time:3.754082e+00  MLUPS:030198  cache block size:25593kiB  reps:4  perf err:  1.2%
+[AUTO TUNE]     [020: 5561.81]  time:7.963572e-01  MLUPS:004429  cache block size:27706kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [020: 7774.88]  time:1.674510e+00  MLUPS:013019  cache block size:27706kiB  reps:2  perf err: 28.5%
+[AUTO TUNE]     [020: 7712.31]  time:2.801890e+00  MLUPS:021609  cache block size:27706kiB  reps:3  perf err:  0.8%
+[AUTO TUNE]   Diamond width:128  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [004: 6971.12]  time:1.251470e+00  MLUPS:008724  cache block size:71776kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 6698.31]  time:3.867246e+00  MLUPS:025904  cache block size:71776kiB  reps:2  perf err:  4.1%
+[AUTO TUNE]     [004: 6653.79]  time:6.475094e+00  MLUPS:043083  cache block size:71776kiB  reps:3  perf err:  0.7%
+[AUTO TUNE]     [008: 7268.12]  time:1.200331e+00  MLUPS:008724  cache block size:75968kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 6551.83]  time:3.953708e+00  MLUPS:025904  cache block size:75968kiB  reps:2  perf err: 10.9%
+[AUTO TUNE]     [008: 6964.94]  time:6.185821e+00  MLUPS:043083  cache block size:75968kiB  reps:3  perf err:  5.9%
+[AUTO TUNE]     [008: 7411.64]  time:8.130963e+00  MLUPS:060263  cache block size:75968kiB  reps:4  perf err:  6.0%
+[AUTO TUNE]     [012: 6391.85]  time:1.364888e+00  MLUPS:008724  cache block size:80161kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 6932.57]  time:3.736567e+00  MLUPS:025904  cache block size:80161kiB  reps:2  perf err:  7.8%
+[AUTO TUNE]     [012: 6462.68]  time:6.666572e+00  MLUPS:043083  cache block size:80161kiB  reps:3  perf err:  7.3%
+[AUTO TUNE]     [012: 7231.93]  time:8.333013e+00  MLUPS:060263  cache block size:80161kiB  reps:4  perf err: 10.6%
+[AUTO TUNE] COMPLETE tune case #10: Thread group size:08  thc:01  thx:01  thy:02  thz:04  t_dim:31  bs_z:16  perf:8044.31 MLUP/s
+
+[AUTO TUNE] START tune case #11: Thread group size:08  thc:01  thx:01  thy:01  thz:08  Possilbe diam width: 4 8 16 32 64 128
+[AUTO TUNE]   Diamond width:04  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [008: 2653.29]  time:1.517560e-01  MLUPS:000402  cache block size:406kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 1887.59]  time:4.977362e-01  MLUPS:000939  cache block size:406kiB  reps:2  perf err: 40.6%
+[AUTO TUNE]     [008: 1865.91]  time:7.912450e-01  MLUPS:001476  cache block size:406kiB  reps:3  perf err:  1.2%
+[AUTO TUNE]     [016: 2308.87]  time:1.743939e-01  MLUPS:000402  cache block size:731kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 1341.08]  time:7.005742e-01  MLUPS:000939  cache block size:731kiB  reps:2  perf err: 72.2%
+[AUTO TUNE]     [016: 1175.45]  time:1.256027e+00  MLUPS:001476  cache block size:731kiB  reps:3  perf err: 14.1%
+[AUTO TUNE]     [016: 1666.24]  time:1.208271e+00  MLUPS:002013  cache block size:731kiB  reps:4  perf err: 29.5%
+[AUTO TUNE]     [016: 1109.54]  time:2.298381e+00  MLUPS:002550  cache block size:731kiB  reps:5  perf err: 50.2%
+[AUTO TUNE]     [016: 1700.55]  time:1.815295e+00  MLUPS:003087  cache block size:731kiB  reps:6  perf err: 34.8%
+[AUTO TUNE]     [016: 1790.43]  time:2.024030e+00  MLUPS:003623  cache block size:731kiB  reps:7  perf err:  5.0%
+[AUTO TUNE]     [016: 1871.75]  time:2.222915e+00  MLUPS:004160  cache block size:731kiB  reps:8  perf err:  4.3%
+[AUTO TUNE]     [016: 1833.50]  time:2.562111e+00  MLUPS:004697  cache block size:731kiB  reps:9  perf err:  2.1%
+[AUTO TUNE]   Diamond width:08  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [008: 3655.96]  time:1.835601e-01  MLUPS:000671  cache block size:893kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 3305.04]  time:5.279300e-01  MLUPS:001744  cache block size:893kiB  reps:2  perf err: 10.6%
+[AUTO TUNE]     [008: 3366.60]  time:8.372169e-01  MLUPS:002818  cache block size:893kiB  reps:3  perf err:  1.8%
+[AUTO TUNE]     [016: 3962.40]  time:1.693640e-01  MLUPS:000671  cache block size:1478kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 3353.23]  time:5.203431e-01  MLUPS:001744  cache block size:1478kiB  reps:2  perf err: 18.2%
+[AUTO TUNE]     [016: 3363.96]  time:8.378730e-01  MLUPS:002818  cache block size:1478kiB  reps:3  perf err:  0.3%
+[AUTO TUNE]   Diamond width:16  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [008: 5741.80]  time:2.103801e-01  MLUPS:001207  cache block size:2258kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 5534.35]  time:6.062939e-01  MLUPS:003355  cache block size:2258kiB  reps:2  perf err:  3.7%
+[AUTO TUNE]     [008: 4202.18]  time:1.309542e+00  MLUPS:005502  cache block size:2258kiB  reps:3  perf err: 31.7%
+[AUTO TUNE]     [008: 5245.91]  time:1.458356e+00  MLUPS:007650  cache block size:2258kiB  reps:4  perf err: 19.9%
+[AUTO TUNE]     [008: 3298.81]  time:2.970134e+00  MLUPS:009797  cache block size:2258kiB  reps:5  perf err: 59.0%
+[AUTO TUNE]     [008: 4529.90]  time:2.637004e+00  MLUPS:011945  cache block size:2258kiB  reps:6  perf err: 27.2%
+[AUTO TUNE]     [008: 3444.45]  time:4.091469e+00  MLUPS:014092  cache block size:2258kiB  reps:7  perf err: 31.5%
+[AUTO TUNE]     [008: 3854.82]  time:4.213000e+00  MLUPS:016240  cache block size:2258kiB  reps:8  perf err: 10.6%
+[AUTO TUNE]     [008: 5169.15]  time:3.557225e+00  MLUPS:018387  cache block size:2258kiB  reps:9  perf err: 25.4%
+[AUTO TUNE]     [008: 5023.79]  time:4.087611e+00  MLUPS:020535  cache block size:2258kiB  reps:10  perf err:  2.9%
+[AUTO TUNE]     [008: 5117.21]  time:4.432649e+00  MLUPS:022682  cache block size:2258kiB  reps:11  perf err:  1.8%
+[AUTO TUNE]     [016: 5572.77]  time:2.167609e-01  MLUPS:001207  cache block size:3363kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 5569.00]  time:6.025212e-01  MLUPS:003355  cache block size:3363kiB  reps:2  perf err:  0.1%
+[AUTO TUNE]     [024: 5446.12]  time:2.218020e-01  MLUPS:001207  cache block size:4468kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [024: 3906.16]  time:8.590131e-01  MLUPS:003355  cache block size:4468kiB  reps:2  perf err: 39.4%
+[AUTO TUNE]     [024: 5438.21]  time:1.011900e+00  MLUPS:005502  cache block size:4468kiB  reps:3  perf err: 28.2%
+[AUTO TUNE]     [024: 5566.22]  time:1.374436e+00  MLUPS:007650  cache block size:4468kiB  reps:4  perf err:  2.3%
+[AUTO TUNE]   Diamond width:32  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [008: 6650.72]  time:3.430760e-01  MLUPS:002281  cache block size:6548kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 6459.00]  time:1.018218e+00  MLUPS:006576  cache block size:6548kiB  reps:2  perf err:  3.0%
+[AUTO TUNE]     [008: 6238.93]  time:1.742547e+00  MLUPS:010871  cache block size:6548kiB  reps:3  perf err:  3.5%
+[AUTO TUNE]     [008: 6201.19]  time:2.445758e+00  MLUPS:015166  cache block size:6548kiB  reps:4  perf err:  0.6%
+[AUTO TUNE]     [016: 6092.50]  time:3.745100e-01  MLUPS:002281  cache block size:8693kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 6646.83]  time:9.894440e-01  MLUPS:006576  cache block size:8693kiB  reps:2  perf err:  8.3%
+[AUTO TUNE]     [016: 5668.94]  time:1.917756e+00  MLUPS:010871  cache block size:8693kiB  reps:3  perf err: 17.3%
+[AUTO TUNE]     [016: 6356.95]  time:2.385830e+00  MLUPS:015166  cache block size:8693kiB  reps:4  perf err: 10.8%
+[AUTO TUNE]     [016: 6324.69]  time:3.077078e+00  MLUPS:019461  cache block size:8693kiB  reps:5  perf err:  0.5%
+[AUTO TUNE]     [024: 6723.05]  time:3.393850e-01  MLUPS:002281  cache block size:10838kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [024: 6936.28]  time:9.481552e-01  MLUPS:006576  cache block size:10838kiB  reps:2  perf err:  3.1%
+[AUTO TUNE]     [024: 6702.57]  time:1.622011e+00  MLUPS:010871  cache block size:10838kiB  reps:3  perf err:  3.5%
+[AUTO TUNE]     [024: 6845.86]  time:2.215443e+00  MLUPS:015166  cache block size:10838kiB  reps:4  perf err:  2.1%
+[AUTO TUNE]     [032: 7000.42]  time:3.259380e-01  MLUPS:002281  cache block size:12983kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [032: 6867.06]  time:9.577119e-01  MLUPS:006576  cache block size:12983kiB  reps:2  perf err:  1.9%
+[AUTO TUNE]     [040: 6972.94]  time:3.272221e-01  MLUPS:002281  cache block size:15128kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [040: 5043.91]  time:1.303884e+00  MLUPS:006576  cache block size:15128kiB  reps:2  perf err: 38.2%
+[AUTO TUNE]     [040: 6151.58]  time:1.767293e+00  MLUPS:010871  cache block size:15128kiB  reps:3  perf err: 18.0%
+[AUTO TUNE]     [040: 6799.92]  time:2.230410e+00  MLUPS:015166  cache block size:15128kiB  reps:4  perf err:  9.5%
+[AUTO TUNE]     [040: 6340.82]  time:3.069253e+00  MLUPS:019461  cache block size:15128kiB  reps:5  perf err:  7.2%
+[AUTO TUNE]     [040: 5496.28]  time:4.322295e+00  MLUPS:023756  cache block size:15128kiB  reps:6  perf err: 15.4%
+[AUTO TUNE]     [040: 4906.13]  time:5.717640e+00  MLUPS:028051  cache block size:15128kiB  reps:7  perf err: 12.0%
+[AUTO TUNE]     [040: 5751.57]  time:5.623941e+00  MLUPS:032346  cache block size:15128kiB  reps:8  perf err: 14.7%
+[AUTO TUNE]     [040: 7109.74]  time:5.153696e+00  MLUPS:036641  cache block size:15128kiB  reps:9  perf err: 19.1%
+[AUTO TUNE]     [040: 6386.14]  time:6.410196e+00  MLUPS:040936  cache block size:15128kiB  reps:10  perf err: 11.3%
+[AUTO TUNE]     [040: 7055.69]  time:6.410621e+00  MLUPS:045231  cache block size:15128kiB  reps:11  perf err:  9.5%
+[AUTO TUNE]     [040: 5559.36]  time:8.908642e+00  MLUPS:049526  cache block size:15128kiB  reps:12  perf err: 26.9%
+[AUTO TUNE]   Diamond width:64  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [008: 6691.80]  time:6.618822e-01  MLUPS:004429  cache block size:21368kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 6127.77]  time:2.124610e+00  MLUPS:013019  cache block size:21368kiB  reps:2  perf err:  9.2%
+[AUTO TUNE]     [008: 6070.39]  time:3.559745e+00  MLUPS:021609  cache block size:21368kiB  reps:3  perf err:  0.9%
+[AUTO TUNE]     [016: 5320.57]  time:8.324649e-01  MLUPS:004429  cache block size:25593kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 5630.93]  time:2.312072e+00  MLUPS:013019  cache block size:25593kiB  reps:2  perf err:  5.5%
+[AUTO TUNE]     [016: 6186.21]  time:3.493098e+00  MLUPS:021609  cache block size:25593kiB  reps:3  perf err:  9.0%
+[AUTO TUNE]     [016: 7022.86]  time:4.300097e+00  MLUPS:030198  cache block size:25593kiB  reps:4  perf err: 11.9%
+[AUTO TUNE]     [016: 7286.86]  time:5.323135e+00  MLUPS:038788  cache block size:25593kiB  reps:5  perf err:  3.6%
+[AUTO TUNE]     [016: 7290.67]  time:6.498558e+00  MLUPS:047378  cache block size:25593kiB  reps:6  perf err:  0.1%
+[AUTO TUNE]     [024: 7472.25]  time:5.927510e-01  MLUPS:004429  cache block size:29818kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [024: 7788.30]  time:1.671626e+00  MLUPS:013019  cache block size:29818kiB  reps:2  perf err:  4.1%
+[AUTO TUNE]     [024: 7631.57]  time:2.831536e+00  MLUPS:021609  cache block size:29818kiB  reps:3  perf err:  2.1%
+[AUTO TUNE]     [032: 5804.02]  time:7.631230e-01  MLUPS:004429  cache block size:34043kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [032: 7996.45]  time:1.628112e+00  MLUPS:013019  cache block size:34043kiB  reps:2  perf err: 27.4%
+[AUTO TUNE]     [032: 7839.99]  time:2.756261e+00  MLUPS:021609  cache block size:34043kiB  reps:3  perf err:  2.0%
+[AUTO TUNE]     [040: 7327.42]  time:6.044672e-01  MLUPS:004429  cache block size:38268kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [040: 7856.61]  time:1.657091e+00  MLUPS:013019  cache block size:38268kiB  reps:2  perf err:  6.7%
+[AUTO TUNE]     [040: 8236.65]  time:2.623525e+00  MLUPS:021609  cache block size:38268kiB  reps:3  perf err:  4.6%
+[AUTO TUNE]     [040: 7847.30]  time:3.848326e+00  MLUPS:030198  cache block size:38268kiB  reps:4  perf err:  5.0%
+[AUTO TUNE]     [040: 7155.86]  time:5.420578e+00  MLUPS:038788  cache block size:38268kiB  reps:5  perf err:  9.7%
+[AUTO TUNE]     [040: 7530.55]  time:6.291554e+00  MLUPS:047378  cache block size:38268kiB  reps:6  perf err:  5.0%
+[AUTO TUNE]     [040: 8040.35]  time:6.960989e+00  MLUPS:055968  cache block size:38268kiB  reps:7  perf err:  6.3%
+[AUTO TUNE]     [040: 7904.92]  time:8.166900e+00  MLUPS:064558  cache block size:38268kiB  reps:8  perf err:  1.7%
+[AUTO TUNE]     [048: 7642.88]  time:5.795181e-01  MLUPS:004429  cache block size:42493kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [048: 5517.92]  time:2.359426e+00  MLUPS:013019  cache block size:42493kiB  reps:2  perf err: 38.5%
+[AUTO TUNE]     [048: 8115.99]  time:2.662530e+00  MLUPS:021609  cache block size:42493kiB  reps:3  perf err: 32.0%
+[AUTO TUNE]     [048: 8090.68]  time:3.732564e+00  MLUPS:030198  cache block size:42493kiB  reps:4  perf err:  0.3%
+[AUTO TUNE]     [056: 5601.37]  time:7.907319e-01  MLUPS:004429  cache block size:46718kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [056: 8185.99]  time:1.590415e+00  MLUPS:013019  cache block size:46718kiB  reps:2  perf err: 31.6%
+[AUTO TUNE]     [056: 8185.19]  time:2.640019e+00  MLUPS:021609  cache block size:46718kiB  reps:3  perf err:  0.0%
+[AUTO TUNE]     [064: 7241.40]  time:6.116478e-01  MLUPS:004429  cache block size:50943kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [064: 8036.18]  time:1.620063e+00  MLUPS:013019  cache block size:50943kiB  reps:2  perf err:  9.9%
+[AUTO TUNE]     [064: 8118.68]  time:2.661648e+00  MLUPS:021609  cache block size:50943kiB  reps:3  perf err:  1.0%
+[AUTO TUNE]   Diamond width:128  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [008: 6912.46]  time:1.262091e+00  MLUPS:008724  cache block size:75968kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 7028.68]  time:3.685473e+00  MLUPS:025904  cache block size:75968kiB  reps:2  perf err:  1.7%
+[AUTO TUNE]     [016: 7495.24]  time:1.163959e+00  MLUPS:008724  cache block size:84353kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 7397.05]  time:3.501939e+00  MLUPS:025904  cache block size:84353kiB  reps:2  perf err:  1.3%
+[AUTO TUNE]     [024: 7879.97]  time:1.107130e+00  MLUPS:008724  cache block size:92738kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [024: 7330.97]  time:3.533503e+00  MLUPS:025904  cache block size:92738kiB  reps:2  perf err:  7.5%
+[AUTO TUNE]     [024: 7531.55]  time:5.720451e+00  MLUPS:043083  cache block size:92738kiB  reps:3  perf err:  2.7%
+[AUTO TUNE]     [024: 7673.97]  time:7.853008e+00  MLUPS:060263  cache block size:92738kiB  reps:4  perf err:  1.9%
+[AUTO TUNE]     [032: 7833.22]  time:1.113738e+00  MLUPS:008724  cache block size:101123kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [032: 7553.05]  time:3.429612e+00  MLUPS:025904  cache block size:101123kiB  reps:2  perf err:  3.7%
+[AUTO TUNE]     [032: 7389.89]  time:5.830113e+00  MLUPS:043083  cache block size:101123kiB  reps:3  perf err:  2.2%
+[AUTO TUNE] COMPLETE tune case #11: Thread group size:08  thc:01  thx:01  thy:01  thz:08  t_dim:31  bs_z:56  perf:8185.19 MLUP/s
+
+[AUTO TUNE] START tune case #12: Thread group size:16  thc:01  thx:02  thy:02  thz:04  Possilbe diam width: 4 8 16 32 64 128
+[AUTO TUNE]   Diamond width:04  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [004: 1273.01]  time:3.162990e-01  MLUPS:000402  cache block size:121kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 982.10]  time:9.566510e-01  MLUPS:000939  cache block size:121kiB  reps:2  perf err: 29.6%
+[AUTO TUNE]     [004: 940.35]  time:1.570050e+00  MLUPS:001476  cache block size:121kiB  reps:3  perf err:  4.4%
+[AUTO TUNE]     [004: 921.67]  time:2.184370e+00  MLUPS:002013  cache block size:121kiB  reps:4  perf err:  2.0%
+[AUTO TUNE]     [008: 1442.84]  time:2.790689e-01  MLUPS:000402  cache block size:203kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 1092.24]  time:8.601780e-01  MLUPS:000939  cache block size:203kiB  reps:2  perf err: 32.1%
+[AUTO TUNE]     [008: 998.90]  time:1.478019e+00  MLUPS:001476  cache block size:203kiB  reps:3  perf err:  9.3%
+[AUTO TUNE]     [008: 997.44]  time:2.018430e+00  MLUPS:002013  cache block size:203kiB  reps:4  perf err:  0.1%
+[AUTO TUNE]     [012: 1337.98]  time:3.009410e-01  MLUPS:000402  cache block size:284kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 1119.69]  time:8.390930e-01  MLUPS:000939  cache block size:284kiB  reps:2  perf err: 19.5%
+[AUTO TUNE]     [012: 1058.71]  time:1.394523e+00  MLUPS:001476  cache block size:284kiB  reps:3  perf err:  5.8%
+[AUTO TUNE]     [012: 1027.49]  time:1.959406e+00  MLUPS:002013  cache block size:284kiB  reps:4  perf err:  3.0%
+[AUTO TUNE]     [012: 1014.08]  time:2.514730e+00  MLUPS:002550  cache block size:284kiB  reps:5  perf err:  1.3%
+[AUTO TUNE]     [016: 1388.85]  time:2.899179e-01  MLUPS:000402  cache block size:365kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 1100.91]  time:8.534050e-01  MLUPS:000939  cache block size:365kiB  reps:2  perf err: 26.2%
+[AUTO TUNE]     [016: 1050.11]  time:1.405947e+00  MLUPS:001476  cache block size:365kiB  reps:3  perf err:  4.8%
+[AUTO TUNE]     [016: 1061.55]  time:1.896530e+00  MLUPS:002013  cache block size:365kiB  reps:4  perf err:  1.1%
+[AUTO TUNE]     [020: 1427.31]  time:2.821062e-01  MLUPS:000402  cache block size:446kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [020: 1139.66]  time:8.243918e-01  MLUPS:000939  cache block size:446kiB  reps:2  perf err: 25.2%
+[AUTO TUNE]     [020: 1100.82]  time:1.341177e+00  MLUPS:001476  cache block size:446kiB  reps:3  perf err:  3.5%
+[AUTO TUNE]     [020: 1055.01]  time:1.908299e+00  MLUPS:002013  cache block size:446kiB  reps:4  perf err:  4.3%
+[AUTO TUNE]     [020: 1055.17]  time:2.416802e+00  MLUPS:002550  cache block size:446kiB  reps:5  perf err:  0.0%
+[AUTO TUNE]   Diamond width:08  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [004: 1666.09]  time:4.027920e-01  MLUPS:000671  cache block size:300kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 1525.40]  time:1.143850e+00  MLUPS:001744  cache block size:300kiB  reps:2  perf err:  9.2%
+[AUTO TUNE]     [004: 1481.09]  time:1.903034e+00  MLUPS:002818  cache block size:300kiB  reps:3  perf err:  3.0%
+[AUTO TUNE]     [004: 1481.35]  time:2.627537e+00  MLUPS:003892  cache block size:300kiB  reps:4  perf err:  0.0%
+[AUTO TUNE]     [008: 1926.43]  time:3.483582e-01  MLUPS:000671  cache block size:446kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 1590.91]  time:1.096749e+00  MLUPS:001744  cache block size:446kiB  reps:2  perf err: 21.1%
+[AUTO TUNE]     [008: 1562.84]  time:1.803489e+00  MLUPS:002818  cache block size:446kiB  reps:3  perf err:  1.8%
+[AUTO TUNE]     [012: 2008.86]  time:3.340650e-01  MLUPS:000671  cache block size:593kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 1558.77]  time:1.119361e+00  MLUPS:001744  cache block size:593kiB  reps:2  perf err: 28.9%
+[AUTO TUNE]     [012: 1680.65]  time:1.677070e+00  MLUPS:002818  cache block size:593kiB  reps:3  perf err:  7.3%
+[AUTO TUNE]     [012: 1571.84]  time:2.476280e+00  MLUPS:003892  cache block size:593kiB  reps:4  perf err:  6.9%
+[AUTO TUNE]     [012: 1537.95]  time:3.229019e+00  MLUPS:004966  cache block size:593kiB  reps:5  perf err:  2.2%
+[AUTO TUNE]   Diamond width:16  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [004: 2296.60]  time:5.259769e-01  MLUPS:001207  cache block size:853kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 2309.54]  time:1.452861e+00  MLUPS:003355  cache block size:853kiB  reps:2  perf err:  0.6%
+[AUTO TUNE]     [008: 2685.93]  time:4.497359e-01  MLUPS:001207  cache block size:1129kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 2423.98]  time:1.384271e+00  MLUPS:003355  cache block size:1129kiB  reps:2  perf err: 10.8%
+[AUTO TUNE]     [008: 2397.65]  time:2.295132e+00  MLUPS:005502  cache block size:1129kiB  reps:3  perf err:  1.1%
+[AUTO TUNE]     [012: 2778.83]  time:4.347010e-01  MLUPS:001207  cache block size:1405kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 2521.68]  time:1.330640e+00  MLUPS:003355  cache block size:1405kiB  reps:2  perf err: 10.2%
+[AUTO TUNE]     [012: 2509.42]  time:2.192911e+00  MLUPS:005502  cache block size:1405kiB  reps:3  perf err:  0.5%
+[AUTO TUNE]     [016: 2758.40]  time:4.379199e-01  MLUPS:001207  cache block size:1681kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 2517.94]  time:1.332613e+00  MLUPS:003355  cache block size:1681kiB  reps:2  perf err:  9.5%
+[AUTO TUNE]     [016: 2470.06]  time:2.227850e+00  MLUPS:005502  cache block size:1681kiB  reps:3  perf err:  1.9%
+[AUTO TUNE]   Diamond width:32  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [004: 3482.52]  time:6.551859e-01  MLUPS:002281  cache block size:2738kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 3324.60]  time:1.978184e+00  MLUPS:006576  cache block size:2738kiB  reps:2  perf err:  4.8%
+[AUTO TUNE]     [004: 3326.22]  time:3.268462e+00  MLUPS:010871  cache block size:2738kiB  reps:3  perf err:  0.0%
+[AUTO TUNE]     [008: 3593.64]  time:6.349270e-01  MLUPS:002281  cache block size:3274kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 3647.57]  time:1.803028e+00  MLUPS:006576  cache block size:3274kiB  reps:2  perf err:  1.5%
+[AUTO TUNE]     [012: 3773.15]  time:6.047208e-01  MLUPS:002281  cache block size:3810kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 3677.57]  time:1.788319e+00  MLUPS:006576  cache block size:3810kiB  reps:2  perf err:  2.6%
+[AUTO TUNE]     [012: 3585.26]  time:3.032315e+00  MLUPS:010871  cache block size:3810kiB  reps:3  perf err:  2.6%
+[AUTO TUNE]     [012: 3529.13]  time:4.297542e+00  MLUPS:015166  cache block size:3810kiB  reps:4  perf err:  1.6%
+[AUTO TUNE]   Diamond width:64  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [004: 4545.87]  time:9.743309e-01  MLUPS:004429  cache block size:9628kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 4246.33]  time:3.065970e+00  MLUPS:013019  cache block size:9628kiB  reps:2  perf err:  7.1%
+[AUTO TUNE]     [004: 4445.87]  time:4.860477e+00  MLUPS:021609  cache block size:9628kiB  reps:3  perf err:  4.5%
+[AUTO TUNE]     [004: 4318.00]  time:6.993746e+00  MLUPS:030198  cache block size:9628kiB  reps:4  perf err:  3.0%
+[AUTO TUNE]     [004: 4365.34]  time:8.885661e+00  MLUPS:038788  cache block size:9628kiB  reps:5  perf err:  1.1%
+[AUTO TUNE]     [008: 4630.83]  time:9.564569e-01  MLUPS:004429  cache block size:10684kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 4612.73]  time:2.822433e+00  MLUPS:013019  cache block size:10684kiB  reps:2  perf err:  0.4%
+[AUTO TUNE]     [012: 4474.61]  time:9.898481e-01  MLUPS:004429  cache block size:11740kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 4626.47]  time:2.814051e+00  MLUPS:013019  cache block size:11740kiB  reps:2  perf err:  3.3%
+[AUTO TUNE]     [012: 4440.05]  time:4.866851e+00  MLUPS:021609  cache block size:11740kiB  reps:3  perf err:  4.2%
+[AUTO TUNE]     [012: 4639.76]  time:6.508734e+00  MLUPS:030198  cache block size:11740kiB  reps:4  perf err:  4.3%
+[AUTO TUNE]     [012: 4630.59]  time:8.376663e+00  MLUPS:038788  cache block size:11740kiB  reps:5  perf err:  0.2%
+[AUTO TUNE]     [016: 4692.18]  time:9.439502e-01  MLUPS:004429  cache block size:12796kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 4623.99]  time:2.815561e+00  MLUPS:013019  cache block size:12796kiB  reps:2  perf err:  1.5%
+[AUTO TUNE]   Diamond width:128  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [004: 5180.37]  time:1.684080e+00  MLUPS:008724  cache block size:35888kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [004: 5091.90]  time:5.087304e+00  MLUPS:025904  cache block size:35888kiB  reps:2  perf err:  1.7%
+[AUTO TUNE]     [008: 5453.34]  time:1.599782e+00  MLUPS:008724  cache block size:37984kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 5333.77]  time:4.856608e+00  MLUPS:025904  cache block size:37984kiB  reps:2  perf err:  2.2%
+[AUTO TUNE]     [012: 5357.09]  time:1.628523e+00  MLUPS:008724  cache block size:40080kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [012: 5398.86]  time:4.798058e+00  MLUPS:025904  cache block size:40080kiB  reps:2  perf err:  0.8%
+[AUTO TUNE]     [016: 5275.84]  time:1.653603e+00  MLUPS:008724  cache block size:42176kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 5387.00]  time:4.808615e+00  MLUPS:025904  cache block size:42176kiB  reps:2  perf err:  2.1%
+[AUTO TUNE] COMPLETE tune case #12: Thread group size:16  thc:01  thx:02  thy:02  thz:04  t_dim:63  bs_z:12  perf:5398.86 MLUP/s
+
+[AUTO TUNE] START tune case #13: Thread group size:16  thc:01  thx:02  thy:01  thz:08  Possilbe diam width: 4 8 16 32 64 128
+[AUTO TUNE]   Diamond width:04  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [008: 1102.45]  time:3.652351e-01  MLUPS:000402  cache block size:203kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 843.45]  time:1.113912e+00  MLUPS:000939  cache block size:203kiB  reps:2  perf err: 30.7%
+[AUTO TUNE]     [008: 841.57]  time:1.754324e+00  MLUPS:001476  cache block size:203kiB  reps:3  perf err:  0.2%
+[AUTO TUNE]     [016: 1283.66]  time:3.136771e-01  MLUPS:000402  cache block size:365kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 958.63]  time:9.800692e-01  MLUPS:000939  cache block size:365kiB  reps:2  perf err: 33.9%
+[AUTO TUNE]     [016: 872.17]  time:1.692779e+00  MLUPS:001476  cache block size:365kiB  reps:3  perf err:  9.9%
+[AUTO TUNE]     [016: 851.67]  time:2.363908e+00  MLUPS:002013  cache block size:365kiB  reps:4  perf err:  2.4%
+[AUTO TUNE]     [024: 1348.58]  time:2.985752e-01  MLUPS:000402  cache block size:528kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [024: 958.42]  time:9.802811e-01  MLUPS:000939  cache block size:528kiB  reps:2  perf err: 40.7%
+[AUTO TUNE]     [024: 952.70]  time:1.549700e+00  MLUPS:001476  cache block size:528kiB  reps:3  perf err:  0.6%
+[AUTO TUNE]     [032: 1329.38]  time:3.028882e-01  MLUPS:000402  cache block size:690kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [032: 1043.86]  time:9.000449e-01  MLUPS:000939  cache block size:690kiB  reps:2  perf err: 27.4%
+[AUTO TUNE]     [032: 959.61]  time:1.538538e+00  MLUPS:001476  cache block size:690kiB  reps:3  perf err:  8.8%
+[AUTO TUNE]     [032: 969.86]  time:2.075821e+00  MLUPS:002013  cache block size:690kiB  reps:4  perf err:  1.1%
+[AUTO TUNE]     [040: 1372.05]  time:2.934680e-01  MLUPS:000402  cache block size:853kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [040: 986.42]  time:9.524572e-01  MLUPS:000939  cache block size:853kiB  reps:2  perf err: 39.1%
+[AUTO TUNE]     [040: 954.51]  time:1.546755e+00  MLUPS:001476  cache block size:853kiB  reps:3  perf err:  3.3%
+[AUTO TUNE]     [040: 913.67]  time:2.203498e+00  MLUPS:002013  cache block size:853kiB  reps:4  perf err:  4.5%
+[AUTO TUNE]     [040: 934.74]  time:2.728175e+00  MLUPS:002550  cache block size:853kiB  reps:5  perf err:  2.3%
+[AUTO TUNE]   Diamond width:08  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [008: 1723.98]  time:3.892682e-01  MLUPS:000671  cache block size:446kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 1416.25]  time:1.232009e+00  MLUPS:001744  cache block size:446kiB  reps:2  perf err: 21.7%
+[AUTO TUNE]     [008: 1396.56]  time:2.018223e+00  MLUPS:002818  cache block size:446kiB  reps:3  perf err:  1.4%
+[AUTO TUNE]     [016: 1839.46]  time:3.648300e-01  MLUPS:000671  cache block size:739kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 1558.32]  time:1.119687e+00  MLUPS:001744  cache block size:739kiB  reps:2  perf err: 18.0%
+[AUTO TUNE]     [016: 1488.73]  time:1.893277e+00  MLUPS:002818  cache block size:739kiB  reps:3  perf err:  4.7%
+[AUTO TUNE]     [016: 1502.52]  time:2.590529e+00  MLUPS:003892  cache block size:739kiB  reps:4  perf err:  0.9%
+[AUTO TUNE]     [024: 1713.95]  time:3.915451e-01  MLUPS:000671  cache block size:1031kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [024: 1518.38]  time:1.149142e+00  MLUPS:001744  cache block size:1031kiB  reps:2  perf err: 12.9%
+[AUTO TUNE]     [024: 1462.91]  time:1.926688e+00  MLUPS:002818  cache block size:1031kiB  reps:3  perf err:  3.8%
+[AUTO TUNE]     [024: 1525.50]  time:2.551493e+00  MLUPS:003892  cache block size:1031kiB  reps:4  perf err:  4.1%
+[AUTO TUNE]     [024: 1453.16]  time:3.417426e+00  MLUPS:004966  cache block size:1031kiB  reps:5  perf err:  5.0%
+[AUTO TUNE]     [024: 1487.07]  time:4.061544e+00  MLUPS:006039  cache block size:1031kiB  reps:6  perf err:  2.3%
+[AUTO TUNE]   Diamond width:16  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [008: 2414.56]  time:5.002820e-01  MLUPS:001207  cache block size:1129kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 2357.38]  time:1.423376e+00  MLUPS:003355  cache block size:1129kiB  reps:2  perf err:  2.4%
+[AUTO TUNE]     [016: 2665.31]  time:4.532151e-01  MLUPS:001207  cache block size:1681kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 2463.34]  time:1.362152e+00  MLUPS:003355  cache block size:1681kiB  reps:2  perf err:  8.2%
+[AUTO TUNE]     [016: 2423.79]  time:2.270384e+00  MLUPS:005502  cache block size:1681kiB  reps:3  perf err:  1.6%
+[AUTO TUNE]     [024: 2758.26]  time:4.379430e-01  MLUPS:001207  cache block size:2234kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [024: 2449.87]  time:1.369641e+00  MLUPS:003355  cache block size:2234kiB  reps:2  perf err: 12.6%
+[AUTO TUNE]     [024: 2384.78]  time:2.307520e+00  MLUPS:005502  cache block size:2234kiB  reps:3  perf err:  2.7%
+[AUTO TUNE]     [024: 2387.42]  time:3.204468e+00  MLUPS:007650  cache block size:2234kiB  reps:4  perf err:  0.1%
+[AUTO TUNE]   Diamond width:32  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [008: 3609.55]  time:6.321290e-01  MLUPS:002281  cache block size:3274kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 3244.95]  time:2.026742e+00  MLUPS:006576  cache block size:3274kiB  reps:2  perf err: 11.2%
+[AUTO TUNE]     [008: 3260.31]  time:3.334537e+00  MLUPS:010871  cache block size:3274kiB  reps:3  perf err:  0.5%
+[AUTO TUNE]     [016: 3467.25]  time:6.580720e-01  MLUPS:002281  cache block size:4346kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 3484.51]  time:1.887400e+00  MLUPS:006576  cache block size:4346kiB  reps:2  perf err:  0.5%
+[AUTO TUNE]     [024: 3700.92]  time:6.165221e-01  MLUPS:002281  cache block size:5419kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [024: 3496.96]  time:1.880679e+00  MLUPS:006576  cache block size:5419kiB  reps:2  perf err:  5.8%
+[AUTO TUNE]     [024: 3437.23]  time:3.162905e+00  MLUPS:010871  cache block size:5419kiB  reps:3  perf err:  1.7%
+[AUTO TUNE]   Diamond width:64  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [008: 4198.80]  time:1.054869e+00  MLUPS:004429  cache block size:10684kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 4298.43]  time:3.028805e+00  MLUPS:013019  cache block size:10684kiB  reps:2  perf err:  2.3%
+[AUTO TUNE]     [016: 4374.81]  time:1.012429e+00  MLUPS:004429  cache block size:12796kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 4444.53]  time:2.929248e+00  MLUPS:013019  cache block size:12796kiB  reps:2  perf err:  1.6%
+[AUTO TUNE]     [024: 4551.45]  time:9.731371e-01  MLUPS:004429  cache block size:14909kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [024: 4528.21]  time:2.875111e+00  MLUPS:013019  cache block size:14909kiB  reps:2  perf err:  0.5%
+[AUTO TUNE]     [032: 4730.20]  time:9.363639e-01  MLUPS:004429  cache block size:17021kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [032: 4515.21]  time:2.883393e+00  MLUPS:013019  cache block size:17021kiB  reps:2  perf err:  4.8%
+[AUTO TUNE]     [032: 4506.48]  time:4.795105e+00  MLUPS:021609  cache block size:17021kiB  reps:3  perf err:  0.2%
+[AUTO TUNE]   Diamond width:128  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [008: 5086.69]  time:1.715093e+00  MLUPS:008724  cache block size:37984kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 5077.53]  time:5.101701e+00  MLUPS:025904  cache block size:37984kiB  reps:2  perf err:  0.2%
+[AUTO TUNE]     [016: 5268.38]  time:1.655945e+00  MLUPS:008724  cache block size:42176kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 5225.78]  time:4.956970e+00  MLUPS:025904  cache block size:42176kiB  reps:2  perf err:  0.8%
+[AUTO TUNE]     [024: 5424.49]  time:1.608291e+00  MLUPS:008724  cache block size:46369kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [024: 5458.65]  time:4.745503e+00  MLUPS:025904  cache block size:46369kiB  reps:2  perf err:  0.6%
+[AUTO TUNE]     [032: 5458.63]  time:1.598231e+00  MLUPS:008724  cache block size:50561kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [032: 5524.56]  time:4.688883e+00  MLUPS:025904  cache block size:50561kiB  reps:2  perf err:  1.2%
+[AUTO TUNE]     [040: 5490.66]  time:1.588909e+00  MLUPS:008724  cache block size:54754kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [040: 5572.48]  time:4.648565e+00  MLUPS:025904  cache block size:54754kiB  reps:2  perf err:  1.5%
+[AUTO TUNE]     [048: 5484.31]  time:1.590748e+00  MLUPS:008724  cache block size:58946kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [048: 5550.68]  time:4.666817e+00  MLUPS:025904  cache block size:58946kiB  reps:2  perf err:  1.2%
+[AUTO TUNE] COMPLETE tune case #13: Thread group size:16  thc:01  thx:02  thy:01  thz:08  t_dim:63  bs_z:40  perf:5572.48 MLUP/s
+
+[AUTO TUNE] START tune case #14: Thread group size:16  thc:01  thx:01  thy:02  thz:08  Possilbe diam width: 4 8 16 32 64 128
+[AUTO TUNE]   Diamond width:04  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [008: 1202.66]  time:3.348031e-01  MLUPS:000402  cache block size:203kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 937.35]  time:1.002323e+00  MLUPS:000939  cache block size:203kiB  reps:2  perf err: 28.3%
+[AUTO TUNE]     [008: 880.10]  time:1.677529e+00  MLUPS:001476  cache block size:203kiB  reps:3  perf err:  6.5%
+[AUTO TUNE]     [008: 834.99]  time:2.411120e+00  MLUPS:002013  cache block size:203kiB  reps:4  perf err:  5.4%
+[AUTO TUNE]     [008: 810.06]  time:3.148082e+00  MLUPS:002550  cache block size:203kiB  reps:5  perf err:  3.1%
+[AUTO TUNE]     [008: 790.74]  time:3.903947e+00  MLUPS:003087  cache block size:203kiB  reps:6  perf err:  2.4%
+[AUTO TUNE]     [016: 1143.09]  time:3.522489e-01  MLUPS:000402  cache block size:365kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 1014.34]  time:9.262381e-01  MLUPS:000939  cache block size:365kiB  reps:2  perf err: 12.7%
+[AUTO TUNE]     [016: 958.59]  time:1.540175e+00  MLUPS:001476  cache block size:365kiB  reps:3  perf err:  5.8%
+[AUTO TUNE]     [016: 899.66]  time:2.237818e+00  MLUPS:002013  cache block size:365kiB  reps:4  perf err:  6.6%
+[AUTO TUNE]     [016: 911.06]  time:2.799090e+00  MLUPS:002550  cache block size:365kiB  reps:5  perf err:  1.3%
+[AUTO TUNE]     [024: 1358.50]  time:2.963948e-01  MLUPS:000402  cache block size:528kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [024: 1011.33]  time:9.289970e-01  MLUPS:000939  cache block size:528kiB  reps:2  perf err: 34.3%
+[AUTO TUNE]     [024: 950.78]  time:1.552822e+00  MLUPS:001476  cache block size:528kiB  reps:3  perf err:  6.4%
+[AUTO TUNE]     [024: 938.53]  time:2.145116e+00  MLUPS:002013  cache block size:528kiB  reps:4  perf err:  1.3%
+[AUTO TUNE]     [032: 1397.91]  time:2.880390e-01  MLUPS:000402  cache block size:690kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [032: 1081.69]  time:8.685739e-01  MLUPS:000939  cache block size:690kiB  reps:2  perf err: 29.2%
+[AUTO TUNE]     [032: 995.93]  time:1.482425e+00  MLUPS:001476  cache block size:690kiB  reps:3  perf err:  8.6%
+[AUTO TUNE]     [032: 931.61]  time:2.161053e+00  MLUPS:002013  cache block size:690kiB  reps:4  perf err:  6.9%
+[AUTO TUNE]     [032: 928.59]  time:2.746244e+00  MLUPS:002550  cache block size:690kiB  reps:5  perf err:  0.3%
+[AUTO TUNE]   Diamond width:08  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [008: 1720.12]  time:3.901401e-01  MLUPS:000671  cache block size:446kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 1528.79]  time:1.141317e+00  MLUPS:001744  cache block size:446kiB  reps:2  perf err: 12.5%
+[AUTO TUNE]     [008: 1478.28]  time:1.906662e+00  MLUPS:002818  cache block size:446kiB  reps:3  perf err:  3.4%
+[AUTO TUNE]     [008: 1414.40]  time:2.751912e+00  MLUPS:003892  cache block size:446kiB  reps:4  perf err:  4.5%
+[AUTO TUNE]     [008: 1401.88]  time:3.542429e+00  MLUPS:004966  cache block size:446kiB  reps:5  perf err:  0.9%
+[AUTO TUNE]     [016: 1865.44]  time:3.597488e-01  MLUPS:000671  cache block size:739kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 1587.64]  time:1.099009e+00  MLUPS:001744  cache block size:739kiB  reps:2  perf err: 17.5%
+[AUTO TUNE]     [016: 1552.21]  time:1.815843e+00  MLUPS:002818  cache block size:739kiB  reps:3  perf err:  2.3%
+[AUTO TUNE]     [024: 1917.84]  time:3.499181e-01  MLUPS:000671  cache block size:1031kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [024: 1555.08]  time:1.122020e+00  MLUPS:001744  cache block size:1031kiB  reps:2  perf err: 23.3%
+[AUTO TUNE]     [024: 1566.64]  time:1.799124e+00  MLUPS:002818  cache block size:1031kiB  reps:3  perf err:  0.7%
+[AUTO TUNE]     [032: 1851.95]  time:3.623681e-01  MLUPS:000671  cache block size:1324kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [032: 1593.62]  time:1.094888e+00  MLUPS:001744  cache block size:1324kiB  reps:2  perf err: 16.2%
+[AUTO TUNE]     [032: 1646.95]  time:1.711388e+00  MLUPS:002818  cache block size:1324kiB  reps:3  perf err:  3.2%
+[AUTO TUNE]     [032: 1608.99]  time:2.419099e+00  MLUPS:003892  cache block size:1324kiB  reps:4  perf err:  2.4%
+[AUTO TUNE]     [040: 1921.44]  time:3.492639e-01  MLUPS:000671  cache block size:1616kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [040: 1627.75]  time:1.071929e+00  MLUPS:001744  cache block size:1616kiB  reps:2  perf err: 18.0%
+[AUTO TUNE]     [040: 1564.19]  time:1.801937e+00  MLUPS:002818  cache block size:1616kiB  reps:3  perf err:  4.1%
+[AUTO TUNE]     [040: 1604.40]  time:2.426029e+00  MLUPS:003892  cache block size:1616kiB  reps:4  perf err:  2.5%
+[AUTO TUNE]     [040: 1564.97]  time:3.173257e+00  MLUPS:004966  cache block size:1616kiB  reps:5  perf err:  2.5%
+[AUTO TUNE]     [040: 1552.53]  time:3.890283e+00  MLUPS:006039  cache block size:1616kiB  reps:6  perf err:  0.8%
+[AUTO TUNE]   Diamond width:16  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [008: 2799.55]  time:4.314830e-01  MLUPS:001207  cache block size:1129kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 2437.11]  time:1.376814e+00  MLUPS:003355  cache block size:1129kiB  reps:2  perf err: 14.9%
+[AUTO TUNE]     [008: 2397.62]  time:2.295162e+00  MLUPS:005502  cache block size:1129kiB  reps:3  perf err:  1.6%
+[AUTO TUNE]     [016: 2662.67]  time:4.536641e-01  MLUPS:001207  cache block size:1681kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 2535.81]  time:1.323224e+00  MLUPS:003355  cache block size:1681kiB  reps:2  perf err:  5.0%
+[AUTO TUNE]     [016: 2628.91]  time:2.093234e+00  MLUPS:005502  cache block size:1681kiB  reps:3  perf err:  3.5%
+[AUTO TUNE]     [016: 2588.05]  time:2.956054e+00  MLUPS:007650  cache block size:1681kiB  reps:4  perf err:  1.6%
+[AUTO TUNE]     [024: 2933.62]  time:4.117639e-01  MLUPS:001207  cache block size:2234kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [024: 2678.86]  time:1.252562e+00  MLUPS:003355  cache block size:2234kiB  reps:2  perf err:  9.5%
+[AUTO TUNE]     [024: 2567.75]  time:2.143096e+00  MLUPS:005502  cache block size:2234kiB  reps:3  perf err:  4.3%
+[AUTO TUNE]     [024: 2643.22]  time:2.894350e+00  MLUPS:007650  cache block size:2234kiB  reps:4  perf err:  2.9%
+[AUTO TUNE]     [024: 2595.50]  time:3.774961e+00  MLUPS:009797  cache block size:2234kiB  reps:5  perf err:  1.8%
+[AUTO TUNE]     [032: 2797.65]  time:4.317760e-01  MLUPS:001207  cache block size:2786kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [032: 2768.17]  time:1.212151e+00  MLUPS:003355  cache block size:2786kiB  reps:2  perf err:  1.1%
+[AUTO TUNE]     [040: 2869.92]  time:4.209030e-01  MLUPS:001207  cache block size:3339kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [040: 2681.08]  time:1.251525e+00  MLUPS:003355  cache block size:3339kiB  reps:2  perf err:  7.0%
+[AUTO TUNE]     [040: 2635.15]  time:2.088279e+00  MLUPS:005502  cache block size:3339kiB  reps:3  perf err:  1.7%
+[AUTO TUNE]   Diamond width:32  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [008: 3388.85]  time:6.732972e-01  MLUPS:002281  cache block size:3274kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 3593.83]  time:1.829988e+00  MLUPS:006576  cache block size:3274kiB  reps:2  perf err:  5.7%
+[AUTO TUNE]     [008: 3415.56]  time:3.182970e+00  MLUPS:010871  cache block size:3274kiB  reps:3  perf err:  5.2%
+[AUTO TUNE]     [008: 3422.51]  time:4.431431e+00  MLUPS:015166  cache block size:3274kiB  reps:4  perf err:  0.2%
+[AUTO TUNE]     [016: 3455.45]  time:6.603200e-01  MLUPS:002281  cache block size:4346kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 3456.89]  time:1.902481e+00  MLUPS:006576  cache block size:4346kiB  reps:2  perf err:  0.0%
+[AUTO TUNE]     [024: 3495.55]  time:6.527441e-01  MLUPS:002281  cache block size:5419kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [024: 3474.68]  time:1.892743e+00  MLUPS:006576  cache block size:5419kiB  reps:2  perf err:  0.6%
+[AUTO TUNE]     [032: 3248.15]  time:7.024610e-01  MLUPS:002281  cache block size:6491kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [032: 3518.33]  time:1.869260e+00  MLUPS:006576  cache block size:6491kiB  reps:2  perf err:  7.7%
+[AUTO TUNE]     [032: 3313.61]  time:3.280908e+00  MLUPS:010871  cache block size:6491kiB  reps:3  perf err:  6.2%
+[AUTO TUNE]     [032: 3362.99]  time:4.509856e+00  MLUPS:015166  cache block size:6491kiB  reps:4  perf err:  1.5%
+[AUTO TUNE]   Diamond width:64  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [008: 4226.83]  time:1.047873e+00  MLUPS:004429  cache block size:10684kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 4199.62]  time:3.100074e+00  MLUPS:013019  cache block size:10684kiB  reps:2  perf err:  0.6%
+[AUTO TUNE]     [016: 4576.00]  time:9.679160e-01  MLUPS:004429  cache block size:12796kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 4433.93]  time:2.936248e+00  MLUPS:013019  cache block size:12796kiB  reps:2  perf err:  3.2%
+[AUTO TUNE]     [016: 4563.48]  time:4.735215e+00  MLUPS:021609  cache block size:12796kiB  reps:3  perf err:  2.8%
+[AUTO TUNE]     [016: 4757.14]  time:6.348143e+00  MLUPS:030198  cache block size:12796kiB  reps:4  perf err:  4.1%
+[AUTO TUNE]     [016: 4682.91]  time:8.283083e+00  MLUPS:038788  cache block size:12796kiB  reps:5  perf err:  1.6%
+[AUTO TUNE]     [024: 4756.40]  time:9.312050e-01  MLUPS:004429  cache block size:14909kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [024: 4753.21]  time:2.739015e+00  MLUPS:013019  cache block size:14909kiB  reps:2  perf err:  0.1%
+[AUTO TUNE]     [032: 4611.51]  time:9.604630e-01  MLUPS:004429  cache block size:17021kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [032: 4784.48]  time:2.721113e+00  MLUPS:013019  cache block size:17021kiB  reps:2  perf err:  3.6%
+[AUTO TUNE]     [032: 4913.60]  time:4.397806e+00  MLUPS:021609  cache block size:17021kiB  reps:3  perf err:  2.6%
+[AUTO TUNE]     [032: 4901.47]  time:6.161216e+00  MLUPS:030198  cache block size:17021kiB  reps:4  perf err:  0.2%
+[AUTO TUNE]     [040: 4849.82]  time:9.132671e-01  MLUPS:004429  cache block size:19134kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [040: 4774.14]  time:2.727009e+00  MLUPS:013019  cache block size:19134kiB  reps:2  perf err:  1.6%
+[AUTO TUNE]   Diamond width:128  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [008: 5057.93]  time:1.724845e+00  MLUPS:008724  cache block size:37984kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [008: 5288.27]  time:4.898390e+00  MLUPS:025904  cache block size:37984kiB  reps:2  perf err:  4.4%
+[AUTO TUNE]     [008: 5576.79]  time:7.725566e+00  MLUPS:043083  cache block size:37984kiB  reps:3  perf err:  5.2%
+[AUTO TUNE]     [008: 5630.09]  time:1.070387e+01  MLUPS:060263  cache block size:37984kiB  reps:4  perf err:  0.9%
+[AUTO TUNE]     [016: 5637.51]  time:1.547518e+00  MLUPS:008724  cache block size:42176kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 5821.26]  time:4.449899e+00  MLUPS:025904  cache block size:42176kiB  reps:2  perf err:  3.2%
+[AUTO TUNE]     [016: 5891.70]  time:7.312646e+00  MLUPS:043083  cache block size:42176kiB  reps:3  perf err:  1.2%
+[AUTO TUNE]     [024: 5926.77]  time:1.471990e+00  MLUPS:008724  cache block size:46369kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [024: 6302.68]  time:4.110003e+00  MLUPS:025904  cache block size:46369kiB  reps:2  perf err:  6.0%
+[AUTO TUNE]     [024: 6157.51]  time:6.996969e+00  MLUPS:043083  cache block size:46369kiB  reps:3  perf err:  2.4%
+[AUTO TUNE]     [032: 5999.90]  time:1.454049e+00  MLUPS:008724  cache block size:50561kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [032: 6226.55]  time:4.160250e+00  MLUPS:025904  cache block size:50561kiB  reps:2  perf err:  3.6%
+[AUTO TUNE]     [032: 6329.64]  time:6.806693e+00  MLUPS:043083  cache block size:50561kiB  reps:3  perf err:  1.6%
+[AUTO TUNE]     [040: 6344.29]  time:1.375118e+00  MLUPS:008724  cache block size:54754kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [040: 6496.17]  time:3.987581e+00  MLUPS:025904  cache block size:54754kiB  reps:2  perf err:  2.3%
+[AUTO TUNE]     [048: 6472.47]  time:1.347886e+00  MLUPS:008724  cache block size:58946kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [048: 6520.55]  time:3.972674e+00  MLUPS:025904  cache block size:58946kiB  reps:2  perf err:  0.7%
+[AUTO TUNE]     [056: 6386.10]  time:1.366116e+00  MLUPS:008724  cache block size:63139kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [056: 6569.39]  time:3.943137e+00  MLUPS:025904  cache block size:63139kiB  reps:2  perf err:  2.8%
+[AUTO TUNE]     [056: 6576.49]  time:6.551200e+00  MLUPS:043083  cache block size:63139kiB  reps:3  perf err:  0.1%
+[AUTO TUNE]     [064: 6245.06]  time:1.396968e+00  MLUPS:008724  cache block size:67331kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [064: 6264.45]  time:4.135084e+00  MLUPS:025904  cache block size:67331kiB  reps:2  perf err:  0.3%
+[AUTO TUNE] COMPLETE tune case #14: Thread group size:16  thc:01  thx:01  thy:02  thz:08  t_dim:63  bs_z:56  perf:6576.49 MLUP/s
+
+[AUTO TUNE] START tune case #15: Thread group size:16  thc:01  thx:01  thy:01  thz:16  Possilbe diam width: 4 8 16 32 64 128
+[AUTO TUNE]   Diamond width:04  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [016: 929.55]  time:4.331682e-01  MLUPS:000402  cache block size:365kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 763.54]  time:1.230482e+00  MLUPS:000939  cache block size:365kiB  reps:2  perf err: 21.7%
+[AUTO TUNE]     [016: 731.71]  time:2.017746e+00  MLUPS:001476  cache block size:365kiB  reps:3  perf err:  4.4%
+[AUTO TUNE]     [016: 709.94]  time:2.835829e+00  MLUPS:002013  cache block size:365kiB  reps:4  perf err:  3.1%
+[AUTO TUNE]     [016: 694.63]  time:3.671199e+00  MLUPS:002550  cache block size:365kiB  reps:5  perf err:  2.2%
+[AUTO TUNE]     [032: 1053.40]  time:3.822420e-01  MLUPS:000402  cache block size:690kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [032: 824.88]  time:1.138988e+00  MLUPS:000939  cache block size:690kiB  reps:2  perf err: 27.7%
+[AUTO TUNE]     [032: 752.07]  time:1.963106e+00  MLUPS:001476  cache block size:690kiB  reps:3  perf err:  9.7%
+[AUTO TUNE]     [032: 742.66]  time:2.710894e+00  MLUPS:002013  cache block size:690kiB  reps:4  perf err:  1.3%
+[AUTO TUNE]     [048: 1079.25]  time:3.730850e-01  MLUPS:000402  cache block size:1015kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [048: 838.13]  time:1.120982e+00  MLUPS:000939  cache block size:1015kiB  reps:2  perf err: 28.8%
+[AUTO TUNE]     [048: 809.16]  time:1.824595e+00  MLUPS:001476  cache block size:1015kiB  reps:3  perf err:  3.6%
+[AUTO TUNE]     [048: 773.76]  time:2.601928e+00  MLUPS:002013  cache block size:1015kiB  reps:4  perf err:  4.6%
+[AUTO TUNE]     [048: 746.13]  time:3.417807e+00  MLUPS:002550  cache block size:1015kiB  reps:5  perf err:  3.7%
+[AUTO TUNE]     [048: 749.55]  time:4.118473e+00  MLUPS:003087  cache block size:1015kiB  reps:6  perf err:  0.5%
+[AUTO TUNE]     [064: 1104.26]  time:3.646359e-01  MLUPS:000402  cache block size:1340kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [064: 861.95]  time:1.089997e+00  MLUPS:000939  cache block size:1340kiB  reps:2  perf err: 28.1%
+[AUTO TUNE]     [064: 809.33]  time:1.824215e+00  MLUPS:001476  cache block size:1340kiB  reps:3  perf err:  6.5%
+[AUTO TUNE]     [064: 789.87]  time:2.548870e+00  MLUPS:002013  cache block size:1340kiB  reps:4  perf err:  2.5%
+[AUTO TUNE]     [080: 1069.34]  time:3.765440e-01  MLUPS:000402  cache block size:1665kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [080: 836.54]  time:1.123110e+00  MLUPS:000939  cache block size:1665kiB  reps:2  perf err: 27.8%
+[AUTO TUNE]     [080: 811.62]  time:1.819070e+00  MLUPS:001476  cache block size:1665kiB  reps:3  perf err:  3.1%
+[AUTO TUNE]     [080: 805.36]  time:2.499831e+00  MLUPS:002013  cache block size:1665kiB  reps:4  perf err:  0.8%
+[AUTO TUNE]     [096: 1112.05]  time:3.620830e-01  MLUPS:000402  cache block size:1990kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [096: 859.30]  time:1.093354e+00  MLUPS:000939  cache block size:1990kiB  reps:2  perf err: 29.4%
+[AUTO TUNE]     [096: 809.81]  time:1.823139e+00  MLUPS:001476  cache block size:1990kiB  reps:3  perf err:  6.1%
+[AUTO TUNE]     [096: 781.13]  time:2.577374e+00  MLUPS:002013  cache block size:1990kiB  reps:4  perf err:  3.7%
+[AUTO TUNE]     [096: 783.90]  time:3.253158e+00  MLUPS:002550  cache block size:1990kiB  reps:5  perf err:  0.4%
+[AUTO TUNE]   Diamond width:08  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [016: 1540.98]  time:4.354939e-01  MLUPS:000671  cache block size:739kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 1261.96]  time:1.382640e+00  MLUPS:001744  cache block size:739kiB  reps:2  perf err: 22.1%
+[AUTO TUNE]     [016: 1254.58]  time:2.246630e+00  MLUPS:002818  cache block size:739kiB  reps:3  perf err:  0.6%
+[AUTO TUNE]     [032: 1567.16]  time:4.282200e-01  MLUPS:000671  cache block size:1324kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [032: 1339.90]  time:1.302211e+00  MLUPS:001744  cache block size:1324kiB  reps:2  perf err: 17.0%
+[AUTO TUNE]     [032: 1298.42]  time:2.170776e+00  MLUPS:002818  cache block size:1324kiB  reps:3  perf err:  3.2%
+[AUTO TUNE]     [032: 1296.37]  time:3.002462e+00  MLUPS:003892  cache block size:1324kiB  reps:4  perf err:  0.2%
+[AUTO TUNE]     [048: 1605.41]  time:4.180181e-01  MLUPS:000671  cache block size:1909kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [048: 1350.41]  time:1.292079e+00  MLUPS:001744  cache block size:1909kiB  reps:2  perf err: 18.9%
+[AUTO TUNE]     [048: 1321.82]  time:2.132336e+00  MLUPS:002818  cache block size:1909kiB  reps:3  perf err:  2.2%
+[AUTO TUNE]     [064: 1602.98]  time:4.186502e-01  MLUPS:000671  cache block size:2494kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [064: 1381.43]  time:1.263060e+00  MLUPS:001744  cache block size:2494kiB  reps:2  perf err: 16.0%
+[AUTO TUNE]     [064: 1159.49]  time:2.430863e+00  MLUPS:002818  cache block size:2494kiB  reps:3  perf err: 19.1%
+[AUTO TUNE]     [064: 1173.07]  time:3.318049e+00  MLUPS:003892  cache block size:2494kiB  reps:4  perf err:  1.2%
+[AUTO TUNE]   Diamond width:16  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [016: 2447.01]  time:4.936471e-01  MLUPS:001207  cache block size:1681kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 2302.63]  time:1.457224e+00  MLUPS:003355  cache block size:1681kiB  reps:2  perf err:  6.3%
+[AUTO TUNE]     [016: 2257.58]  time:2.437529e+00  MLUPS:005502  cache block size:1681kiB  reps:3  perf err:  2.0%
+[AUTO TUNE]     [032: 2403.66]  time:5.025499e-01  MLUPS:001207  cache block size:2786kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [032: 2364.84]  time:1.418890e+00  MLUPS:003355  cache block size:2786kiB  reps:2  perf err:  1.6%
+[AUTO TUNE]     [048: 2563.41]  time:4.712319e-01  MLUPS:001207  cache block size:3891kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [048: 2145.23]  time:1.564139e+00  MLUPS:003355  cache block size:3891kiB  reps:2  perf err: 19.5%
+[AUTO TUNE]     [048: 2168.51]  time:2.537656e+00  MLUPS:005502  cache block size:3891kiB  reps:3  perf err:  1.1%
+[AUTO TUNE]   Diamond width:32  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [016: 3391.74]  time:6.727221e-01  MLUPS:002281  cache block size:4346kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 3255.14]  time:2.020397e+00  MLUPS:006576  cache block size:4346kiB  reps:2  perf err:  4.2%
+[AUTO TUNE]     [016: 3243.46]  time:3.351869e+00  MLUPS:010871  cache block size:4346kiB  reps:3  perf err:  0.4%
+[AUTO TUNE]     [032: 3668.53]  time:6.219659e-01  MLUPS:002281  cache block size:6491kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [032: 3466.56]  time:1.897175e+00  MLUPS:006576  cache block size:6491kiB  reps:2  perf err:  5.8%
+[AUTO TUNE]     [032: 3645.16]  time:2.982482e+00  MLUPS:010871  cache block size:6491kiB  reps:3  perf err:  4.9%
+[AUTO TUNE]     [032: 3476.75]  time:4.362290e+00  MLUPS:015166  cache block size:6491kiB  reps:4  perf err:  4.8%
+[AUTO TUNE]     [032: 3408.22]  time:5.710185e+00  MLUPS:019461  cache block size:6491kiB  reps:5  perf err:  2.0%
+[AUTO TUNE]     [048: 3747.49]  time:6.088610e-01  MLUPS:002281  cache block size:8636kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [048: 3689.04]  time:1.782759e+00  MLUPS:006576  cache block size:8636kiB  reps:2  perf err:  1.6%
+[AUTO TUNE]     [064: 3821.84]  time:5.970170e-01  MLUPS:002281  cache block size:10781kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [064: 3481.18]  time:1.889204e+00  MLUPS:006576  cache block size:10781kiB  reps:2  perf err:  9.8%
+[AUTO TUNE]     [064: 3548.29]  time:3.063910e+00  MLUPS:010871  cache block size:10781kiB  reps:3  perf err:  1.9%
+[AUTO TUNE]   Diamond width:64  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [016: 4366.51]  time:1.014353e+00  MLUPS:004429  cache block size:12796kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 4498.38]  time:2.894181e+00  MLUPS:013019  cache block size:12796kiB  reps:2  perf err:  2.9%
+[AUTO TUNE]     [016: 4542.42]  time:4.757170e+00  MLUPS:021609  cache block size:12796kiB  reps:3  perf err:  1.0%
+[AUTO TUNE]     [032: 4733.01]  time:9.358082e-01  MLUPS:004429  cache block size:17021kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [032: 4636.12]  time:2.808195e+00  MLUPS:013019  cache block size:17021kiB  reps:2  perf err:  2.1%
+[AUTO TUNE]     [048: 5123.53]  time:8.644800e-01  MLUPS:004429  cache block size:21246kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [048: 4795.02]  time:2.715131e+00  MLUPS:013019  cache block size:21246kiB  reps:2  perf err:  6.9%
+[AUTO TUNE]     [048: 4805.16]  time:4.497048e+00  MLUPS:021609  cache block size:21246kiB  reps:3  perf err:  0.2%
+[AUTO TUNE]     [064: 5145.70]  time:8.607540e-01  MLUPS:004429  cache block size:25471kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [064: 4807.78]  time:2.707929e+00  MLUPS:013019  cache block size:25471kiB  reps:2  perf err:  7.0%
+[AUTO TUNE]     [064: 4982.56]  time:4.336941e+00  MLUPS:021609  cache block size:25471kiB  reps:3  perf err:  3.5%
+[AUTO TUNE]     [064: 4779.66]  time:6.318228e+00  MLUPS:030198  cache block size:25471kiB  reps:4  perf err:  4.2%
+[AUTO TUNE]     [064: 4911.96]  time:7.896834e+00  MLUPS:038788  cache block size:25471kiB  reps:5  perf err:  2.7%
+[AUTO TUNE]     [064: 4878.22]  time:9.712324e+00  MLUPS:047378  cache block size:25471kiB  reps:6  perf err:  0.7%
+[AUTO TUNE]     [080: 4908.40]  time:9.023678e-01  MLUPS:004429  cache block size:29696kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [080: 4954.13]  time:2.627931e+00  MLUPS:013019  cache block size:29696kiB  reps:2  perf err:  0.9%
+[AUTO TUNE]     [096: 5269.55]  time:8.405240e-01  MLUPS:004429  cache block size:33921kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [096: 4741.58]  time:2.745734e+00  MLUPS:013019  cache block size:33921kiB  reps:2  perf err: 11.1%
+[AUTO TUNE]     [096: 4938.50]  time:4.375634e+00  MLUPS:021609  cache block size:33921kiB  reps:3  perf err:  4.0%
+[AUTO TUNE]     [096: 4946.89]  time:6.104643e+00  MLUPS:030198  cache block size:33921kiB  reps:4  perf err:  0.2%
+[AUTO TUNE]   Diamond width:128  [wavefronts #: pefromance (MLUPS/s)]
+[AUTO TUNE]     [016: 5358.10]  time:1.628217e+00  MLUPS:008724  cache block size:42176kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [016: 5561.89]  time:4.657414e+00  MLUPS:025904  cache block size:42176kiB  reps:2  perf err:  3.7%
+[AUTO TUNE]     [016: 5597.11]  time:7.697524e+00  MLUPS:043083  cache block size:42176kiB  reps:3  perf err:  0.6%
+[AUTO TUNE]     [032: 5965.70]  time:1.462386e+00  MLUPS:008724  cache block size:50561kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [032: 5709.57]  time:4.536945e+00  MLUPS:025904  cache block size:50561kiB  reps:2  perf err:  4.5%
+[AUTO TUNE]     [032: 5862.17]  time:7.349480e+00  MLUPS:043083  cache block size:50561kiB  reps:3  perf err:  2.6%
+[AUTO TUNE]     [032: 5773.69]  time:1.043766e+01  MLUPS:060263  cache block size:50561kiB  reps:4  perf err:  1.5%
+[AUTO TUNE]     [048: 5844.33]  time:1.492756e+00  MLUPS:008724  cache block size:58946kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [048: 5803.35]  time:4.463631e+00  MLUPS:025904  cache block size:58946kiB  reps:2  perf err:  0.7%
+[AUTO TUNE]     [064: 6161.32]  time:1.415955e+00  MLUPS:008724  cache block size:67331kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [064: 5826.05]  time:4.446238e+00  MLUPS:025904  cache block size:67331kiB  reps:2  perf err:  5.8%
+[AUTO TUNE]     [064: 5902.80]  time:7.298891e+00  MLUPS:043083  cache block size:67331kiB  reps:3  perf err:  1.3%
+[AUTO TUNE]     [080: 5409.33]  time:1.612798e+00  MLUPS:008724  cache block size:75716kiB  reps:1  perf err: 100.0%
+[AUTO TUNE]     [080: 5673.30]  time:4.565951e+00  MLUPS:025904  cache block size:75716kiB  reps:2  perf err:  4.7%
+[AUTO TUNE]     [080: 5552.00]  time:7.760072e+00  MLUPS:043083  cache block size:75716kiB  reps:3  perf err:  2.2%
+[AUTO TUNE] COMPLETE tune case #15: Thread group size:16  thc:01  thx:01  thy:01  thz:16  t_dim:63  bs_z:64  perf:5902.80 MLUP/s
+[AUTO TUNE]  Tuning time: 2330.4 seconds
+###INFO: Modified nt from 500 to 514 for the intra-diamond method to work properly
+[rank=1] alloc. dom(err=0):1.059420GiB coef(err=0):0.000000GiB total:1.059420GiB
+Started on Thu Sep  1 14:57:14 2016
+
+******************************************************
+Parameters settings
+******************************************************
+Time stepper name: Diamond
+Stencil Kernel name: star
+Stencil Kernel semi-bandwidth: 1
+Stencil Kernel coefficients: constant
+Precision: SP
+Global domain    size:268435456    nx:512    ny:1024    nz:512
+Rank 0 domain    size:134217728    nx:512    ny:512    nz:512
+Number of time steps: 514
+Alignment size: 8 Bytes
+Number of tests: 3
+Verify:   0
+Source point enabled: 0
+Time unroll:   15
+Using separate call to central line update: 0
+Halo concatenation: 1
+Enable wavefronts: 1
+Wavefront parallel strategy: Relaxed synchronization wavefront
+Intra-diamond width:   32
+Wavefront width:  33
+Cache block size/wf (kiB): 2604
+Total cache block size (kiB): 20832
+Next larger cache block size/wf (kiB): 3221 (diam_width=36)
+Intra-diamond prologue/epilogue MStencils: 2281
+Multi-wavefront updates: 3
+User set thread group size: -1
+Thread group size: 2
+Threads along z-axis: 1
+Threads along y-axis: 2
+Threads along x-axis: 1
+Threads per cell    : 1
+Threads block: 1
+Threads stride: 1
+OpenMP Threads: 16
+Assumed usable cache size: 0KiB
+MPI size: 2
+Processors topology (npx, npy, npz): 01,02,01
+******************************************************
+[rank=0] alloc. dom(err=0):1.055437GiB coef(err=0):0.000000GiB total:1.055437GiB
+
+******************************************************
+Performance results
+******************************************************
+Rank 0 TEST#01 time: 1.264678e+01
+Rank 0 TEST#02 time: 1.298113e+01
+Rank 0 TEST#03 time: 1.234558e+01
+******************************************************
+
+******************************************************
+##WARNING[rank:1]: 138412032 nan and/or -inf/inf values in the final sub domain solution. This might result in inaccurate performance results
+******************************************************
+
+
+******************************************************
+##WARNING[rank:0]: 138412032 nan and/or -inf/inf values in the final sub domain solution. This might result in inaccurate performance results
+******************************************************
+
+Total memory allocation per MPI rank: 1621 MiB
+Total time(s): 3.797349e+01
+time/test(s): 1.265783e+01
+
+Total RANK0 MStencil/s MIN: 5314.474934  
+Total RANK0 MStencil/s MAX: 5588.067061  
+******************************************************
+MWD main-loop RANK0 MStencil/s MIN: 5523.027118
+MWD main-loop RANK0 MStencil/s MAX: 5756.303297
+******************************************************
+RANK0 ts main loop:         11.588340 (s) - 93.87%
+RANK0 ts prologue/epilogue: 0.656348 (s) - 05.32%
+RANK0 ts others:            0.100889 (s) - 00.82%
+******************************************************
+Metric \ core:                  core 00       core 01       core 02       core 03       core 04       core 05       core 06       core 07       core 08       core 09       core 10       core 11       core 12       core 13       core 14       core 15     
+Wavefront synchronization [s]:  1.149723e+00  1.124166e+00  1.027218e+00  1.182897e+00  1.018111e+00  9.826274e-01  9.713891e-01  1.015261e+00  1.019748e+00  1.187104e+00  1.022810e+00  9.490848e-01  9.958286e-01  1.170962e+00  8.826122e-01  7.687588e-01
+Wavefront synchronization [%]:  09.39         09.18         08.39         09.66         08.31         08.02         07.93         08.29         08.33         09.69         08.35         07.75         08.13         09.56         07.21         06.28       
+
+Metric \ thread group:       group 00      group 01      group 02      group 03      group 04      group 05      group 06      group 07    
+Wavefront steady state [s]:  7.116857e+00  6.713041e+00  7.086119e+00  6.751093e+00  7.032432e+00  6.832383e+00  7.283955e+00  6.567487e+00
+Wavefront steady state [%]:  58.12         54.82         57.87         55.13         57.43         55.80         59.49         53.64       
+Wavefront startup/end [s]:   4.076753e+00  4.253006e+00  4.241998e+00  4.378757e+00  4.384661e+00  4.158030e+00  3.817841e+00  4.725618e+00
+Wavefront startup/end [%]:   33.29         34.73         34.64         35.76         35.81         33.96         31.18         38.59       
+Wavefront communication [s]:  2.066145e-01  4.354148e-01  3.001766e-01  1.485455e-01  2.397509e-01  5.714667e-01  5.180988e-01  2.220900e-01
+Wavefront communication [%]:  01.69         03.56         02.45         01.21         01.96         04.67         04.23         01.81       
+Wavefront others [s]:        8.444631e-01  8.432257e-01  6.163940e-01  9.662924e-01  5.878444e-01  6.828086e-01  6.247933e-01  7.294927e-01
+Wavefront others [%]:        06.90         06.89         05.03         07.89         04.80         05.58         05.10         05.96       
+Group spin-wait [s]:         2.302020e-01  7.683754e-03  1.061001e-01  7.285213e-02  9.298325e-06  7.152557e-06  2.225313e-01  8.821487e-06
+Group spin-wait [%]:         01.86         00.06         00.86         00.59         00.00         00.00         01.80         00.00       
+Resolved diamonds:           6.400000e+01  5.800000e+01  6.400000e+01  6.100000e+01  6.100000e+01  6.300000e+01  6.500000e+01  6.000000e+01
+******************************************************
+COMPLETED SUCCESSFULLY on Thu Sep  1 14:57:54 2016

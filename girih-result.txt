@@ -1,0 +1,93 @@
+###INFO: Modified nt from 500 to 514 for the intra-diamond method to work properly
+Started on Tue Aug 30 14:31:34 2016
+
+******************************************************
+Parameters settings
+******************************************************
+Time stepper name: Diamond
+Stencil Kernel name: star
+Stencil Kernel semi-bandwidth: 1
+Stencil Kernel coefficients: constant
+Precision: SP
+Global domain    size:134217728    nx:512    ny:512    nz:512
+Rank 0 domain    size:134217728    nx:512    ny:512    nz:512
+Number of time steps: 514
+Alignment size: 8 Bytes
+Number of tests: 3
+Verify:   0
+Source point enabled: 0
+Time unroll:   7
+Using separate call to central line update: 0
+Halo concatenation: 0
+Enable wavefronts: 1
+Wavefront parallel strategy: Relaxed synchronization wavefront
+Intra-diamond width:   16
+Wavefront width:  16
+Cache block size/wf (kiB): 715
+Total cache block size (kiB): 11440
+Next larger cache block size/wf (kiB): 1056 (diam_width=20)
+Intra-diamond prologue/epilogue MStencils: 1207
+Multi-wavefront updates: 2
+User set thread group size: -1
+Thread group size: 1
+Threads along z-axis: 1
+Threads along y-axis: 1
+Threads along x-axis: 1
+Threads per cell    : 1
+Threads block: 1
+Threads stride: 1
+OpenMP Threads: 16
+Assumed usable cache size: 0KiB
+MPI size: 1
+Processors topology (npx, npy, npz): 01,01,01
+******************************************************
+[rank=0] alloc. dom(err=0):1.023575GiB coef(err=0):0.000000GiB total:1.023575GiB
+
+******************************************************
+Performance results
+******************************************************
+Rank 0 TEST#01 time: 4.167330e+00
+Rank 0 TEST#02 time: 4.062602e+00
+Rank 0 TEST#03 time: 4.055491e+00
+******************************************************
+
+******************************************************
+##WARNING[rank:0]: 134217728 nan and/or -inf/inf values in the final sub domain solution. This might result in inaccurate performance results
+******************************************************
+
+Total memory allocation per MPI rank: 1572 MiB
+Total time(s): 1.228542e+01
+time/test(s): 4.095141e+00
+
+Total RANK0 MStencil/s MIN: 16554.464297
+Total RANK0 MStencil/s MAX: 17010.988976
+******************************************************
+MWD main-loop RANK0 MStencil/s MIN: 16633.654985
+MWD main-loop RANK0 MStencil/s MAX: 17105.007080
+******************************************************
+RANK0 ts main loop:         3.962524 (s) - 97.71%
+RANK0 ts prologue/epilogue: 0.092956 (s) - 02.29%
+RANK0 ts others:            0.000011 (s) - 00.00%
+******************************************************
+Metric \ core:                  core 00       core 01       core 02       core 03       core 04       core 05       core 06       core 07       core 08       core 09       core 10       core 11       core 12       core 13       core 14       core 15
+Wavefront synchronization [s]:  4.865718e-02  4.622674e-02  4.653358e-02  4.579806e-02  4.510856e-02  4.559612e-02  4.592943e-02  4.673624e-02  4.280853e-02  4.135346e-02  4.461551e-02  4.522610e-02  4.683304e-02  4.736352e-02  4.778218e-02  4.616117e-02
+Wavefront synchronization [%]:  01.20         01.14         01.15         01.13         01.11         01.12         01.13         01.15         01.06         01.02         01.10         01.12         01.15         01.17         01.18         01.14
+
+Metric \ thread group:       group 00      group 01      group 02      group 03      group 04      group 05      group 06      group 07      group 08      group 09      group 10      group 11      group 12      group 13      group 14      group 15
+Wavefront steady state [s]:  3.926733e+00  3.921973e+00  3.925737e+00  3.932106e+00  3.917292e+00  3.919536e+00  3.919546e+00  3.933067e+00  3.932583e+00  3.934272e+00  3.940173e+00  3.933407e+00  3.935393e+00  3.932757e+00  3.922208e+00  3.920377e+00
+Wavefront steady state [%]:  96.83         96.71         96.80         96.96         96.59         96.65         96.65         96.98         96.97         97.01         97.16         96.99         97.04         96.97         96.71         96.67
+Wavefront startup/end [s]:   1.126833e-01  1.124880e-01  1.129858e-01  1.127324e-01  1.126993e-01  1.126132e-01  1.125076e-01  1.126740e-01  1.127658e-01  1.130574e-01  1.127877e-01  1.125920e-01  1.130655e-01  1.127963e-01  1.121569e-01  1.125145e-01
+Wavefront startup/end [%]:   02.78         02.77         02.79         02.78         02.78         02.78         02.77         02.78         02.78         02.79         02.78         02.78         02.79         02.78         02.77         02.77
+Wavefront communication [s]:  1.144409e-05  8.821487e-06  1.597404e-05  1.287460e-05  1.168251e-05  1.192093e-05  1.716614e-05  1.287460e-05  1.358986e-05  1.478195e-05  9.536743e-06  1.811981e-05  2.336502e-05  2.217293e-05  1.621246e-05  1.382828e-05
+Wavefront communication [%]:  00.00         00.00         00.00         00.00         00.00         00.00         00.00         00.00         00.00         00.00         00.00         00.00         00.00         00.00         00.00         00.00
+Wavefront others [s]:        1.605225e-02  2.101016e-02  1.674104e-02  1.062870e-02  2.547669e-02  2.331924e-02  2.340961e-02  9.725809e-03  1.011801e-02  8.135557e-03  2.509832e-03  9.463072e-03  6.998301e-03  9.904861e-03  2.109933e-02  2.257466e-02
+Wavefront others [%]:        00.40         00.52         00.41         00.26         00.63         00.58         00.58         00.24         00.25         00.20         00.06         00.23         00.17         00.24         00.52         00.56
+Group spin-wait [s]:         1.454353e-05  1.645088e-05  8.821487e-06  1.478195e-05  1.835823e-05  1.692772e-05  1.406670e-05  1.239777e-05  1.192093e-05  1.978874e-05  1.788139e-05  1.549721e-05  1.883507e-05  2.384186e-05  1.192093e-05  1.692772e-05
+Group spin-wait [%]:         00.00         00.00         00.00         00.00         00.00         00.00         00.00         00.00         00.00         00.00         00.00         00.00         00.00         00.00         00.00         00.00
+Resolved diamonds:           1.270000e+02  1.270000e+02  1.255000e+02  1.235000e+02  1.215000e+02  1.265000e+02  1.260000e+02  1.260000e+02  1.260000e+02  1.235000e+02  1.255000e+02  1.270000e+02  1.285000e+02  1.280000e+02  1.275000e+02  1.270000e+02
+******************************************************
+COMPLETED SUCCESSFULLY on Tue Aug 30 14:31:47 2016
+
+real    33m15.627s
+user    420m8.067s
+sys     17m38.566s
